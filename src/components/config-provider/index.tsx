@@ -1,12 +1,11 @@
 import { ConfigProvider as AntdConfigProvider } from "antd";
+import { useContext, useId } from "react";
 import type { ConfigProviderProps } from "antd/es/config-provider";
 import zhCN from "antd/locale/zh_CN";
 import type { GZDThemeMode } from "../../styles/themes";
 import { getDesignTokens } from "../../styles/themes";
 import { GZDConfigContext } from "./context";
 import { applyGoldDarkAdapters } from "./goldDarkAdapters";
-
-const DEFAULT_CSS_VAR_PREFIX = "gzd-ant";
 
 const toKebabCase = (value: string): string =>
   value
@@ -16,17 +15,23 @@ const toKebabCase = (value: string): string =>
     .replace(/^-+|-+$/g, "")
     .toLowerCase();
 
-const getCssVarConfig = (themeMode: GZDThemeMode, cssVarScope?: string) => {
+const getCssVarConfig = (
+  themeMode: GZDThemeMode,
+  prefixCls: string,
+  instanceId: string,
+  cssVarScope?: string,
+) => {
   const normalizedScope = cssVarScope ? toKebabCase(cssVarScope) : "";
 
   if (!normalizedScope) {
     return {
-      key: `gzd-${themeMode}`,
-      prefix: DEFAULT_CSS_VAR_PREFIX,
+      key: `${prefixCls}-${themeMode}-${instanceId}`,
+      // antd 的尺寸变量带单位，与自有原始 Token 分开，避免 calc 重复乘 px。
+      prefix: `${prefixCls}-ant`,
     };
   }
 
-  const scopedPrefix = `gzd-${normalizedScope}`;
+  const scopedPrefix = `${prefixCls}-${normalizedScope}`;
 
   return {
     key: `${scopedPrefix}-${themeMode}`,
@@ -61,6 +66,7 @@ export interface GZDConfigProviderProps extends ConfigProviderProps {
 const ConfigProvider = ({
   themeMode = "gold-dark",
   cssVarScope,
+  prefixCls,
   theme: customTheme,
   locale = zhCN,
   button: customButton,
@@ -79,6 +85,11 @@ const ConfigProvider = ({
   children,
   ...rest
 }: GZDConfigProviderProps) => {
+  const parent = useContext(GZDConfigContext);
+  const { getPrefixCls } = useContext(AntdConfigProvider.ConfigContext);
+  const instanceId = useId().replace(/[^a-zA-Z0-9_-]/g, "");
+  const mergedPrefixCls = prefixCls ?? (parent.themeMode ? getPrefixCls() : "gz");
+
   // 获取当前模式的基础配置，并合并业务方传入的额外定制配置
   const baseTheme = getDesignTokens({ themeMode });
   const mergedTheme = {
@@ -91,7 +102,10 @@ const ConfigProvider = ({
       ...baseTheme.components,
       ...customTheme?.components,
     },
-    cssVar: getCssVarConfig(themeMode, cssVarScope),
+    cssVar: {
+      ...getCssVarConfig(themeMode, mergedPrefixCls, instanceId, cssVarScope),
+      ...customTheme?.cssVar,
+    },
   };
 
   // 对各组件应用 gold-dark 主题适配（CSS 变量与类名注入）
@@ -126,6 +140,7 @@ const ConfigProvider = ({
   return (
     <GZDConfigContext.Provider value={{ themeMode }}>
       <AntdConfigProvider
+        prefixCls={mergedPrefixCls}
         theme={mergedTheme}
         locale={locale}
         button={adaptedComponents.button}

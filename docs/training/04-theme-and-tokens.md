@@ -148,14 +148,18 @@ const preset = getDesignTokens({ themeMode });
 
 ## `cssVarScope` 是做什么的
 
-Ant Design 会把主题转换成 CSS 变量。gzd 会自动为它生成稳定的 `key` 和 `prefix`，业务代码不要直接维护 `theme.cssVar.key` 或 `theme.cssVar.prefix`。
+Ant Design 会把主题转换成 CSS 变量。gzd 自动生成实例隔离的 `key` 和 `prefix`，通常无需手动配置；有明确隔离需求时可以使用 `cssVarScope` 或 `theme.cssVar`。
 
 默认情况下：
 
 | 配置 | 生成结果 |
 | --- | --- |
-| `themeMode="gold-dark"` | `key: "gzd-gold-dark"`，`prefix: "gzd-ant"` |
-| `themeMode="blue-light"` | `key: "gzd-blue-light"`，`prefix: "gzd-ant"` |
+| `themeMode="gold-dark"` | `key: "gz-gold-dark-<实例ID>"`，`prefix: "gz-ant"` |
+| `themeMode="blue-light"` | `key: "gz-blue-light-<实例ID>"`，`prefix: "gz-ant"` |
+
+组件类名默认使用 `gz-*`。自有 Token 变量为 `--gz-*`，antd 的计算后变量为
+`--gz-ant-*`，避免原始数字与带单位的尺寸变量互相覆盖。更改 `prefixCls` 时，
+antd 变量前缀默认跟随为 `<prefixCls>-ant`。
 
 普通单体应用不需要传 `cssVarScope`。
 
@@ -175,8 +179,8 @@ import { ConfigProvider } from 'gzd';
 `orderCenter` 会被转成短横线格式，结果是：
 
 ```text
-key:    gzd-order-center-gold-dark
-prefix: gzd-order-center
+key:    gz-order-center-gold-dark
+prefix: gz-order-center
 ```
 
 使用时记住三点：
@@ -255,14 +259,14 @@ const variables = getDesignTokenCssVariables({
   themeMode: 'gold-dark',
 });
 
-console.log(variables['--gzd-color-bg-layout']);
+console.log(variables['--gz-color-bg-layout']);
 ```
 
 默认配置如下：
 
 | 选项 | 默认值 | 作用 |
 | --- | --- | --- |
-| `prefix` | `'gzd'` | CSS 变量名前缀 |
+| `prefix` | `'gz'` | CSS 变量名前缀 |
 | `includeCustom` | `true` | 是否包含 `custom` Token |
 | `includeComponents` | `false` | 是否包含组件级 Token |
 
@@ -270,20 +274,20 @@ console.log(variables['--gzd-color-bg-layout']);
 
 ```text
 globalToken.colorBgLayout
-→ --gzd-color-bg-layout
+→ --gz-color-bg-layout
 
 custom.responsive.Desktop...
-→ --gzd-custom-responsive-desktop-...
+→ --gz-custom-responsive-desktop-...
 
 components.Button.primaryGradientStart
-→ --gzd-components-button-primary-gradient-start
+→ --gz-components-button-primary-gradient-start
 ```
 
 组件级 Token 数量很多，所以 `includeComponents` 默认关闭。只有 CSS 确实需要读取组件级 Token 时再打开。
 
 数值 Token 会原样转成字符串，不会自动补 `px`。例如变量值为 `14` 时，要先确认它代表像素、倍数还是其他单位，再决定 CSS 写法。
 
-// chenhui996？？？
+// chenhui996 待解决疑问
 
 ### `applyDesignTokenCssVariables`
 
@@ -402,7 +406,7 @@ Token 转换只读取 `gzd-design-tokens-origin/` 中的 JSON。根目录不要�
 
 `ConfigProvider` 使用前两项驱动组件主题；业务代码可以使用三项，也可以把它们转换成自己的 CSS 变量。
 
-// chenhui996？？？
+// chenhui996 待解决疑问
 
 AG Grid 不走 `getDesignTokens`。`Table` 会在 `gold-dark` 和 `gold-light` 下自动使用对应结果。如果业务直接使用底层 AG Grid，则从 `gzd/gzd-table` 导入生成的 Grid Token。详细用法见 [AG Grid Table Tokens](/tokens/ag-grid-table)。
 
@@ -560,7 +564,7 @@ npm run tokens:transform
 - 不要修改 `getDesignTokens` 返回的对象。
 - 不要把组件 Token 全部转换成 CSS 变量，除非业务确实需要。
 - 调用 `applyDesignTokenCssVariables` 后要保存并执行清理函数。
-- 多个应用共用页面根元素时，要使用不同 `prefix`，或者把变量写到各自的 `target`。 // chenhui996？？？
+- 多个应用共用页面根元素时，要使用不同 `prefix`，或者把变量写到各自的 `target`。 // chenhui996 待解决疑问
 - 覆盖 `theme.components.Xxx` 前，要记住当前是组件一级的浅合并。
 - 固定颜色只适合不随主题变化的特殊场景；普通页面优先使用语义 Token。
 

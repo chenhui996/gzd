@@ -11,7 +11,7 @@ const Switch = forwardRef<HTMLButtonElement, GZDSwitchProps>((props, ref) => {
   return (
     <AntdSwitch
       ref={ref}
-      className={classNames('gzd-switch', className)}
+      className={classNames('gz-switch', className)}
       {...restProps}
     />
   );

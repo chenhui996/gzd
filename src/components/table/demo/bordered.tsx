@@ -68,8 +68,8 @@ const rowData: DataType[] = [
 ];
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope gzd-table-demo-bordered">
-    <div className="gzd-table-demo-bordered-section">Header</div>
+  <div className="gz-table-demo-scrollbar-scope gz-table-demo-bordered">
+    <div className="gz-table-demo-bordered-section">Header</div>
     <Table<DataType>
       modules={[AllCommunityModule]}
       columnDefs={columnDefs}
@@ -82,7 +82,7 @@ const App: React.FC = () => (
       }}
       domLayout="autoHeight"
     />
-    <div className="gzd-table-demo-bordered-section">Footer</div>
+    <div className="gz-table-demo-bordered-section">Footer</div>
   </div>
 );
 

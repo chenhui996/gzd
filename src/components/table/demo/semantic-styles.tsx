@@ -21,21 +21,21 @@ const columnDefs: ColDef<DataType>[] = [
     field: 'name',
     minWidth: 160,
     flex: 1,
-    headerClass: 'gzd-table-demo-semantic-header',
-    cellClass: 'gzd-table-demo-semantic-name',
+    headerClass: 'gz-table-demo-semantic-header',
+    cellClass: 'gz-table-demo-semantic-name',
   },
   {
     headerName: 'Status',
     field: 'status',
     width: 120,
-    headerClass: 'gzd-table-demo-semantic-header',
+    headerClass: 'gz-table-demo-semantic-header',
   },
   {
     headerName: 'Amount',
     field: 'amount',
     width: 120,
-    headerClass: 'gzd-table-demo-semantic-header',
-    cellClass: 'gzd-table-demo-semantic-amount',
+    headerClass: 'gz-table-demo-semantic-header',
+    cellClass: 'gz-table-demo-semantic-amount',
     valueFormatter: ({ value }) => `$${value ?? 0}`,
   },
   {
@@ -43,7 +43,7 @@ const columnDefs: ColDef<DataType>[] = [
     field: 'description',
     minWidth: 240,
     flex: 2,
-    headerClass: 'gzd-table-demo-semantic-header',
+    headerClass: 'gz-table-demo-semantic-header',
   },
 ];
 
@@ -54,14 +54,14 @@ const rowData: DataType[] = [
 ];
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope gzd-table-demo-semantic">
+  <div className="gz-table-demo-scrollbar-scope gz-table-demo-semantic">
     <Table<DataType>
       modules={[AllCommunityModule]}
       columnDefs={columnDefs}
       rowData={rowData}
       getRowId={({ data }) => data.key}
       getRowClass={({ data }) =>
-        data?.status === 'warning' ? 'gzd-table-demo-semantic-row-warning' : undefined
+        data?.status === 'warning' ? 'gz-table-demo-semantic-row-warning' : undefined
       }
       defaultColDef={{
         sortable: false,

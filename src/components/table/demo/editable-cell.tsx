@@ -103,7 +103,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="gzd-table-demo-scrollbar-scope">
+    <div className="gz-table-demo-scrollbar-scope">
       <Button onClick={handleAdd} type="primary" style={{ marginBottom: 16 }}>
         Add a row
       </Button>

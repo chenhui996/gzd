@@ -9,7 +9,7 @@ export type GZDTreeProps = TreeProps;
 // Extract the ref type from AntdTree
 type TreeRef = React.ElementRef<typeof AntdTree>;
 
-const GOLD_DARK_TREE_CLASS_NAME = 'gzd-tree-gold-dark';
+const GOLD_DARK_TREE_CLASS_NAME = 'gz-tree-gold-dark';
 
 const Tree = forwardRef<TreeRef, GZDTreeProps>((props, ref) => {
   const { className, style, ...restProps } = props;

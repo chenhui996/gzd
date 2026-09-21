@@ -75,7 +75,7 @@ const ColorSwitch = () => {
 
   return (
     <span
-      className="gzd-docs-theme-switch"
+      className="gz-docs-theme-switch"
       onClick={(event) => event.stopPropagation()}
     >
       <Cascader

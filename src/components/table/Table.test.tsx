@@ -113,8 +113,8 @@ describe("Table", () => {
     );
 
     const grid = screen.getByTestId("ag-grid-react");
-    expect(grid.classList.contains("gzd-table")).toBe(true);
-    expect(grid.classList.contains("gzd-table-gold-dark")).toBe(true);
+    expect(grid.classList.contains("gz-table")).toBe(true);
+    expect(grid.classList.contains("gz-table-gold-dark")).toBe(true);
     expect(grid.classList.contains("consumer-table")).toBe(true);
   });
 
@@ -126,9 +126,9 @@ describe("Table", () => {
     );
 
     const grid = screen.getByTestId("ag-grid-react");
-    expect(grid.classList.contains("gzd-table")).toBe(true);
-    expect(grid.classList.contains("gzd-table-gold-dark")).toBe(false);
-    expect(grid.classList.contains("gzd-table-gold-light")).toBe(true);
+    expect(grid.classList.contains("gz-table")).toBe(true);
+    expect(grid.classList.contains("gz-table-gold-dark")).toBe(false);
+    expect(grid.classList.contains("gz-table-gold-light")).toBe(true);
     expect(grid.classList.contains("consumer-table")).toBe(true);
   });
 
@@ -142,8 +142,8 @@ describe("Table", () => {
     const grid = screen.getByTestId("ag-grid-react");
     const gridProps = agGridPropsSpy.mock.lastCall?.[0] as MockAgGridProps;
 
-    expect(grid.classList.contains("gzd-table-pagination")).toBe(true);
-    expect(grid.classList.contains("gzd-table-default-pagination-layout")).toBe(true);
+    expect(grid.classList.contains("gz-table-pagination")).toBe(true);
+    expect(grid.classList.contains("gz-table-default-pagination-layout")).toBe(true);
     expect(gridProps.paginationPanels).toEqual([
       "rowSummary",
       "pageSize",
@@ -169,8 +169,8 @@ describe("Table", () => {
     const grid = screen.getByTestId("ag-grid-react");
     const gridProps = agGridPropsSpy.mock.lastCall?.[0] as MockAgGridProps;
 
-    expect(grid.classList.contains("gzd-table-pagination")).toBe(true);
-    expect(grid.classList.contains("gzd-table-default-pagination-layout")).toBe(false);
+    expect(grid.classList.contains("gz-table-pagination")).toBe(true);
+    expect(grid.classList.contains("gz-table-default-pagination-layout")).toBe(false);
     expect(gridProps.paginationPanels).toBe(paginationPanels);
   });
 
@@ -235,7 +235,7 @@ describe("Table", () => {
     expect(goldDarkThemeCss).toContain(
       "--ag-wrapper-background-color: var(--ag-inherited-wrapper-background-color, var(--ag-background-color))",
     );
-    expect(goldDarkThemeCss).toContain("var(--gzd-font-family)");
+    expect(goldDarkThemeCss).toContain("var(--gz-font-family)");
     expect(goldDarkGridProps.headerHeight).toBeUndefined();
     expect(agGridRawPropsSpy.mock.lastCall?.[0]?.theme).toBeDefined();
 
@@ -406,8 +406,8 @@ describe("Table", () => {
       rowHeight: 36,
       suppressContextMenu: false,
     });
-    expect(grid.classList.contains("gzd-table-pagination")).toBe(true);
-    expect(grid.classList.contains("gzd-table-default-pagination-layout")).toBe(true);
+    expect(grid.classList.contains("gz-table-pagination")).toBe(true);
+    expect(grid.classList.contains("gz-table-default-pagination-layout")).toBe(true);
     expect(gridProps.paginationPanels).toEqual([
       "rowSummary",
       "pageSize",
@@ -452,8 +452,8 @@ describe("Table", () => {
       rowHeight: 42,
       suppressContextMenu: true,
     });
-    expect(grid.classList.contains("gzd-table-pagination")).toBe(false);
-    expect(grid.classList.contains("gzd-table-default-pagination-layout")).toBe(false);
+    expect(grid.classList.contains("gz-table-pagination")).toBe(false);
+    expect(grid.classList.contains("gz-table-default-pagination-layout")).toBe(false);
     expect(gridProps.paginationPanels).toBeUndefined();
     expect(gridProps.defaultColDef).toEqual({
       sortable: true,
@@ -512,46 +512,46 @@ describe("Table", () => {
       "--ag-row-height: var(--ag-inherited-row-height, 28px)",
     );
     expect(themeCss).toContain(
-      "--ag-font-size: var(--ag-inherited-font-size, calc(var(--gzd-font-size) * 1px))",
+      "--ag-font-size: var(--ag-inherited-font-size, calc(var(--gz-font-size) * 1px))",
     );
     expect(themeCss).toContain(
-      "--ag-header-font-size: var(--ag-inherited-header-font-size, calc(var(--gzd-font-size) * 1px))",
+      "--ag-header-font-size: var(--ag-inherited-header-font-size, calc(var(--gz-font-size) * 1px))",
     );
     expect(themeCss).toContain(
       "--ag-wrapper-background-color: var(--ag-inherited-wrapper-background-color, var(--ag-background-color))",
     );
     expect(themeCss).toContain(
-      "--ag-header-background-color: var(--ag-inherited-header-background-color, var(--gzd-components-table-header-bg, var(--gzd-color-border)))",
+      "--ag-header-background-color: var(--ag-inherited-header-background-color, var(--gz-components-table-header-bg, var(--gz-color-border)))",
     );
     expect(themeCss).toContain(
-      "--ag-header-text-color: var(--ag-inherited-header-text-color, var(--gzd-components-table-header-text-color, var(--gzd-color-text-secondary)))",
+      "--ag-header-text-color: var(--ag-inherited-header-text-color, var(--gz-components-table-header-text-color, var(--gz-color-text-secondary)))",
     );
     expect(themeCss).toContain(
-      "--ag-header-column-border: var(--ag-inherited-header-column-border, solid 2px var(--gzd-color-split))",
+      "--ag-header-column-border: var(--ag-inherited-header-column-border, solid 2px var(--gz-color-split))",
     );
     expect(themeCss).toContain(
       "--ag-header-column-border-height: var(--ag-inherited-header-column-border-height, 14px)",
     );
     expect(themeCss).toContain(
-      "--ag-pinned-column-border: var(--ag-inherited-pinned-column-border, solid 1px var(--gzd-color-split))",
+      "--ag-pinned-column-border: var(--ag-inherited-pinned-column-border, solid 1px var(--gz-color-split))",
     );
     expect(themeCss).toContain(
-      "--ag-border-color: var(--ag-inherited-border-color, var(--gzd-components-table-border-color, var(--gzd-color-border)))",
+      "--ag-border-color: var(--ag-inherited-border-color, var(--gz-components-table-border-color, var(--gz-color-border)))",
     );
     expect(themeCss).toContain(
-      "--ag-odd-row-background-color: var(--ag-inherited-odd-row-background-color, var(--gzd-color-bg-container))",
+      "--ag-odd-row-background-color: var(--ag-inherited-odd-row-background-color, var(--gz-color-bg-container))",
     );
     expect(themeCss).toContain(
-      "--ag-background-color: var(--ag-inherited-background-color, var(--gzd-color-bg-container))",
+      "--ag-background-color: var(--ag-inherited-background-color, var(--gz-color-bg-container))",
     );
     expect(themeCss).toContain(
-      "--ag-foreground-color: var(--ag-inherited-foreground-color, var(--gzd-color-text))",
+      "--ag-foreground-color: var(--ag-inherited-foreground-color, var(--gz-color-text))",
     );
     expect(themeCss).toContain(
       "--ag-pagination-panel-height: var(--ag-inherited-pagination-panel-height, 40px)",
     );
     const emptyText = screen.getByText("暂无符合条件的数据");
-    expect(emptyText.classList.contains("gzd-table-no-rows-overlay")).toBe(true);
+    expect(emptyText.classList.contains("gz-table-no-rows-overlay")).toBe(true);
     expect(emptyText.getAttribute("role")).toBe("status");
     expect(emptyText.getAttribute("style")).toBeNull();
   });
@@ -565,25 +565,25 @@ describe("Table", () => {
     )?._getParamsCss();
 
     expect(themeCss).toContain(
-      "--ag-font-family: var(--ag-inherited-font-family, var(--gzd-font-family))",
+      "--ag-font-family: var(--ag-inherited-font-family, var(--gz-font-family))",
     );
     expect(themeCss).toContain(
-      "--ag-font-size: var(--ag-inherited-font-size, calc(var(--gzd-font-size) * 1px))",
+      "--ag-font-size: var(--ag-inherited-font-size, calc(var(--gz-font-size) * 1px))",
     );
     expect(themeCss).toContain(
-      "--ag-header-font-weight: var(--ag-inherited-header-font-weight, var(--gzd-font-weight-normal))",
+      "--ag-header-font-weight: var(--ag-inherited-header-font-weight, var(--gz-font-weight-normal))",
     );
     expect(themeCss).toContain(
-      "--ag-cell-horizontal-padding: var(--ag-inherited-cell-horizontal-padding, calc(var(--gzd-padding-xs) * 1px))",
+      "--ag-cell-horizontal-padding: var(--ag-inherited-cell-horizontal-padding, calc(var(--gz-padding-xs) * 1px))",
     );
     expect(themeCss).toContain(
-      "--ag-odd-row-background-color: var(--ag-inherited-odd-row-background-color, var(--gzd-color-bg-container))",
+      "--ag-odd-row-background-color: var(--ag-inherited-odd-row-background-color, var(--gz-color-bg-container))",
     );
     expect(themeCss).toContain(
-      "--ag-row-hover-color: var(--ag-inherited-row-hover-color, color-mix(in srgb, transparent, var(--gzd-color-primary) 15%))",
+      "--ag-row-hover-color: var(--ag-inherited-row-hover-color, color-mix(in srgb, transparent, var(--gz-color-primary) 15%))",
     );
     expect(themeCss).toContain(
-      "--ag-selected-row-background-color: var(--ag-inherited-selected-row-background-color, color-mix(in srgb, transparent, var(--gzd-color-primary) 12%))",
+      "--ag-selected-row-background-color: var(--ag-inherited-selected-row-background-color, color-mix(in srgb, transparent, var(--gz-color-primary) 12%))",
     );
   });
 
@@ -596,40 +596,40 @@ describe("Table", () => {
     )?._getParamsCss();
 
     expect(themeCss).toContain(
-      "--ag-icon-size: var(--ag-inherited-icon-size, calc(var(--gzd-checkbox-size) * 1px))",
+      "--ag-icon-size: var(--ag-inherited-icon-size, calc(var(--gz-checkbox-size) * 1px))",
     );
     expect(themeCss).toContain(
       "--ag-focus-shadow: var(--ag-inherited-focus-shadow, 0px 0px 0px 0px var(--ag-foreground-color))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-border-radius: var(--ag-inherited-checkbox-border-radius, calc(var(--gzd-border-radius-sm) * 1px))",
+      "--ag-checkbox-border-radius: var(--ag-inherited-checkbox-border-radius, calc(var(--gz-border-radius-sm) * 1px))",
     );
     expect(themeCss).toContain(
       "--ag-checkbox-border-width: var(--ag-inherited-checkbox-border-width, 1px)",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-unchecked-background-color: var(--ag-inherited-checkbox-unchecked-background-color, var(--gzd-color-bg-container))",
+      "--ag-checkbox-unchecked-background-color: var(--ag-inherited-checkbox-unchecked-background-color, var(--gz-color-bg-container))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-unchecked-border-color: var(--ag-inherited-checkbox-unchecked-border-color, var(--gzd-color-border-secondary))",
+      "--ag-checkbox-unchecked-border-color: var(--ag-inherited-checkbox-unchecked-border-color, var(--gz-color-border-secondary))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-checked-background-color: var(--ag-inherited-checkbox-checked-background-color, var(--gzd-color-primary))",
+      "--ag-checkbox-checked-background-color: var(--ag-inherited-checkbox-checked-background-color, var(--gz-color-primary))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-checked-border-color: var(--ag-inherited-checkbox-checked-border-color, var(--gzd-color-primary))",
+      "--ag-checkbox-checked-border-color: var(--ag-inherited-checkbox-checked-border-color, var(--gz-color-primary))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-checked-shape-color: var(--ag-inherited-checkbox-checked-shape-color, var(--gzd-color-text-on-light))",
+      "--ag-checkbox-checked-shape-color: var(--ag-inherited-checkbox-checked-shape-color, var(--gz-color-text-on-light))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-indeterminate-background-color: var(--ag-inherited-checkbox-indeterminate-background-color, var(--gzd-color-primary))",
+      "--ag-checkbox-indeterminate-background-color: var(--ag-inherited-checkbox-indeterminate-background-color, var(--gz-color-primary))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-indeterminate-border-color: var(--ag-inherited-checkbox-indeterminate-border-color, var(--gzd-color-primary))",
+      "--ag-checkbox-indeterminate-border-color: var(--ag-inherited-checkbox-indeterminate-border-color, var(--gz-color-primary))",
     );
     expect(themeCss).toContain(
-      "--ag-checkbox-indeterminate-shape-color: var(--ag-inherited-checkbox-indeterminate-shape-color, var(--gzd-color-text-on-light))",
+      "--ag-checkbox-indeterminate-shape-color: var(--ag-inherited-checkbox-indeterminate-shape-color, var(--gz-color-text-on-light))",
     );
   });
 

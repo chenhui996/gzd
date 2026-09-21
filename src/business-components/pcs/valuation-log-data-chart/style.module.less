@@ -1,29 +1,29 @@
 .root {
   width: 100%;
   min-width: 0;
-  color: var(--gzd-color-text);
-  font-size: calc(var(--gzd-font-size, 14) * 1px);
+  color: var(--gz-color-text);
+  font-size: calc(var(--gz-font-size, 14) * 1px);
   box-sizing: border-box;
-  padding: calc(var(--gzd-padding-md, 16) * 1px);
-  font-family: var(--gzd-font-family);
+  padding: calc(var(--gz-padding-md, 16) * 1px);
+  font-family: var(--gz-font-family);
   background: #1f1f1f;
-  border-radius: calc(var(--gzd-border-radius-lg, 6) * 1px);
+  border-radius: calc(var(--gz-border-radius-lg, 6) * 1px);
 }
 
 .title {
-  margin: 0 0 calc(var(--gzd-margin, 16) * 1px);
-  color: var(--gzd-color-text-secondary);
-  font-size: calc(var(--gzd-font-size, 14) * 1px);
-  font-weight: var(--gzd-font-weight-medium, 500);
+  margin: 0 0 calc(var(--gz-margin, 16) * 1px);
+  color: var(--gz-color-text-secondary);
+  font-size: calc(var(--gz-font-size, 14) * 1px);
+  font-weight: var(--gz-font-weight-medium, 500);
   line-height: 22px;
 }
 
 .loading,
-.loading :global(.ant-spin-container) {
+.loading :global([class*="-spin-container"]) {
   width: 100%;
 }
 
-.loading :global(.ant-spin-container) {
+.loading :global([class*="-spin-container"]) {
   min-height: 312px;
 }
 
@@ -31,7 +31,7 @@
   display: grid;
   min-width: 0;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: calc(var(--gzd-padding-xs, 8) * 1px);
+  gap: calc(var(--gz-padding-xs, 8) * 1px);
 }
 
 .tablePanel,
@@ -40,9 +40,9 @@
   min-width: 0;
   height: 312px;
   overflow: hidden;
-  background: var(--gzd-color-bg-container);
-  border: calc(var(--gzd-line-width, 1) * 1px) solid var(--gzd-color-border-secondary, var(--gzd-color-border));
-  border-radius: calc(var(--gzd-border-radius-lg, 8) * 1px);
+  background: var(--gz-color-bg-container);
+  border: calc(var(--gz-line-width, 1) * 1px) solid var(--gz-color-border-secondary, var(--gz-color-border));
+  border-radius: calc(var(--gz-border-radius-lg, 8) * 1px);
 }
 
 .table {
@@ -51,10 +51,10 @@
 
   --valuation-log-scrollbar-thumb-color: color-mix(in srgb,
       transparent,
-      var(--gzd-color-text) 18%);
+      var(--gz-color-text) 18%);
   --valuation-log-scrollbar-thumb-hover-color: color-mix(in srgb,
       transparent,
-      var(--gzd-color-text) 25%);
+      var(--gz-color-text) 25%);
 
   :global(.ag-root-wrapper) {
     border: 0;
@@ -85,7 +85,7 @@
 }
 
 .negativeValue {
-  color: var(--gzd-red-6, var(--gzd-color-error));
+  color: var(--gz-red-6, var(--gz-color-error));
 }
 
 .chartPanel {
@@ -100,14 +100,14 @@
   flex: 0 0 40px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 calc(var(--gzd-padding, 16) * 1px);
+  padding: 0 calc(var(--gz-padding, 16) * 1px);
 }
 
 .chartTitle {
   margin: 0;
-  color: var(--gzd-color-text);
-  font-size: calc(var(--gzd-font-size, 14) * 1px);
-  font-weight: var(--gzd-font-weight-medium, 500);
+  color: var(--gz-color-text);
+  font-size: calc(var(--gz-font-size, 14) * 1px);
+  font-weight: var(--gz-font-weight-medium, 500);
   line-height: 22px;
 }
 
@@ -126,12 +126,12 @@
   --valuation-chart-scrollbar-thumb-color: color-mix(
     in srgb,
     transparent,
-    var(--gzd-color-text) 25%
+    var(--gz-color-text) 25%
   );
   --valuation-chart-scrollbar-thumb-hover-color: color-mix(
     in srgb,
     transparent,
-    var(--gzd-color-text) 35%
+    var(--gz-color-text) 35%
   );
 
   overflow-x: auto;

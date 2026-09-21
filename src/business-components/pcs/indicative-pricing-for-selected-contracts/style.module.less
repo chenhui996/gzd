@@ -1,32 +1,32 @@
 .root {
   box-sizing: border-box;
   width: 100%;
-  padding: calc(var(--gzd-padding-md, 16) * 1px);
-  color: var(--gzd-color-text);
-  font-family: var(--gzd-font-family);
-  font-size: calc(var(--gzd-font-size, 14) * 1px);
+  padding: calc(var(--gz-padding-md, 16) * 1px);
+  color: var(--gz-color-text);
+  font-family: var(--gz-font-family);
+  font-size: calc(var(--gz-font-size, 14) * 1px);
   background: #1f1f1f;
-  border-radius: calc(var(--gzd-border-radius-lg, 6) * 1px);
+  border-radius: calc(var(--gz-border-radius-lg, 6) * 1px);
 }
 
-.root :global(.ant-spin-container) {
+.root :global([class*="-spin-container"]) {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--gzd-padding-md, 16) * 1px);
+  gap: calc(var(--gz-padding-md, 16) * 1px);
 }
 
 .section {
   display: flex;
   min-width: 0;
   flex-direction: column;
-  gap: calc(var(--gzd-padding-xs, 8) * 1px);
+  gap: calc(var(--gz-padding-xs, 8) * 1px);
 }
 
 .sectionTitle {
   margin-top: 16px;
-  color: var(--gzd-color-text);
-  font-size: calc(var(--gzd-font-size, 14) * 1px);
-  font-weight: var(--gzd-font-weight-medium, 500);
+  color: var(--gz-color-text);
+  font-size: calc(var(--gz-font-size, 14) * 1px);
+  font-weight: var(--gz-font-weight-medium, 500);
   line-height: 22px;
 }
 
@@ -113,7 +113,7 @@
 
 .resourceIssues {
   display: grid;
-  gap: calc(var(--gzd-padding-xs, 8) * 1px);
+  gap: calc(var(--gz-padding-xs, 8) * 1px);
 }
 
 .limitAlert {
@@ -124,14 +124,14 @@
 .multipleGrid {
   --pricing-table-scrollbar-thumb-color: color-mix(in srgb,
       transparent,
-      var(--gzd-color-text) 18%);
+      var(--gz-color-text) 18%);
   --pricing-table-scrollbar-thumb-hover-color: color-mix(in srgb,
       transparent,
-      var(--gzd-color-text) 25%);
+      var(--gz-color-text) 25%);
 
   min-width: 0;
   overflow: hidden;
-  border-radius: calc(var(--gzd-border-radius, 6) * 1px);
+  border-radius: calc(var(--gz-border-radius, 6) * 1px);
 
   ::-webkit-scrollbar {
     width: 10px;
@@ -177,17 +177,17 @@
 
 .fixedGrid :global(.ag-root-wrapper),
 .multipleGrid :global(.ag-root-wrapper) {
-  border-color: var(--gzd-color-border);
+  border-color: var(--gz-color-border);
 }
 
 .fieldCell {
-  color: var(--gzd-color-text-secondary);
-  font-weight: var(--gzd-font-weight-medium, 500);
+  color: var(--gz-color-text-secondary);
+  font-weight: var(--gz-font-weight-medium, 500);
   background: transparent;
 }
 
 .negativeValue {
-  color: var(--gzd-red-6, var(--gzd-color-error));
+  color: var(--gz-red-6, var(--gz-color-error));
 }
 
 .gridErrorAlert {
@@ -236,14 +236,14 @@
   height: 100%;
   box-sizing: border-box;
   justify-content: center;
-  padding: calc(var(--gzd-padding-xs, 8) * 1px) calc(var(--gzd-padding-sm, 12) * 1px);
+  padding: calc(var(--gz-padding-xs, 8) * 1px) calc(var(--gz-padding-sm, 12) * 1px);
   overflow: hidden;
-  color: var(--gzd-color-text);
+  color: var(--gz-color-text);
   line-height: 22px;
   white-space: normal;
   overflow-wrap: anywhere;
-  background: var(--gzd-color-error-bg, var(--gzd-color-bg-container));
-  border-radius: calc(var(--gzd-border-radius, 4) * 1px);
+  background: var(--gz-color-error-bg, var(--gz-color-bg-container));
+  border-radius: calc(var(--gz-border-radius, 4) * 1px);
 }
 
 .mergedErrorText {
@@ -257,14 +257,14 @@
   display: grid;
   min-height: 144px;
   place-items: center;
-  background: var(--gzd-color-bg-container);
-  border: 1px solid var(--gzd-color-border-secondary, var(--gzd-color-border));
-  border-radius: calc(var(--gzd-border-radius, 6) * 1px);
+  background: var(--gz-color-bg-container);
+  border: 1px solid var(--gz-color-border-secondary, var(--gz-color-border));
+  border-radius: calc(var(--gz-border-radius, 6) * 1px);
 }
 
 .footer {
   display: flex;
   justify-content: flex-end;
-  gap: calc(var(--gzd-padding-xs, 8) * 1px);
-  margin-top: calc(var(--gzd-padding-md, 16) * 1px);
+  gap: calc(var(--gz-padding-xs, 8) * 1px);
+  margin-top: calc(var(--gz-padding-md, 16) * 1px);
 }

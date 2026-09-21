@@ -118,7 +118,7 @@ const App: React.FC = () => {
   );
 
   return (
-    <div className="gzd-table-demo-scrollbar-scope" style={{ height: 330 }}>
+    <div className="gz-table-demo-scrollbar-scope" style={{ height: 330 }}>
       <Table<DataType>
         columnDefs={columnDefs}
         rowData={rowData}

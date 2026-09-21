@@ -17,7 +17,7 @@ const toKebabCase = (value: string): string =>
     .toLowerCase();
 
 const normalizeCssVariablePrefix = (prefix: string): string =>
-  toKebabCase(prefix).replace(/^-+|-+$/g, "") || "gzd";
+  toKebabCase(prefix).replace(/^-+|-+$/g, "") || "gz";
 
 const appendCssVariables = (
   output: Record<string, string>,
@@ -41,7 +41,7 @@ const appendCssVariables = (
 };
 
 export const getDesignTokenCssVariables = ({
-  prefix = "gzd",
+  prefix = "gz",
   includeComponents = false,
   includeCustom = true,
   ...themeOptions

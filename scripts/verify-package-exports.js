@@ -132,8 +132,8 @@ for (const subpath of ["./gzd.css", "./style.css"]) {
   );
 }
 const css = await readFile(path.join(rootDir, "gzd-lib/gzd.css"), "utf8");
-assert.ok(css.includes(".gzd-"), "Published CSS must include gzd component classes.");
-assert.ok(css.includes("--gzd-"), "Published CSS must use gzd token variables.");
+assert.ok(css.includes(".gz-"), "Published CSS must include gzd component classes.");
+assert.ok(css.includes("--gz-"), "Published CSS must use gzd token variables.");
 
 const verifiedSubpaths = packageExportsConfig.subpaths
   .map(({ subpath }) => subpath)

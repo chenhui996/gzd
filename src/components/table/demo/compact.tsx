@@ -55,7 +55,7 @@ const commonProps = {
 };
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope">
+  <div className="gz-table-demo-scrollbar-scope">
     <Divider>Medium size table</Divider>
     <Table<DataType> {...commonProps} headerHeight={40} rowHeight={40} />
     <Divider>Small size table</Divider>

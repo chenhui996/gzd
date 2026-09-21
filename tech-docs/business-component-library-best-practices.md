@@ -15,7 +15,7 @@ order: 2
 2. 主应用负责把客户主题色和用户明暗模式映射成完整的 `themeMode`。
 3. 子应用只消费主应用下发的 `themeMode`，不要自行拼装或维护主题规则。
 4. 业务自定义样式优先使用组件库导出的 Design Tokens，避免散落硬编码颜色、字号、间距。
-5. 微前端全局主题下，主应用作为 root CSS 变量的唯一写入者，子应用默认只消费 `var(--gzd-*)`。
+5. 微前端全局主题下，主应用作为 root CSS 变量的唯一写入者，子应用默认只消费 `var(--gz-*)`。
 6. 子应用入口应显式引入 `gzd/gzd.css`，确保组件库的全局样式、组件修正样式和主题适配样式被子应用构建产物稳定包含。
 7. 如果业务需要新增自定义 Design Tokens，需要收敛到组件库统一维护，由组件库完成设计、命名、转换和导出。
 
@@ -78,8 +78,8 @@ export function MainApp({ themeMode }: { themeMode: GZDThemeMode }) {
 
 ```ts
 cssVar: {
-  key: `gzd-${themeMode}`,
-  prefix: "gzd-ant",
+  key: `gz-${themeMode}`,
+  prefix: "gz-ant",
 }
 ```
 
@@ -132,8 +132,8 @@ createRoot(document.getElementById("root")!).render(
 
 组件库内部会开启 antd 的 `theme.cssVar`，用于让 antd 运行时样式消费 CSS 变量。它和 `applyDesignTokenCssVariables` 注入的业务 CSS 变量不是同一套变量：
 
-1. antd CSS 变量默认由组件库 `ConfigProvider` 管理，变量名形如 `--gzd-ant-color-primary`。
-2. 业务 CSS 变量默认由 `applyDesignTokenCssVariables` 管理，变量名形如 `--gzd-color-primary`。
+1. antd CSS 变量默认由组件库 `ConfigProvider` 管理，变量名形如 `--gz-ant-color-primary`。
+2. 业务 CSS 变量默认由 `applyDesignTokenCssVariables` 管理，变量名形如 `--gz-color-primary`。
 3. 主应用负责决定并下发 `themeMode`；子应用只消费并透传 `themeMode`。
 4. 业务应用默认不要直接维护 antd `cssVar.key` 和 `cssVar.prefix`。
 
@@ -149,8 +149,8 @@ createRoot(document.getElementById("root")!).render(
 
 ```ts
 cssVar: {
-  key: `gzd-${themeMode}`,
-  prefix: "gzd-ant",
+  key: `gz-${themeMode}`,
+  prefix: "gz-ant",
 }
 ```
 
@@ -166,8 +166,8 @@ cssVar: {
 
 ```ts
 cssVar: {
-  key: `gzd-risk-center-${themeMode}`,
-  prefix: "gzd-risk-center",
+  key: `gz-risk-center-${themeMode}`,
+  prefix: "gz-risk-center",
 }
 ```
 
@@ -310,7 +310,7 @@ function Toolbar() {
 
 普通 CSS 或 CSS Modules 不能直接读取 JS 对象。推荐由主应用监听主题变化，并调用 `applyDesignTokenCssVariables({ themeMode })` 把当前全局主题 token 注入为 CSS 变量。
 
-在微前端全局主题模式下，`document.documentElement` 上的 `--gzd-*` 变量属于整个页面的共享主题状态。主应用应作为 root CSS 变量的唯一写入者，子应用默认只消费这些变量，不重复向 `document.documentElement` 注入同名变量。
+在微前端全局主题模式下，`document.documentElement` 上的 `--gz-*` 变量属于整个页面的共享主题状态。主应用应作为 root CSS 变量的唯一写入者，子应用默认只消费这些变量，不重复向 `document.documentElement` 注入同名变量。
 
 主应用示例：
 
@@ -341,7 +341,7 @@ export function MainAppRoot({ themeMode }: { themeMode: GZDThemeMode }) {
 }
 ```
 
-子应用从主应用读取 `themeMode` 后，继续传给 `ConfigProvider`；业务 CSS 直接使用主应用已经注入的 `var(--gzd-*)`：
+子应用从主应用读取 `themeMode` 后，继续传给 `ConfigProvider`；业务 CSS 直接使用主应用已经注入的 `var(--gz-*)`：
 
 ```tsx
 import { ConfigProvider, type GZDThemeMode } from "gzd";
@@ -359,26 +359,26 @@ CSS 示例：
 
 ```css
 .business-card {
-  background: var(--gzd-color-bg-container);
-  color: var(--gzd-color-text);
-  border: 1px solid var(--gzd-color-border-secondary);
-  border-radius: calc(var(--gzd-border-radius-lg) * 1px);
+  background: var(--gz-color-bg-container);
+  color: var(--gz-color-text);
+  border: 1px solid var(--gz-color-border-secondary);
+  border-radius: calc(var(--gz-border-radius-lg) * 1px);
 }
 
 .business-card__title {
-  color: var(--gzd-color-primary);
+  color: var(--gz-color-primary);
 }
 ```
 
 默认规则：
 
-1. `prefix` 默认为 `gzd`，变量名形如 `--gzd-color-primary`。
+1. `prefix` 默认为 `gz`，变量名形如 `--gz-color-primary`。
 2. 默认注入到 `document.documentElement`，该默认行为只适用于“全局主题模式”。
 3. 默认包含全局 token 和 custom token。
 4. 默认不包含组件级 token，避免变量数量过多。
 5. `applyDesignTokenCssVariables` 返回清理函数，写入方在主题切换或应用卸载时应调用。
 
-微前端下不建议主应用和多个子应用同时写 `document.documentElement`。同一个 `--gzd-*` 变量在 root 上只有一份，多个应用重复写入会出现最后写入者覆盖、卸载清理恢复旧值、不同组件库版本变量语义不一致等问题。
+微前端下不建议主应用和多个子应用同时写 `document.documentElement`。同一个 `--gz-*` 变量在 root 上只有一份，多个应用重复写入会出现最后写入者覆盖、卸载清理恢复旧值、不同组件库版本变量语义不一致等问题。
 
 子应用只有在独立主题或隔离运行时才需要自己注入 CSS 变量。这时必须显式传入 `target`，必要时再传独立 `prefix`，不要依赖默认的 `document.documentElement`：
 
@@ -386,7 +386,7 @@ CSS 示例：
 const cleanup = applyDesignTokenCssVariables({
   themeMode,
   target: document.querySelector("#sub-app-root") as HTMLElement,
-  prefix: "gzd-sub-app",
+  prefix: "gz-sub-app",
 });
 ```
 
@@ -394,7 +394,7 @@ const cleanup = applyDesignTokenCssVariables({
 
 ```css
 #sub-app-root .business-card {
-  background: var(--gzd-sub-app-color-bg-container);
+  background: var(--gz-sub-app-color-bg-container);
 }
 ```
 
@@ -404,16 +404,16 @@ Less 编译发生在构建期，无法感知运行时的 `themeMode`。因此不
 
 ```less
 .business-panel {
-  background: var(--gzd-color-bg-layout);
-  color: var(--gzd-color-text);
-  padding: calc(var(--gzd-padding-lg) * 1px);
+  background: var(--gz-color-bg-layout);
+  color: var(--gz-color-text);
+  padding: calc(var(--gz-padding-lg) * 1px);
 }
 
 .business-panel__action {
-  color: var(--gzd-color-primary);
+  color: var(--gz-color-primary);
 
   &:hover {
-    color: var(--gzd-color-primary-hover);
+    color: var(--gz-color-primary-hover);
   }
 }
 ```
@@ -445,8 +445,8 @@ applyDesignTokenCssVariables({
 
 ```css
 .custom-primary-button {
-  height: calc(var(--gzd-components-button-control-height) * 1px);
-  border-radius: calc(var(--gzd-components-button-border-radius) * 1px);
+  height: calc(var(--gz-components-button-control-height) * 1px);
+  border-radius: calc(var(--gz-components-button-border-radius) * 1px);
 }
 ```
 
@@ -472,12 +472,12 @@ const desktopSmOffset = responsive?.["Desktop SM"]?.pageOffset;
 
 ```css
 .page {
-  padding-inline: calc(var(--gzd-custom-responsive-desktop-page-offset) * 1px);
+  padding-inline: calc(var(--gz-custom-responsive-desktop-page-offset) * 1px);
 }
 
 @media (max-width: 767px) {
   .page {
-    padding-inline: calc(var(--gzd-custom-responsive-mobile-page-offset) * 1px);
+    padding-inline: calc(var(--gz-custom-responsive-mobile-page-offset) * 1px);
   }
 }
 ```
@@ -552,16 +552,16 @@ useEffect(() => {
 
 ### 为什么 Less 变量拿不到当前主题？
 
-Less 是构建期编译，`themeMode` 是运行时状态。业务 Less 中请使用 `var(--gzd-xxx)`，不要依赖 Less 变量实现运行时主题切换。
+Less 是构建期编译，`themeMode` 是运行时状态。业务 Less 中请使用 `var(--gz-xxx)`，不要依赖 Less 变量实现运行时主题切换。
 
 ### CSS 里使用数字 token 为什么没有生效？
 
-CSS 变量会保持 token 原值。颜色 token 可以直接使用，但数字 token 通常没有单位，例如 `--gzd-padding-lg: 24`。在 CSS 长度属性中需要补单位：
+CSS 变量会保持 token 原值。颜色 token 可以直接使用，但数字 token 通常没有单位，例如 `--gz-padding-lg: 24`。在 CSS 长度属性中需要补单位：
 
 ```css
 .box {
-  padding: calc(var(--gzd-padding-lg) * 1px);
-  border-radius: calc(var(--gzd-border-radius-lg) * 1px);
+  padding: calc(var(--gz-padding-lg) * 1px);
+  border-radius: calc(var(--gz-border-radius-lg) * 1px);
 }
 ```
 

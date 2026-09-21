@@ -1,54 +1,54 @@
-.gzd-button-gold-dark-gradient[class*="-btn-color-primary"][class*="-btn-variant-solid"]:not( :disabled):not([class*="-btn-disabled"]):not([class*="-btn-dangerous"]) {
-  color: var(--gzd-button-primary-gradient-text);
+.gz-button-gold-dark-gradient[class*="-btn-color-primary"][class*="-btn-variant-solid"]:not( :disabled):not([class*="-btn-disabled"]):not([class*="-btn-dangerous"]) {
+  color: var(--gz-button-primary-gradient-text);
   border-color: transparent;
   background: linear-gradient(180deg,
-      var(--gzd-button-primary-gradient-end) 0%,
-      var(--gzd-button-primary-gradient-start) 100%);
+      var(--gz-button-primary-gradient-end) 0%,
+      var(--gz-button-primary-gradient-start) 100%);
   border: none;
 
   &:hover {
-    color: var(--gzd-button-primary-gradient-text-hover);
+    color: var(--gz-button-primary-gradient-text-hover);
     border-color: transparent;
     background: linear-gradient(180deg,
-        var(--gzd-button-primary-gradient-end-hover) 0%,
-        var(--gzd-button-primary-gradient-start-hover) 100%);
+        var(--gz-button-primary-gradient-end-hover) 0%,
+        var(--gz-button-primary-gradient-start-hover) 100%);
   }
 
   &:active {
-    color: var(--gzd-button-primary-gradient-text-active);
+    color: var(--gz-button-primary-gradient-text-active);
     border-color: transparent;
     background: linear-gradient(180deg,
-        var(--gzd-button-primary-gradient-end-active) 0%,
-        var(--gzd-button-primary-gradient-start-active) 100%);
+        var(--gz-button-primary-gradient-end-active) 0%,
+        var(--gz-button-primary-gradient-start-active) 100%);
   }
 }
 
 // default disabled border color
-.gzd-button-default-border-color {
+.gz-button-default-border-color {
   &[class*="-btn-variant-outlined"][class*="-btn-default"][class*="-btn-color-default"]:disabled {
     border-color: transparent;
   }
 }
 
-.ant-btn.ant-btn-variant-solid {
+.gz-button[class*="-btn-variant-solid"] {
   border: 1px solid transparent;
 }
 
-.ant-btn.ant-btn-default.ant-btn-color-default.ant-btn-variant-solid {
-  background-color: var(--gzd-components-button-default-bg);
-  color: var(--gzd-color-text-base);
+.gz-button[class*="-btn-default"][class*="-btn-color-default"][class*="-btn-variant-solid"] {
+  background-color: var(--gz-components-button-default-bg);
+  color: var(--gz-color-text-base);
 
   &:hover{
-    background-color: var(--gzd-components-button-default-hover-bg);
+    background-color: var(--gz-components-button-default-hover-bg);
   }
 
   &:active{
-    background-color: var(--gzd-components-button-default-active-bg);
+    background-color: var(--gz-components-button-default-active-bg);
   }
 
   //disabled
   &:disabled{
-    background-color: var(--gzd-color-bg-container-disabled);
-    color: var(--gzd-color-text-disabled);
+    background-color: var(--gz-color-bg-container-disabled);
+    color: var(--gz-color-text-disabled);
   }
 }

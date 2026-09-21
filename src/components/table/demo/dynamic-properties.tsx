@@ -64,7 +64,7 @@ const App: React.FC = () => {
   const [expandable, setExpandable] = useState(false);
 
   return (
-    <Flex className="gzd-table-demo-scrollbar-scope" gap="medium" vertical>
+    <Flex className="gz-table-demo-scrollbar-scope" gap="medium" vertical>
       <Flex align="center" gap="medium" wrap>
         <Switch checked={bordered} checkedChildren="Bordered" unCheckedChildren="Plain" onChange={setBordered} />
         <Switch checked={compact} checkedChildren="Compact" unCheckedChildren="Normal" onChange={setCompact} />
@@ -73,7 +73,7 @@ const App: React.FC = () => {
         <Switch checked={showHeader} checkedChildren="Header" unCheckedChildren="No header" onChange={setShowHeader} />
         <Switch checked={expandable} checkedChildren="Expandable" unCheckedChildren="Plain" onChange={setExpandable} />
       </Flex>
-      <div className={bordered ? 'gzd-table-demo-dynamic-bordered' : undefined} style={{ height: 300 }}>
+      <div className={bordered ? 'gz-table-demo-dynamic-bordered' : undefined} style={{ height: 300 }}>
         <Table<DataType>
           key={expandable ? 'master-detail' : 'plain'}
           columnDefs={columnDefs}

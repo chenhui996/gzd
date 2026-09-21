@@ -60,7 +60,7 @@ describe("Tag gold-dark styles", () => {
     let tag = screen.getByTestId("tag");
     expect(tag.style.color).toBe("rgb(118, 56, 0)");
     expect(tag.style.backgroundColor).toBe("rgb(255, 231, 203)");
-    expect(tag.querySelector(".ant-tag-close-icon")).toHaveProperty(
+    expect(tag.querySelector(".gz-tag-close-icon")).toHaveProperty(
       "style.color",
       "rgb(118, 56, 0)",
     );
@@ -101,7 +101,7 @@ describe("Tag gold-light styles", () => {
     expect(tag.style.color).toBe("rgb(255, 255, 255)");
     expect(tag.style.backgroundColor).toBe("rgb(0, 131, 255)");
     expect(tag.style.borderColor).toBe("transparent");
-    expect(tag.querySelector(".ant-tag-close-icon")).toHaveProperty(
+    expect(tag.querySelector(".gz-tag-close-icon")).toHaveProperty(
       "style.color",
       "rgb(255, 255, 255)",
     );

@@ -153,4 +153,4 @@ type PriceCalResponse = PriceCalResponseItem[];
 
 ## 主题
 
-设计稿基于金色暗色主题。组件颜色、边框、圆角、间距和字号主要读取 `--gzd-*` Design Token；不要在消费应用覆写内部 AG Grid 结构类，主题调整应通过 gzd `ConfigProvider` 或 Design Token 完成。
+设计稿基于金色暗色主题。组件颜色、边框、圆角、间距和字号主要读取 `--gz-*` Design Token；不要在消费应用覆写内部 AG Grid 结构类，主题调整应通过 gzd `ConfigProvider` 或 Design Token 完成。

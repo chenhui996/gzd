@@ -162,9 +162,9 @@ describe("gzd-table public API", () => {
       themeMode: "gold-dark",
     });
 
-    expect(darkVariables["--ag-font-family"]).toBe("var(--gzd-font-family)");
-    expect(darkVariables["--ag-cell-font-family"]).toBe("var(--gzd-font-family)");
-    expect(darkVariables["--ag-header-font-family"]).toBe("var(--gzd-font-family)");
+    expect(darkVariables["--ag-font-family"]).toBe("var(--gz-font-family)");
+    expect(darkVariables["--ag-cell-font-family"]).toBe("var(--gz-font-family)");
+    expect(darkVariables["--ag-header-font-family"]).toBe("var(--gz-font-family)");
   });
 
   it("supports custom AG Grid CSS variable prefixes and rewrites references", () => {

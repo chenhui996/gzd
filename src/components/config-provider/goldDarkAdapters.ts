@@ -22,49 +22,49 @@ import {
 // ============================================================
 
 /** Steps 组件 — 流程图标激活态文字颜色 */
-const goldDarkStepsClassName = "gzd-steps-gold-dark";
-const stepsProcessIconTextVar = "--gzd-steps-process-icon-active-text-color";
+const goldDarkStepsClassName = "gz-steps-gold-dark";
+const stepsProcessIconTextVar = "--gz-steps-process-icon-active-text-color";
 
 /** Checkbox 组件 — 选中态图标颜色 */
-const goldDarkCheckboxClassName = "gzd-checkbox-gold-dark";
+const goldDarkCheckboxClassName = "gz-checkbox-gold-dark";
 
 /** Radio 组件 — 选中态图标颜色 */
-const goldDarkRadioClassName = "gzd-radio-gold-dark";
+const goldDarkRadioClassName = "gz-radio-gold-dark";
 
 /** Switch 组件 — 选中态背景色 & 内部圆点颜色 */
-const goldDarkSwitchClassName = "gzd-switch-gold-dark";
-const switchCheckedBgVar = "--gzd-switch-checked-bg";
-const switchInnerColorVar = "--gzd-switch-inner-color";
+const goldDarkSwitchClassName = "gz-switch-gold-dark";
+const switchCheckedBgVar = "--gz-switch-checked-bg";
+const switchInnerColorVar = "--gz-switch-inner-color";
 
 /** Slider 组件 — hover 状态滑块样式 */
-const goldDarkSliderClassName = "gzd-slider-gold-dark";
-const sliderHandleHoverOuterBgVar = "--gzd-slider-handle-hover-outer-bg";
-const sliderHandleHoverRingColorVar = "--gzd-slider-handle-hover-ring-color";
-const sliderHandleHoverInnerBgVar = "--gzd-slider-handle-hover-inner-bg";
+const goldDarkSliderClassName = "gz-slider-gold-dark";
+const sliderHandleHoverOuterBgVar = "--gz-slider-handle-hover-outer-bg";
+const sliderHandleHoverRingColorVar = "--gz-slider-handle-hover-ring-color";
+const sliderHandleHoverInnerBgVar = "--gz-slider-handle-hover-inner-bg";
 
 /** Popconfirm 组件 — 仅注入类名，由样式表统一控制 */
-const goldDarkPopconfirmClassName = "gzd-popconfirm-gold-dark";
+const goldDarkPopconfirmClassName = "gz-popconfirm-gold-dark";
 
 /** Tag 组件 — 业务状态类 Tag 色彩适配 */
-const goldDarkTagClassName = "gzd-tag-gold-dark";
+const goldDarkTagClassName = "gz-tag-gold-dark";
 
 /** DatePicker 组件 — 选中日期文字颜色 */
-const goldDarkDatePickerClassName = "gzd-date-picker-gold-dark";
+const goldDarkDatePickerClassName = "gz-date-picker-gold-dark";
 const datePickerSelectedCellTextVar =
-  "--gzd-date-picker-selected-cell-text-color";
+  "--gz-date-picker-selected-cell-text-color";
 
 /** Calendar 组件 — 选中日期文字颜色 */
-const goldDarkCalendarClassName = "gzd-calendar-gold-dark";
-const calendarSelectedCellTextVar = "--gzd-calendar-selected-cell-text-color";
+const goldDarkCalendarClassName = "gz-calendar-gold-dark";
+const calendarSelectedCellTextVar = "--gz-calendar-selected-cell-text-color";
 
 /** TreeSelect 组件 — treeCheckable 选中态图标颜色 */
-const goldDarkTreeSelectClassName = "gzd-tree-select-gold-dark";
+const goldDarkTreeSelectClassName = "gz-tree-select-gold-dark";
 
 /** Tree 组件 — checkable 选中态勾选图标颜色 */
-const goldDarkTreeClassName = "gzd-tree-gold-dark";
+const goldDarkTreeClassName = "gz-tree-gold-dark";
 
 /** Cascader 组件 — 多选态勾选图标颜色 */
-const goldDarkCascaderClassName = "gzd-cascader-gold-dark";
+const goldDarkCascaderClassName = "gz-cascader-gold-dark";
 
 /**
  * 合并多个类名，过滤掉空值，返回合并后的字符串或 undefined
@@ -185,7 +185,7 @@ const adaptButton = (
     className: mergeClassNames(
       goldDarkButtonGradientClassName,
       custom?.className,
-      "gzd-button-default-border-color",
+      "gz-button-default-border-color",
     ),
     style: {
       ...getButtonGradientStyleVars(gradientTokens),

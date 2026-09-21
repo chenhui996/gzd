@@ -6,10 +6,14 @@ import { type ButtonProps } from "antd/es/button";
 export interface GZDButtonProps extends ButtonProps {}
 
 const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, GZDButtonProps>((props, ref) => {
-  const { children, type = "default", ...restProps } = props;
+  const { children, type = "default", className, ...restProps } = props;
 
   return (
-    <AntdButton ref={ref} type={type} {...restProps}>
+    <AntdButton
+      ref={ref}
+      type={type}
+      className={["gz-button", className].filter(Boolean).join(" ")}
+      {...restProps}>
       {children}
     </AntdButton>
   );

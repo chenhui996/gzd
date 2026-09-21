@@ -125,13 +125,13 @@ const Table = forwardRef<AgGridReactInstance, GZDTableProps>((props, ref) => {
 
   // 合并类名
   const mergedClassName = [
-    "gzd-table",
-    pagination ? "gzd-table-pagination" : undefined,
+    "gz-table",
+    pagination ? "gz-table-pagination" : undefined,
     usesDefaultPaginationLayout
-      ? "gzd-table-default-pagination-layout"
+      ? "gz-table-default-pagination-layout"
       : undefined,
-    themeMode === "gold-dark" ? "gzd-table-gold-dark" : undefined,
-    themeMode === "gold-light" ? "gzd-table-gold-light" : undefined,
+    themeMode === "gold-dark" ? "gz-table-gold-dark" : undefined,
+    themeMode === "gold-light" ? "gz-table-gold-light" : undefined,
     props.className,
   ]
     .filter(Boolean)
@@ -171,11 +171,11 @@ const Table = forwardRef<AgGridReactInstance, GZDTableProps>((props, ref) => {
       const isPingRight = Math.ceil(scrollLeft + clientWidth) < scrollWidth - 1;
 
       // 遵循底层直接操作以优化性能的原则
-      wrapperElement.classList.toggle('gzd-table-ping-left', isPingLeft);
-      wrapperElement.classList.toggle('gzd-table-ping-right', isPingRight);
+      wrapperElement.classList.toggle('gz-table-ping-left', isPingLeft);
+      wrapperElement.classList.toggle('gz-table-ping-right', isPingRight);
     } else {
       // 若没有出现横向滚动条，则清除所有的 ping 类名
-      wrapperElement.classList.remove('gzd-table-ping-left', 'gzd-table-ping-right');
+      wrapperElement.classList.remove('gz-table-ping-left', 'gz-table-ping-right');
     }
   }, []);
 
@@ -313,7 +313,7 @@ const Table = forwardRef<AgGridReactInstance, GZDTableProps>((props, ref) => {
   );
 
   return (
-    <div ref={wrapperRef} className="gzd-table-wrapper" style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column' }}>
+    <div ref={wrapperRef} className="gz-table-wrapper" style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column' }}>
       <AgGridProvider
         modules={ENTERPRISE_MODULES}
         licenseKey={AG_GRID_ENTERPRISE_LICENSE}

@@ -1,7 +1,7 @@
 // ============================================================================
 // 表格核心样式覆盖（基于 AG Grid 的 DOM 结构进行主题化定制）
 // ============================================================================
-.gzd-table {
+.gz-table {
 
   // ============================================================================
   // 表格主体样式入口
@@ -101,7 +101,7 @@
 
                 // 组合表头使用完整的层级边界；普通单行表头继续保留短分隔线。
                 .ag-header-row-group {
-                  border-bottom: calc(var(--gzd-line-width) * 1px) solid var(--gzd-color-split);
+                  border-bottom: calc(var(--gz-line-width) * 1px) solid var(--gz-color-split);
                 }
 
                 // 确保多级表头或分组表头的分隔线高度占满 100%
@@ -312,9 +312,9 @@
         // ============================================================================
         // 表格空数据（No Rows）遮罩层样式
         // ============================================================================
-        .gzd-table-no-rows-overlay {
-          padding: calc(var(--gzd-padding-md) * 1px);
-          color: var(--gzd-color-text-secondary);
+        .gz-table-no-rows-overlay {
+          padding: calc(var(--gz-padding-md) * 1px);
+          color: var(--gz-color-text-secondary);
           text-align: center;
         }
       }
@@ -323,7 +323,7 @@
     // ============================================================================
     // Ping 滚动阴影/边框状态 (利用外层类名控制内部固定列的边框显示)
     // ============================================================================
-    .gzd-table-ping-left & {
+    .gz-table-ping-left & {
 
       .ag-grid-pinned-left-cells,
       .ag-header-cell-last-left-pinned {
@@ -343,7 +343,7 @@
       }
     }
 
-    .gzd-table-ping-right & {
+    .gz-table-ping-right & {
 
       .ag-grid-pinned-right-cells,
       .ag-header-cell-first-right-pinned {
@@ -437,7 +437,7 @@
   // ============================================================================
   // 分页器
   // ============================================================================
-  &.gzd-table-default-pagination-layout {
+  &.gz-table-default-pagination-layout {
 
     // 左侧面板（总条数）自动占据剩余空间
     .ag-paging-row-summary-panel {
@@ -451,11 +451,11 @@
     // 定制“总条数”的显示格式
     .ag-paging-row-summary-content {
       display: inline-flex;
-      gap: calc(var(--gzd-margin-xxs) * 1px);
+      gap: calc(var(--gz-margin-xxs) * 1px);
       align-items: center;
       justify-self: auto;
       white-space: nowrap;
-      font-size: calc(var(--gzd-font-size-sm) * 1px);
+      font-size: calc(var(--gz-font-size-sm) * 1px);
     }
 
     // 隐藏 AG Grid 默认自带的 “1 to 10 of 100” 冗余文案
@@ -478,7 +478,7 @@
     // 分页选择器（每页条数）下拉框字体调整
     .ag-paging-page-size {
       .ag-picker-field {
-        font-size: calc(var(--gzd-font-size-sm) * 1px);
+        font-size: calc(var(--gz-font-size-sm) * 1px);
       }
     }
 
@@ -488,7 +488,7 @@
       color: var(--ag-text-color);
       color-scheme: var(--ag-browser-color-scheme);
       font-family: var(--ag-font-family);
-      font-size: calc(var(--gzd-font-size-sm) * 1px);
+      font-size: calc(var(--gz-font-size-sm) * 1px);
       font-weight: var(--ag-font-weight);
     }
 
@@ -501,14 +501,14 @@
       color: var(--ag-text-color);
       color-scheme: var(--ag-browser-color-scheme);
       font-family: var(--ag-font-family);
-      font-size: calc(var(--gzd-font-size-sm) * 1px);
+      font-size: calc(var(--gz-font-size-sm) * 1px);
       font-weight: var(--ag-font-weight);
     }
 
     .ag-paging-description {
       position: relative;
       margin-right: 18px;
-      font-size: calc(var(--gzd-font-size-sm) * 1px);
+      font-size: calc(var(--gz-font-size-sm) * 1px);
     }
   }
 
@@ -585,7 +585,7 @@
 // ============================================================================
 // AG Grid 弹出层（Menu/Popup/Panel）样式覆盖
 // ============================================================================
-// 弹出层通常挂载在 body 上，脱离了 .gzd-table 的 DOM 树，所以需要在最外层覆盖。
+// 弹出层通常挂载在 body 上，脱离了 .gz-table 的 DOM 树，所以需要在最外层覆盖。
 .ag-menu,
 .ag-popup {
   .ag-menu-list {
@@ -617,10 +617,10 @@
         content: "";
         position: absolute;
         inset: 0; // 撑满整个菜单项 (top:0, right:0, bottom:0, left:0)
-        border-radius: calc(var(--gzd-border-radius) * 1px); // 使用 gzd 的统一圆角
+        border-radius: calc(var(--gz-border-radius) * 1px); // 使用 gzd 的统一圆角
         background-color: transparent; // 默认透明
         z-index: -1; // 放到最底层，防止遮挡文字和图标
-        transition: background-color var(--gzd-motion-duration-mid);
+        transition: background-color var(--gz-motion-duration-mid);
         pointer-events: none; // 防止伪元素拦截鼠标事件
       }
 

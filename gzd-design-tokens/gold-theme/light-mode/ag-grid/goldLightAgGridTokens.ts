@@ -63,7 +63,7 @@ export const goldLightAgGridTokens = {
       "ref": "accentColor"
     }
   },
-  "cellFontFamily": "var(--gzd-font-family)",
+  "cellFontFamily": "var(--gz-font-family)",
   "cellHorizontalPadding": 8,
   "cellHorizontalPaddingScale": 1,
   "cellTextColor": {
@@ -145,7 +145,7 @@ export const goldLightAgGridTokens = {
     "ref": "foregroundColor"
   },
   "focusShadow": false,
-  "fontFamily": "var(--gzd-font-family)",
+  "fontFamily": "var(--gz-font-family)",
   "fontSize": 14,
   "footerRowBorder": false,
   "foregroundColor": "rgba(24, 29, 31, 0.85)",
@@ -162,7 +162,7 @@ export const goldLightAgGridTokens = {
   "headerColumnResizeHandleColor": "#E3E4E4",
   "headerColumnResizeHandleHeight": 14,
   "headerColumnResizeHandleWidth": 2,
-  "headerFontFamily": "var(--gzd-font-family)",
+  "headerFontFamily": "var(--gz-font-family)",
   "headerFontSize": 14,
   "headerFontWeight": 500,
   "headerHeight": 32,

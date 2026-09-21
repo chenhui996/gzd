@@ -42,7 +42,7 @@ const App: React.FC = () => {
   );
 
   return (
-    <div className="gzd-table-demo-scrollbar-scope">
+    <div className="gz-table-demo-scrollbar-scope">
       <Divider>Columns displayed</Divider>
       <Checkbox.Group
         value={checkedList}

@@ -81,9 +81,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="gzd-table-demo-scrollbar-scope">
+    <div className="gz-table-demo-scrollbar-scope">
       <div
-        style={{ marginBottom: 12, color: "var(--gzd-color-text-secondary)" }}
+        style={{ marginBottom: 12, color: "var(--gz-color-text-secondary)" }}
       >
         {layout} · 调整演示容器大小以查看列的变化。
       </div>

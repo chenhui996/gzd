@@ -135,7 +135,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <Flex className="gzd-table-demo-scrollbar-scope" gap="medium" vertical>
+    <Flex className="gz-table-demo-scrollbar-scope" gap="medium" vertical>
       <Flex gap="small" wrap>
         <Button onClick={setAgeSort}>Sort age</Button>
         <Button onClick={clearFilters}>Clear filters</Button>

@@ -21,23 +21,23 @@ const paginationPickerPart = createPart({
 .ag-paging-panel .ag-picker-field-wrapper {
   min-width: 48px !important;
   min-height: 24px !important;
-  border: 1px solid var(--gzd-color-border) !important;
+  border: 1px solid var(--gz-color-border) !important;
   cursor: pointer;
   transition: border-color 0.3s ease-in-out;
 
   &:hover {
-    border-color: var(--gzd-color-primary-hover) !important;
+    border-color: var(--gz-color-primary-hover) !important;
   }
 }
 
 /* 覆盖分页器输入框的宽度，以及补充缺失的边框 */
 .ag-number-field-input-wrapper .ag-input-field-input.ag-number-field-input {
-  border: 1px solid var(--gzd-color-border) !important;
+  border: 1px solid var(--gz-color-border) !important;
   cursor: pointer;
   transition: border-color 0.3s ease-in-out;
 
   &:hover {
-    border-color: var(--gzd-color-primary-hover) !important;
+    border-color: var(--gz-color-primary-hover) !important;
   }
 }
 
@@ -56,56 +56,56 @@ const tableTheme = themeQuartz
   .withPart(disabledCheckboxCursorPart)
   .withPart(paginationPickerPart)
   .withParams({
-    fontFamily: "var(--gzd-font-family)",
-    fontSize: "calc(var(--gzd-font-size) * 1px)",
-    fontWeight: "var(--gzd-font-weight-normal)",
-    iconSize: "calc(var(--gzd-checkbox-size) * 1px)",
+    fontFamily: "var(--gz-font-family)",
+    fontSize: "calc(var(--gz-font-size) * 1px)",
+    fontWeight: "var(--gz-font-weight-normal)",
+    iconSize: "calc(var(--gz-checkbox-size) * 1px)",
     focusShadow: {
       spread: "0px",
     },
-    cellFontSize: "calc(var(--gzd-font-size) * 1px)",
-    cellFontWeight: "var(--gzd-font-weight-normal)",
-    cellHorizontalPadding: "calc(var(--gzd-padding-xs) * 1px)",
-    headerFontSize: "calc(var(--gzd-font-size) * 1px)",
-    headerFontWeight: "var(--gzd-font-weight-normal)",
+    cellFontSize: "calc(var(--gz-font-size) * 1px)",
+    cellFontWeight: "var(--gz-font-weight-normal)",
+    cellHorizontalPadding: "calc(var(--gz-padding-xs) * 1px)",
+    headerFontSize: "calc(var(--gz-font-size) * 1px)",
+    headerFontWeight: "var(--gz-font-weight-normal)",
     headerHeight: 31,
     rowHeight: 28,
     headerBackgroundColor:
-      "var(--gzd-components-table-header-bg, var(--gzd-color-border))",
+      "var(--gz-components-table-header-bg, var(--gz-color-border))",
     headerTextColor:
-      "var(--gzd-components-table-header-text-color, var(--gzd-color-text-secondary))",
+      "var(--gz-components-table-header-text-color, var(--gz-color-text-secondary))",
     headerColumnBorder: {
       style: "solid",
       width: 2,
-      color: "var(--gzd-color-split)",
+      color: "var(--gz-color-split)",
     },
     headerColumnBorderHeight: 14,
     pinnedColumnBorder: {
       style: "solid",
       width: 1,
-      color: "var(--gzd-color-split)",
+      color: "var(--gz-color-split)",
     },
-    checkboxBorderRadius: "calc(var(--gzd-border-radius-sm) * 1px)",
+    checkboxBorderRadius: "calc(var(--gz-border-radius-sm) * 1px)",
     checkboxBorderWidth: 1,
-    checkboxUncheckedBackgroundColor: "var(--gzd-color-bg-container)",
-    checkboxUncheckedBorderColor: "var(--gzd-color-border-secondary)",
-    checkboxCheckedBackgroundColor: "var(--gzd-color-primary)",
-    checkboxCheckedBorderColor: "var(--gzd-color-primary)",
-    checkboxCheckedShapeColor: "var(--gzd-color-text-on-light)",
-    checkboxIndeterminateBackgroundColor: "var(--gzd-color-primary)",
-    checkboxIndeterminateBorderColor: "var(--gzd-color-primary)",
-    checkboxIndeterminateShapeColor: "var(--gzd-color-text-on-light)",
+    checkboxUncheckedBackgroundColor: "var(--gz-color-bg-container)",
+    checkboxUncheckedBorderColor: "var(--gz-color-border-secondary)",
+    checkboxCheckedBackgroundColor: "var(--gz-color-primary)",
+    checkboxCheckedBorderColor: "var(--gz-color-primary)",
+    checkboxCheckedShapeColor: "var(--gz-color-text-on-light)",
+    checkboxIndeterminateBackgroundColor: "var(--gz-color-primary)",
+    checkboxIndeterminateBorderColor: "var(--gz-color-primary)",
+    checkboxIndeterminateShapeColor: "var(--gz-color-text-on-light)",
     borderColor:
-      "var(--gzd-components-table-border-color, var(--gzd-color-border))",
-    oddRowBackgroundColor: "var(--gzd-color-bg-container)",
-    backgroundColor: "var(--gzd-color-bg-container)",
-    dataBackgroundColor: "var(--gzd-color-bg-container)",
-    foregroundColor: "var(--gzd-color-text)",
-    cellTextColor: "var(--gzd-color-text)",
+      "var(--gz-components-table-border-color, var(--gz-color-border))",
+    oddRowBackgroundColor: "var(--gz-color-bg-container)",
+    backgroundColor: "var(--gz-color-bg-container)",
+    dataBackgroundColor: "var(--gz-color-bg-container)",
+    foregroundColor: "var(--gz-color-text)",
+    cellTextColor: "var(--gz-color-text)",
     rowHoverColor:
-      "color-mix(in srgb, transparent, var(--gzd-color-primary) 15%)",
+      "color-mix(in srgb, transparent, var(--gz-color-primary) 15%)",
     selectedRowBackgroundColor:
-      "color-mix(in srgb, transparent, var(--gzd-color-primary) 12%)",
+      "color-mix(in srgb, transparent, var(--gz-color-primary) 12%)",
     paginationPanelHeight: 40,
   })
 

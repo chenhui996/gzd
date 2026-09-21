@@ -110,7 +110,7 @@ const App: React.FC = () => {
   );
 
   return (
-    <div className="gzd-table-demo-scrollbar-scope">
+    <div className="gz-table-demo-scrollbar-scope">
       <Space align="center" style={{ marginBottom: 16 }}>
         CheckStrictly:
         <Switch checked={checkStrictly} onChange={setCheckStrictly} />

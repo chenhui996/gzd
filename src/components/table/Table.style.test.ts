@@ -28,10 +28,10 @@ describe("Table style maintenance contract", () => {
 
   it("does not contain obsolete or theme-incompatible scrollbar values", () => {
     // 防止混入过时或写死的滚动条颜色，必须严格使用主题 Token
-    expect(tableStyles).not.toContain("--gzd-table-scrollbar-width");
+    expect(tableStyles).not.toContain("--gz-table-scrollbar-width");
     expect(tableStyles).not.toContain("#333");
     expect(tableStyles).toContain(
-      "--gzd-table-scrollbar-background-color: var(--gzd-color-border)",
+      "--gz-table-scrollbar-background-color: var(--gz-color-border)",
     );
   });
 
@@ -46,7 +46,7 @@ describe("Table style maintenance contract", () => {
   it("defines token-aligned scrollbar styles for the light demo", () => {
     // 确保亮色模式 Demo 里的滚动条透明度符合设计规范
     expect(tableDemoStyles).toContain(
-      ".gzd-table-demo-scrollbar-scope .gzd-table-gold-light",
+      ".gz-table-demo-scrollbar-scope .gz-table-gold-light",
     );
     expect(tableDemoStyles).toContain("rgba(0, 0, 0, 0.18)");
     expect(tableDemoStyles).toContain("rgba(0, 0, 0, 0.25)");
@@ -65,14 +65,14 @@ describe("Table style maintenance contract", () => {
   });
 
   it("keeps component-owned styles semantic and scoped", () => {
-    expect(tableStyles).toContain(".gzd-table-no-rows-overlay");
-    expect(tableStyles).toContain(".gzd-table-default-pagination-layout");
+    expect(tableStyles).toContain(".gz-table-no-rows-overlay");
+    expect(tableStyles).toContain(".gz-table-default-pagination-layout");
   });
 
   it("rounds only the data area bottom corners when pagination is enabled", () => {
     const paginationStyles = tableStyles.slice(
-      tableStyles.indexOf(".gzd-table-pagination"),
-      tableStyles.indexOf(".gzd-table-default-pagination-layout"),
+      tableStyles.indexOf(".gz-table-pagination"),
+      tableStyles.indexOf(".gz-table-default-pagination-layout"),
     );
 
     expect(paginationStyles).toContain(".ag-root-wrapper-body");

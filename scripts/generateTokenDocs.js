@@ -128,7 +128,7 @@ const renderValue = (value) => {
   const text =
     value && typeof value === "object" ? JSON.stringify(value) : String(value);
   const swatch = isDisplayColor(value)
-    ? `<span aria-hidden="true" class="gzd-token-swatch" style="background:${escapeHtml(value)};"></span>`
+    ? `<span aria-hidden="true" class="gz-token-swatch" style="background:${escapeHtml(value)};"></span>`
     : "";
 
   return `${swatch}<code>${escapeHtml(text)}</code>`;
@@ -325,7 +325,7 @@ const buildGlobalDocumentation = ({ themes, metadata }) => {
           modeConfigs.map(({ id }) => themes[id].token[tokenName]),
         ),
       )}</code>`,
-      `<code>${escapeHtml(cssVariableName("gzd", [tokenName]))}</code>`,
+      `<code>${escapeHtml(cssVariableName("gz", [tokenName]))}</code>`,
       ...modeConfigs.map(({ id }) => renderValue(themes[id].token[tokenName])),
     ],
   }));
@@ -349,7 +349,7 @@ ${generatedNotice}
 <!-- prettier-ignore -->
 <code src="./tokens/demo/global.tsx">跟随文档主题使用全局 Token</code>
 
-需要 <code>--gzd-*</code> CSS 变量时，使用 <code>getDesignTokenCssVariables</code> 或 <code>applyDesignTokenCssVariables</code>。完整流程参见 [新人培训：主题与 Design Token](/training/04-theme-and-tokens)。
+需要 <code>--gz-*</code> CSS 变量时，使用 <code>getDesignTokenCssVariables</code> 或 <code>applyDesignTokenCssVariables</code>。完整流程参见 [新人培训：主题与 Design Token](/training/04-theme-and-tokens)。
 
 ## ECharts 使用全局 Token
 
@@ -389,7 +389,7 @@ export const createChartOption = (themeMode: GZDThemeMode) => {
 ## 阅读说明
 
 - <strong>—</strong> 表示该主题没有这个 Token。例如本次新增的国泰蓝色阶只存在于 Gold。
-- CSS 变量列使用默认前缀 <code>gzd</code>；业务传入其他 <code>prefix</code> 时，前缀会随之变化。
+- CSS 变量列使用默认前缀 <code>gz</code>；业务传入其他 <code>prefix</code> 时，前缀会随之变化。
 - 此页只列 <code>globalToken</code>。组件和响应式 Token 分别见 [组件 Tokens](/tokens/components) 与 [响应式和自定义 Tokens](/tokens/custom)。
 
 ## 完整清单（${tokenNames.length} 个）
@@ -451,7 +451,7 @@ const buildComponentDocumentation = ({ themes, componentDescriptions }) => {
             ),
           )}</code>`,
           `<code>${escapeHtml(
-            cssVariableName("gzd", [
+            cssVariableName("gz", [
               "components",
               componentName,
               ...relativeParts,
@@ -510,7 +510,7 @@ ${generatedNotice}
 <!-- prettier-ignore -->
 <code src="./demo/components.tsx">组件自动使用当前 Token</code>
 
-开启 <code>includeComponents</code> 后，可以把这些值转换为 <code>--gzd-components-*</code> CSS 变量：
+开启 <code>includeComponents</code> 后，可以把这些值转换为 <code>--gz-components-*</code> CSS 变量：
 
 ${fencedCode(
     "ts | pure",
@@ -561,7 +561,7 @@ const buildCustomDocumentation = ({ themes }) => {
           ),
         )}</code>`,
         `<code>${escapeHtml(
-          cssVariableName("gzd", ["custom", ...pathParts]),
+          cssVariableName("gz", ["custom", ...pathParts]),
         )}</code>`,
         ...modeConfigs.map(({ id }) =>
           renderValue(getNestedValue(themes[id].custom, pathParts)),
@@ -584,12 +584,12 @@ ${generatedNotice}
 
 ## 代码演示
 
-文档根节点会把当前主题的 custom Token 写入 <code>--gzd-custom-*</code> CSS 变量。当前四套主题的响应式数值一致，因此切换主题时断点数值不会变化。
+文档根节点会把当前主题的 custom Token 写入 <code>--gz-custom-*</code> CSS 变量。当前四套主题的响应式数值一致，因此切换主题时断点数值不会变化。
 
 <!-- prettier-ignore -->
 <code src="./demo/custom.tsx">使用响应式 CSS 变量</code>
 
-开启 <code>includeCustom</code>（默认开启）时，这些值会生成 <code>--gzd-custom-*</code> CSS 变量。表中的 <code>0 / 1</code> 是当前生成物的真实值，不在文档层擅自转换成布尔值。
+开启 <code>includeCustom</code>（默认开启）时，这些值会生成 <code>--gz-custom-*</code> CSS 变量。表中的 <code>0 / 1</code> 是当前生成物的真实值，不在文档层擅自转换成布尔值。
 
 ## 完整清单（${tokenPaths.length} 个）
 
@@ -719,8 +719,8 @@ ${fencedCode(
 | --- | --- |
 | <code>gold-dark</code> | 自动使用 Gold Dark AG Grid Token |
 | <code>gold-light</code> | 自动使用 Gold Light AG Grid Token |
-| <code>blue-dark</code> | 使用运行时 <code>--gzd-*</code> 表格主题 |
-| <code>blue-light</code> | 使用运行时 <code>--gzd-*</code> 表格主题 |
+| <code>blue-dark</code> | 使用运行时 <code>--gz-*</code> 表格主题 |
+| <code>blue-light</code> | 使用运行时 <code>--gz-*</code> 表格主题 |
 
 图表统一使用 ECharts，并直接消费 [全局 Tokens](/tokens)；Table 不注册图表模块，也不注入图表主题。
 

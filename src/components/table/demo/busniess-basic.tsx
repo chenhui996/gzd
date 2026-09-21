@@ -38,13 +38,13 @@ const NameCellRenderer: React.FC<ICellRendererParams<DataType, string>> = ({ val
 
 const NumberCellRenderer: React.FC<ICellRendererParams<DataType, number>> = ({ value }) => {
   if (value == null) return <span>-</span>;
-  const color = value < 0 ? 'var(--gzd-color-error)' : (value > 0 ? 'var(--gzd-color-success)' : 'inherit');
+  const color = value < 0 ? 'var(--gz-color-error)' : (value > 0 ? 'var(--gz-color-success)' : 'inherit');
   return <span style={{ color, fontVariantNumeric: 'tabular-nums' }}>{value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>;
 };
 
 const PercentCellRenderer: React.FC<ICellRendererParams<DataType, number>> = ({ value }) => {
   if (value == null) return <span>-</span>;
-  const color = value < 0 ? 'var(--gzd-color-error)' : (value > 0 ? 'var(--gzd-color-success)' : 'inherit');
+  const color = value < 0 ? 'var(--gz-color-error)' : (value > 0 ? 'var(--gz-color-success)' : 'inherit');
   return <span style={{ color, fontVariantNumeric: 'tabular-nums' }}>{(value * 100).toFixed(2)}%</span>;
 };
 

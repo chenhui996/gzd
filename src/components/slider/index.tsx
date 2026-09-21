@@ -11,7 +11,7 @@ type SliderClassNames = GZDSliderProps["classNames"];
 type SliderClassNamesObject = NonNullable<SliderSemanticType["classNames"]>;
 type SliderClassNamesInfo = { props: SliderBaseProps };
 
-const goldDarkSliderHandleClassName = "gzd-slider-gold-dark";
+const goldDarkSliderHandleClassName = "gz-slider-gold-dark";
 
 const mergeClassNames = (...classNames: Array<string | undefined>) =>
   classNames.filter(Boolean).join(" ") || undefined;

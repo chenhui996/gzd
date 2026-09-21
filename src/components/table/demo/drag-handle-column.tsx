@@ -49,7 +49,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="gzd-table-demo-scrollbar-scope" style={{ height: 150 }}>
+    <div className="gz-table-demo-scrollbar-scope" style={{ height: 150 }}>
       <Table<DataType>
         modules={[AllCommunityModule]}
         columnDefs={columnDefs}

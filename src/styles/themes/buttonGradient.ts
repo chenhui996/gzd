@@ -1,7 +1,7 @@
 import type { ThemeConfig } from "antd/es/config-provider/context";
 import type { CSSProperties } from "react";
 
-export const goldDarkButtonGradientClassName = "gzd-button-gold-dark-gradient";
+export const goldDarkButtonGradientClassName = "gz-button-gold-dark-gradient";
 
 type CSSVariableProperties = CSSProperties &
   Record<`--${string}`, string | number | undefined>;
@@ -47,16 +47,16 @@ export const hasPrimarySolidGradientTokens = (tokens: ButtonGradientTokens) =>
 export const getButtonGradientStyleVars = (
   tokens: ButtonGradientTokens,
 ): CSSVariableProperties => ({
-  "--gzd-button-primary-gradient-start": tokens.primaryGradientStart,
-  "--gzd-button-primary-gradient-end": tokens.primaryGradientEnd,
-  "--gzd-button-primary-gradient-start-hover": tokens.primaryGradientStartHover,
-  "--gzd-button-primary-gradient-end-hover": tokens.primaryGradientEndHover,
-  "--gzd-button-primary-gradient-start-active":
+  "--gz-button-primary-gradient-start": tokens.primaryGradientStart,
+  "--gz-button-primary-gradient-end": tokens.primaryGradientEnd,
+  "--gz-button-primary-gradient-start-hover": tokens.primaryGradientStartHover,
+  "--gz-button-primary-gradient-end-hover": tokens.primaryGradientEndHover,
+  "--gz-button-primary-gradient-start-active":
     tokens.primaryGradientStartActive,
-  "--gzd-button-primary-gradient-end-active": tokens.primaryGradientEndActive,
-  "--gzd-button-primary-gradient-text": tokens.primaryText,
-  "--gzd-button-primary-gradient-text-hover":
+  "--gz-button-primary-gradient-end-active": tokens.primaryGradientEndActive,
+  "--gz-button-primary-gradient-text": tokens.primaryText,
+  "--gz-button-primary-gradient-text-hover":
     tokens.primaryTextHover ?? tokens.primaryText,
-  "--gzd-button-primary-gradient-text-active":
+  "--gz-button-primary-gradient-text-active":
     tokens.primaryTextActive ?? tokens.primaryText,
 });

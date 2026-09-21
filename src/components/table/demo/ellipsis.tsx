@@ -38,7 +38,7 @@ const rowData: DataType[] = [
 ];
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope gzd-table-demo-ellipsis">
+  <div className="gz-table-demo-scrollbar-scope gz-table-demo-ellipsis">
     <Table<DataType>
       modules={[AllCommunityModule]}
       columnDefs={columnDefs}

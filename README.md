@@ -7,8 +7,12 @@
 `gzd/business-components/pcs`。
 
 整体更名后，有品牌前缀的类型统一使用 `GZD`（如 `GZDThemeMode`），自有 CSS
-变量和类名使用 `gzd-` 前缀。已有业务项目需要同步调整导入、类型和自定义样式，
+变量和类名使用 `gz-` 前缀。已有业务项目需要同步调整导入、类型和自定义样式，
 并重新选择文档站主题；组件的 `Button`、`Table` 等名称及常规 Props 保持不变。
+
+与 antd 区分包名和样式前缀的方式一致，`ConfigProvider` 默认使用 `prefixCls="gz"`。
+自有变量为 `--gz-*`，antd 计算后变量为 `--gz-ant-*`，避免无单位数值与带单位
+尺寸互相覆盖。图标 `anticon` 和 AG Grid 的 `ag-*` 前缀不变。
 
 ## 安装
 

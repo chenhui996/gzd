@@ -33,7 +33,7 @@ const App: React.FC = () => {
         }}
       >
         {breakpoints.map(({ label, cssName }) => {
-          const variablePrefix = `--gzd-custom-responsive-${cssName}`;
+          const variablePrefix = `--gz-custom-responsive-${cssName}`;
 
           return (
             <div

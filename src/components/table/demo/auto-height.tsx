@@ -36,7 +36,7 @@ const App: React.FC = () => {
 
   return (
     <Flex
-      className="gzd-table-demo-scrollbar-scope"
+      className="gz-table-demo-scrollbar-scope"
       align="start"
       gap="middle"
       vertical

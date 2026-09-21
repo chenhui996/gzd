@@ -23,12 +23,12 @@ describe("gzd theme CSS namespace", () => {
     });
 
     expect(Object.keys(variables).length).toBeGreaterThan(0);
-    expect(Object.keys(variables).every((key) => key.startsWith("--gzd-"))).toBe(true);
-    expect(variables["--gzd-color-primary"]).toBe(
+    expect(Object.keys(variables).every((key) => key.startsWith("--gz-"))).toBe(true);
+    expect(variables["--gz-color-primary"]).toBe(
       getDesignTokens({ themeMode }).globalToken.colorPrimary,
     );
-    expect(Object.keys(variables).some((key) => key.startsWith("--gzd-components-"))).toBe(true);
-    expect(Object.keys(variables).some((key) => key.startsWith("--gzd-custom-"))).toBe(true);
+    expect(Object.keys(variables).some((key) => key.startsWith("--gz-components-"))).toBe(true);
+    expect(Object.keys(variables).some((key) => key.startsWith("--gz-custom-"))).toBe(true);
   });
 
   it("uses gzd when the supplied prefix normalizes to empty", () => {
@@ -36,7 +36,7 @@ describe("gzd theme CSS namespace", () => {
       themeMode: "gold-dark",
       prefix: " -- ",
     });
-    expect(Object.keys(variables).every((key) => key.startsWith("--gzd-"))).toBe(true);
+    expect(Object.keys(variables).every((key) => key.startsWith("--gz-"))).toBe(true);
   });
 
   it("preserves consumer-defined namespaces", () => {
@@ -52,19 +52,19 @@ describe("gzd theme CSS namespace", () => {
 describe("gzd theme CSS lifecycle", () => {
   it("restores previous values without touching unrelated styles", () => {
     const target = document.createElement("div");
-    target.style.setProperty("--gzd-color-primary", "red");
+    target.style.setProperty("--gz-color-primary", "red");
     target.style.setProperty("--business-color", "green");
     const cleanup = applyDesignTokenCssVariables({
       target,
       themeMode: "gold-dark",
     });
 
-    expect(target.style.getPropertyValue("--gzd-color-primary")).toBe(
+    expect(target.style.getPropertyValue("--gz-color-primary")).toBe(
       getDesignTokens({ themeMode: "gold-dark" }).globalToken.colorPrimary,
     );
     cleanup();
-    expect(target.style.getPropertyValue("--gzd-color-primary")).toBe("red");
+    expect(target.style.getPropertyValue("--gz-color-primary")).toBe("red");
     expect(target.style.getPropertyValue("--business-color")).toBe("green");
-    expect(target.style.getPropertyValue("--gzd-color-text")).toBe("");
+    expect(target.style.getPropertyValue("--gz-color-text")).toBe("");
   });
 });

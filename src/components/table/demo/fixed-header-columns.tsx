@@ -58,7 +58,7 @@ const rowData: DataType[] = Array.from({ length: 100 }, (_, index) => ({
 }));
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope">
+  <div className="gz-table-demo-scrollbar-scope">
     <div style={{ height: 280 }}>
       <Table<DataType>
         modules={[AllCommunityModule]}

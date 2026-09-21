@@ -89,19 +89,19 @@ linear-gradient(180deg, var(--end) 0%, var(--start) 100%)
 `src/styles/themes/buttonGradient.ts` 定义渐变 className、token 读取和 CSS 变量映射：
 
 ```ts
-export const goldDarkButtonGradientClassName = 'gzd-button-gold-dark-gradient';
+export const goldDarkButtonGradientClassName = 'gz-button-gold-dark-gradient';
 ```
 
 它从合并后的 `ThemeConfig.components.Button` 中读取扩展字段，并转换为：
 
 ```css
---gzd-button-primary-gradient-start
---gzd-button-primary-gradient-end
---gzd-button-primary-gradient-start-hover
---gzd-button-primary-gradient-end-hover
---gzd-button-primary-gradient-start-active
---gzd-button-primary-gradient-end-active
---gzd-button-primary-gradient-text
+--gz-button-primary-gradient-start
+--gz-button-primary-gradient-end
+--gz-button-primary-gradient-start-hover
+--gz-button-primary-gradient-end-hover
+--gz-button-primary-gradient-start-active
+--gz-button-primary-gradient-end-active
+--gz-button-primary-gradient-text
 ```
 
 ### 2. ConfigProvider 注入
@@ -118,10 +118,10 @@ mode === 'gold-dark' || mode === 'goldDark'
 <AntdConfigProvider
   theme={mergedTheme}
   button={{
-    className: 'gzd-button-gold-dark-gradient',
+    className: 'gz-button-gold-dark-gradient',
     style: {
-      '--gzd-button-primary-gradient-start': '#FFCA9C',
-      '--gzd-button-primary-gradient-end': '#FFE7CB',
+      '--gz-button-primary-gradient-start': '#FFCA9C',
+      '--gz-button-primary-gradient-end': '#FFE7CB',
     },
   }}
 >
@@ -134,13 +134,13 @@ mode === 'gold-dark' || mode === 'goldDark'
 `src/components/button/style.less` 只命中被注入 class 的 primary solid Button：
 
 ```less
-.gzd-button-gold-dark-gradient.ant-btn.ant-btn-color-primary.ant-btn-variant-solid:not(:disabled):not(
+.gz-button-gold-dark-gradient.ant-btn.ant-btn-color-primary.ant-btn-variant-solid:not(:disabled):not(
     .ant-btn-disabled
   ):not(.ant-btn-dangerous) {
   background: linear-gradient(
     180deg,
-    var(--gzd-button-primary-gradient-end) 0%,
-    var(--gzd-button-primary-gradient-start) 100%
+    var(--gz-button-primary-gradient-end) 0%,
+    var(--gz-button-primary-gradient-start) 100%
   );
 }
 ```

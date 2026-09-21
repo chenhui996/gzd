@@ -37,7 +37,7 @@ const App: React.FC = () => {
   const [rowData, setRowData] = useState<DataType[]>([]);
 
   return (
-    <div className="gzd-table-demo-scrollbar-scope">
+    <div className="gz-table-demo-scrollbar-scope">
       <Button
         type="primary"
         onClick={() => setRowData((current) => (current.length ? [] : sampleRowData))}

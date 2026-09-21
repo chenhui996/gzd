@@ -28,7 +28,7 @@ const columnDefs: ColDef<DataType>[] = [
 ];
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope" style={{ height: 320 }}>
+  <div className="gz-table-demo-scrollbar-scope" style={{ height: 320 }}>
     <Table<DataType>
       modules={[AllCommunityModule]}
       columnDefs={columnDefs}

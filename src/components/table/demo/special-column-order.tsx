@@ -151,7 +151,7 @@ const rowData: DataType[] = [
 ];
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope">
+  <div className="gz-table-demo-scrollbar-scope">
     <div style={{ height: 280 }}>
       <Table<DataType>
         columnDefs={columnDefs}

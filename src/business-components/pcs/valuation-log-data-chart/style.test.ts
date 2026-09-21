@@ -27,13 +27,13 @@ describe("ValuationLogDataChart style contract", () => {
   it("keeps the root transparent and uses the secondary title color", () => {
     expect(getRule("root")).toContain("background: transparent;");
     expect(getRule("title")).toContain(
-      "color: var(--gzd-color-text-secondary);",
+      "color: var(--gz-color-text-secondary);",
     );
   });
 
   it("uses the error token for negative table values", () => {
     expect(getRule("negativeValue")).toContain(
-      "color: var(--gzd-red-6, var(--gzd-color-error));",
+      "color: var(--gz-red-6, var(--gz-color-error));",
     );
   });
 

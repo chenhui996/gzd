@@ -350,13 +350,13 @@ export const generateAgGridTokens = (mode = "dark") => {
   );
   // 统一 fontFamily 兜底：让 AG Grid 直接消费主包生成的 CSS 变量
   // 这样既能保持全局统一，又能避免因包含逗号和引号的复杂字符串在 AG Grid 内部解析出错。
-  tokens.fontFamily = "var(--gzd-font-family)";
+  tokens.fontFamily = "var(--gz-font-family)";
   
   // 对于 Figma 中可能定义的特定组件字体（如单元格、表头等），同样强制替换为统一字体，
   // 除非它们有特殊的图标字体（如 charts.fontFamily 我们暂不处理）。
   for (const key of Object.keys(tokens)) {
     if (key.endsWith("FontFamily") && tokens[key] !== undefined) {
-      tokens[key] = "var(--gzd-font-family)";
+      tokens[key] = "var(--gz-font-family)";
     }
   }
   const relativeSource = path

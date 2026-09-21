@@ -110,7 +110,7 @@ import { App, ConfigProvider } from 'gzd';
 - 业务是否通过 `theme.token` 或 `theme.components` 覆盖了当前值。
 - 同屏多应用是否需要稳定的 `cssVarScope`。
 
-主题和业务 CSS 变量不是同一件事。`ConfigProvider` 管理 antd 主题；业务要使用 `--gzd-*` 时，还要按[主题与 Design Token](/training/04-theme-and-tokens)中的方式注入或获取变量。
+主题和业务 CSS 变量不是同一件事。`ConfigProvider` 管理 antd 主题；业务要使用 `--gz-*` 时，还要按[主题与 Design Token](/training/04-theme-and-tokens)中的方式注入或获取变量。
 
 ## 只有 `gold-dark` 正常，其他主题不正常
 

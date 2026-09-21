@@ -20,9 +20,9 @@ order: 3
 
 1. 独立部署时，子应用必须自己确定 `themeMode`，来源可以是用户设置、部署配置、URL 参数或本地默认值。
 2. 独立部署时，子应用应显式引入 `gzd/gzd.css`。
-3. 独立部署时，子应用可以调用 `applyDesignTokenCssVariables({ themeMode })` 写入页面级 `--gzd-*` 变量。
-4. 嵌入主应用时，子应用不写 `document.documentElement` 上的 `--gzd-*`，只消费主应用已经注入的变量。
-5. 自定义样式优先使用组件库导出的 Design Tokens 或 `var(--gzd-*)`，不要长期散落硬编码颜色、字号、间距。
+3. 独立部署时，子应用可以调用 `applyDesignTokenCssVariables({ themeMode })` 写入页面级 `--gz-*` 变量。
+4. 嵌入主应用时，子应用不写 `document.documentElement` 上的 `--gz-*`，只消费主应用已经注入的变量。
+5. 自定义样式优先使用组件库导出的 Design Tokens 或 `var(--gz-*)`，不要长期散落硬编码颜色、字号、间距。
 6. 如果业务新增的样式值具备跨页面、跨应用复用价值，应回收到组件库 Design Tokens 中维护。
 
 ## 运行模式识别
@@ -110,9 +110,9 @@ createRoot(document.getElementById("root")!).render(<StandaloneRoot />);
 
 ```css
 :root {
-  --gzd-color-primary: ...;
-  --gzd-color-bg-container: ...;
-  --gzd-color-text: ...;
+  --gz-color-primary: ...;
+  --gz-color-bg-container: ...;
+  --gz-color-text: ...;
 }
 ```
 
@@ -120,12 +120,12 @@ createRoot(document.getElementById("root")!).render(<StandaloneRoot />);
 
 ```css
 .page {
-  background: var(--gzd-color-bg-layout);
-  color: var(--gzd-color-text);
+  background: var(--gz-color-bg-layout);
+  color: var(--gz-color-text);
 }
 
 .page-header {
-  border-bottom: 1px solid var(--gzd-color-border-secondary);
+  border-bottom: 1px solid var(--gz-color-border-secondary);
 }
 ```
 
@@ -176,8 +176,8 @@ function Root() {
 
 ```ts
 cssVar: {
-  key: `gzd-${themeMode}`,
-  prefix: "gzd-ant",
+  key: `gz-${themeMode}`,
+  prefix: "gz-ant",
 }
 ```
 
@@ -193,12 +193,12 @@ cssVar: {
 
 ```ts
 cssVar: {
-  key: `gzd-risk-center-${themeMode}`,
-  prefix: "gzd-risk-center",
+  key: `gz-risk-center-${themeMode}`,
+  prefix: "gz-risk-center",
 }
 ```
 
-注意：`cssVarScope` 只影响 antd 运行时 CSS 变量，例如 `--gzd-risk-center-color-primary`。它不会改变 `applyDesignTokenCssVariables` 注入的业务 CSS 变量 `--gzd-*`。
+注意：`cssVarScope` 只影响 antd 运行时 CSS 变量，例如 `--gz-risk-center-color-primary`。它不会改变 `applyDesignTokenCssVariables` 注入的业务 CSS 变量 `--gz-*`。
 
 如果业务 CSS 变量也需要隔离，应同时给 `applyDesignTokenCssVariables` 设置 `target` 和 `prefix`：
 
@@ -209,7 +209,7 @@ useEffect(() => {
   return applyDesignTokenCssVariables({
     themeMode,
     target,
-    prefix: "gzd-risk-center",
+    prefix: "gz-risk-center",
     includeCustom: true,
   });
 }, [themeMode]);
@@ -219,8 +219,8 @@ useEffect(() => {
 
 ```css
 #risk-center-root .page {
-  background: var(--gzd-risk-center-color-bg-layout);
-  color: var(--gzd-risk-center-color-text);
+  background: var(--gz-risk-center-color-bg-layout);
+  color: var(--gz-risk-center-color-text);
 }
 ```
 
@@ -242,8 +242,8 @@ useEffect(() => {
 优先级建议如下：
 
 1. React 组件内动态样式优先使用 `theme.useToken()` 或 `getDesignTokens({ themeMode })`。
-2. 普通 CSS、CSS Modules、Less 优先使用 `var(--gzd-*)`。
-3. 独立作用域下的普通 CSS 使用隔离后的 `var(--gzd-risk-center-*)`。
+2. 普通 CSS、CSS Modules、Less 优先使用 `var(--gz-*)`。
+3. 独立作用域下的普通 CSS 使用隔离后的 `var(--gz-risk-center-*)`。
 4. 业务私有临时变量使用应用自己的前缀，例如 `--risk-center-chart-warning-bg`。
 5. 长期设计语义回收到组件库 tokens，不在业务应用长期维护。
 
@@ -251,14 +251,14 @@ useEffect(() => {
 
 ```css
 .dashboard-card {
-  background: var(--gzd-color-bg-container);
-  color: var(--gzd-color-text);
-  border: 1px solid var(--gzd-color-border-secondary);
-  border-radius: calc(var(--gzd-border-radius-lg) * 1px);
+  background: var(--gz-color-bg-container);
+  color: var(--gz-color-text);
+  border: 1px solid var(--gz-color-border-secondary);
+  border-radius: calc(var(--gz-border-radius-lg) * 1px);
 }
 
 .dashboard-card__metric {
-  color: var(--gzd-color-primary);
+  color: var(--gz-color-primary);
 }
 ```
 
@@ -278,7 +278,7 @@ useEffect(() => {
 
 ## theme 覆盖和 CSS 变量的关系
 
-`ConfigProvider` 的 `theme.token`、`theme.components` 覆盖只影响当前 React 树中的 antd 主题。`applyDesignTokenCssVariables({ themeMode })` 注入的 `--gzd-*` 来自组件库内置 token bundle，不会自动包含业务传给 `ConfigProvider.theme` 的临时覆盖。
+`ConfigProvider` 的 `theme.token`、`theme.components` 覆盖只影响当前 React 树中的 antd 主题。`applyDesignTokenCssVariables({ themeMode })` 注入的 `--gz-*` 来自组件库内置 token bundle，不会自动包含业务传给 `ConfigProvider.theme` 的临时覆盖。
 
 因此：
 
@@ -294,7 +294,7 @@ useEffect(() => {
 </ConfigProvider>
 ```
 
-这会影响 antd 组件和 `theme.useToken()` 读取到的结果，但不会自动把 `--gzd-border-radius` 改成 `8`。
+这会影响 antd 组件和 `theme.useToken()` 读取到的结果，但不会自动把 `--gz-border-radius` 改成 `8`。
 
 如果 CSS 里也需要这个值，有三种处理方式：
 
@@ -309,7 +309,7 @@ useEffect(() => {
 1. 已引入 `gzd/gzd.css`。
 2. 有明确的 `themeMode` 来源和默认值。
 3. 独立模式下调用 `applyDesignTokenCssVariables({ themeMode })`。
-4. 嵌入模式下不重复写 `document.documentElement` 的 `--gzd-*`。
+4. 嵌入模式下不重复写 `document.documentElement` 的 `--gz-*`。
 5. 使用 `ConfigProvider themeMode={themeMode}` 包裹应用。
 6. 只有隔离、多版本、局部覆盖或多主题同屏时才使用 `cssVarScope`。
 7. 自定义样式优先消费 Design Tokens，长期语义 token 回收到组件库。

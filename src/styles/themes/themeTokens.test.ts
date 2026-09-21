@@ -49,9 +49,9 @@ describe("gold design tokens", () => {
       includeComponents: true,
     });
 
-    expect(variables["--gzd-components-sidebar-item-hover-bg"]).toBe(
+    expect(variables["--gz-components-sidebar-item-hover-bg"]).toBe(
       "rgba(0, 131, 255, 0.08)",
     );
-    expect(variables["--gzd-components-panel-collapse-bg"]).toBe("#F0F0F0");
+    expect(variables["--gz-components-panel-collapse-bg"]).toBe("#F0F0F0");
   });
 });

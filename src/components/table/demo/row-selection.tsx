@@ -106,7 +106,7 @@ const App: React.FC = () => {
   const hasSelected = selectedRowKeys.length > 0;
 
   return (
-    <Flex className="gzd-table-demo-scrollbar-scope" gap="medium" vertical>
+    <Flex className="gz-table-demo-scrollbar-scope" gap="medium" vertical>
       <Flex align="center" gap="medium">
         <Button type="primary" onClick={start} disabled={!hasSelected} loading={loading}>
           Reload

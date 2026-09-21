@@ -132,7 +132,7 @@ const onFilterChanged = ({ api }: FilterChangedEvent<DataType>) => {
 };
 
 const App: React.FC = () => (
-  <div className="gzd-table-demo-scrollbar-scope">
+  <div className="gz-table-demo-scrollbar-scope">
     <Table<DataType>
       modules={[AllCommunityModule]}
       columnDefs={columnDefs}

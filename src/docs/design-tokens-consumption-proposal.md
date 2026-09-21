@@ -127,7 +127,7 @@ export function getDesignTokenCssVariables(
 
 默认行为：
 
-- 默认 `prefix` 为 `gzd`。
+- 默认 `prefix` 为 `gz`。
 - 默认注入到 `document.documentElement`。
 - 默认注入全局 token 和 custom token。
 - 组件级 token 是否注入由 `includeComponents` 控制，默认不注入，避免变量数量过大。
@@ -137,10 +137,10 @@ export function getDesignTokenCssVariables(
 
 ```css
 :root {
-  --gzd-color-primary: #c98a49;
-  --gzd-color-bg-layout: #000000;
-  --gzd-font-size: 14px;
-  --gzd-custom-page-header-bg: #141414;
+  --gz-color-primary: #c98a49;
+  --gz-color-bg-layout: #000000;
+  --gz-font-size: 14px;
+  --gz-custom-page-header-bg: #141414;
 }
 ```
 
@@ -148,13 +148,13 @@ export function getDesignTokenCssVariables(
 
 ```css
 .business-card {
-  background: var(--gzd-color-bg-container);
-  border-color: var(--gzd-color-border);
-  color: var(--gzd-color-text);
+  background: var(--gz-color-bg-container);
+  border-color: var(--gz-color-border);
+  color: var(--gz-color-text);
 }
 
 .business-card__title {
-  color: var(--gzd-color-primary);
+  color: var(--gz-color-primary);
 }
 ```
 

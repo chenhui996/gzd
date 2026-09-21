@@ -1,5 +1,7 @@
 ## Unreleased
 
+## 0.2.3-beta.4 - 2026-09-21
+
 ### Breaking Changes
 
 - 组件库统一命名为 `gzd`，同步 npm 包名、内部导入、文档、构建产物和发布校验。
@@ -363,6 +365,7 @@
 ### Added
 
 - Button 渐变背景色
+
 
 
 

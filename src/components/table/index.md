@@ -1004,16 +1004,16 @@ return <Table&lt;User&gt; ref=&#123;tableRef&#125; columnDefs=&#123;columnDefs&#
 
 ## 主题变量
 
-Table 默认主题基于 `themeQuartz`。gold-dark 和 gold-light 模式分别使用对应的 AG Grid Token 提供视觉参数；其他主题继续使用运行时 `--gzd-*` CSS 变量。
+Table 默认主题基于 `themeQuartz`。gold-dark 和 gold-light 模式分别使用对应的 AG Grid Token 提供视觉参数；其他主题继续使用运行时 `--gz-*` CSS 变量。
 
 ### Table 组件变量
 
 | CSS 变量 | 说明 | 未提供时回退到 |
 | --- | --- | --- | --- | --- |
-| `--gzd-components-table-header-bg` | gzcomponentstable表头bg。用于精细化配置该功能的展现形式或执行逻辑。 | `--gzd-color-border` |
-| `--gzd-components-table-header-text-color` | gzcomponentstable表头文本color。用于精细化配置该功能的展现形式或执行逻辑。 | `--gzd-color-text-secondary` |
-| `--gzd-components-table-border-color` | gzcomponentstablebordercolor。用于精细化配置该功能的展现形式或执行逻辑。 | `--gzd-color-border` |
-| `--gzd-table-scrollbar-background-color` | gztablescrollbarbackgroundcolor。用于精细化配置该功能的展现形式或执行逻辑。 | `--gzd-color-border` |
+| `--gz-components-table-header-bg` | gzcomponentstable表头bg。用于精细化配置该功能的展现形式或执行逻辑。 | `--gz-color-border` |
+| `--gz-components-table-header-text-color` | gzcomponentstable表头文本color。用于精细化配置该功能的展现形式或执行逻辑。 | `--gz-color-text-secondary` |
+| `--gz-components-table-border-color` | gzcomponentstablebordercolor。用于精细化配置该功能的展现形式或执行逻辑。 | `--gz-color-border` |
+| `--gz-table-scrollbar-background-color` | gztablescrollbarbackgroundcolor。用于精细化配置该功能的展现形式或执行逻辑。 | `--gz-color-border` |
 
 组件变量需要在生成 CSS 变量时启用 `includeComponents`：
 
@@ -1033,22 +1033,22 @@ applyDesignTokenCssVariables(&#123;
 
 | CSS 变量 | 影响范围 |
 | --- | --- | --- | --- |
-| `--gzd-color-bg-container` | gzcolorbg容器。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-color-text` | gzcolor文本。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-color-text-secondary` | gzcolor文本secondary。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-color-primary` | gzcolorprimary。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-color-border` | gzcolorborder。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-color-border-secondary` | gzcolorbordersecondary。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-color-split` | gzcolorsplit。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-color-text-on-light` | gzcolor文本onlight。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-font-family` | gzfontfamily。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-font-size` | gzfont大小。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-font-weight-normal` | gzfontweightnormal。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-line-height` | gzline高度。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-padding-xs` | gzpaddingxs。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-border-radius-lg` | gzborderradiuslg。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-border-radius-sm` | gzborderradiussm。用于精细化配置该功能的展现形式或执行逻辑。 |
-| `--gzd-checkbox-size` | gzd复选框大小。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-bg-container` | gzcolorbg容器。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-text` | gzcolor文本。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-text-secondary` | gzcolor文本secondary。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-primary` | gzcolorprimary。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-border` | gzcolorborder。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-border-secondary` | gzcolorbordersecondary。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-split` | gzcolorsplit。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-color-text-on-light` | gzcolor文本onlight。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-font-family` | gzfontfamily。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-font-size` | gzfont大小。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-font-weight-normal` | gzfontweightnormal。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-line-height` | gzline高度。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-padding-xs` | gzpaddingxs。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-border-radius-lg` | gzborderradiuslg。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-border-radius-sm` | gzborderradiussm。用于精细化配置该功能的展现形式或执行逻辑。 |
+| `--gz-checkbox-size` | gzd复选框大小。用于精细化配置该功能的展现形式或执行逻辑。 |
 
 当 `ConfigProvider` 的 `themeMode` 为 `gold-dark` 或 `gold-light` 时，Table 会使用对应的 Gold AG Grid Token；gold-dark 额外适配表头、数据行、hover、边框、滚动区域、cell focus 和范围选择状态。这些视觉值优先读取主题生成的 `--ag-*` CSS 变量。该覆盖只作用于 gzd Table，不影响页面中的其他 AG Grid 实例。
 
@@ -1110,7 +1110,7 @@ export const tableTheme = themeQuartz
   .withParams(&#123;
     // 例如：微调输入框内边距，并绑定到全局 Token
     inputPaddingStart: "8px",
-    inputBorderRadius: "var(--gzd-border-radius-base)",
+    inputBorderRadius: "var(--gz-border-radius-base)",
   &#125;)
 ```
 
@@ -1132,7 +1132,7 @@ export const tableTheme = themeQuartz
 ```
 
 ### 3. 最终兜底：`style.less` 强覆盖 + 契约测试
-如果涉及极其复杂的布局修改（如强行隐藏/挪动深层 DOM 节点），只能在 `src/components/table/style.less` 中利用 `.gzd-table` 命名空间进行强制覆盖。
+如果涉及极其复杂的布局修改（如强行隐藏/挪动深层 DOM 节点），只能在 `src/components/table/style.less` 中利用 `.gz-table` 命名空间进行强制覆盖。
 **⚠️ 警告：** 采用此方法直接依赖了 AG Grid 的内部类名。你**必须**在 `tests/ct/Table.style.test.ts` 中添加对应的“契约测试”，以防未来 AG Grid 升级更改类名导致样式“静默雪崩”：
 ```ts | pure
 it("防御性测试：确保自定义分页器选择框的内部类名没有丢失", () => &#123;

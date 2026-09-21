@@ -104,7 +104,7 @@ import { Button, ConfigProvider } from 'gzd';
 
 这个文件还会导入 `src/styles/index.less`，让构建结果包含组件库样式。
 
-// chenhui996？？？
+// chenhui996 待解决疑问
 
 ### `src/gzd-table/index.ts` 子路径入口  
 
@@ -167,7 +167,7 @@ src/components/button/
 
 `.dumirc.ts` 已把 `src/docs/` 配置为文档目录，所以其中的 Markdown 也能进入 Dumi 文档站。
 
-// chenhui996？？？
+// chenhui996 待解决疑问
 
 ## 4. 文档放在哪里
 
@@ -224,7 +224,7 @@ src/components/button/
 
 应该回到对应源文件修改：
 
-// chenhui996？？？
+// chenhui996 待解决疑问
 
 | 你想改什么 | 应该去哪里 |
 | --- | --- |
