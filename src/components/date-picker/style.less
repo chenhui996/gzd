@@ -1,0 +1,29 @@
+.gzd-date-picker-gold-dark {
+  &[class*='-picker-dropdown']
+    [class*='-picker-cell-in-view'][class*='-picker-cell-selected']:not(
+      [class*='-picker-cell-disabled']
+    )
+    [class*='-picker-cell-inner'],
+  &[class*='-picker-dropdown']
+    [class*='-picker-cell-in-view'][class*='-picker-cell-range-start']:not(
+      [class*='-picker-cell-disabled']
+    )
+    [class*='-picker-cell-inner'],
+  &[class*='-picker-dropdown']
+    [class*='-picker-cell-in-view'][class*='-picker-cell-range-end']:not(
+      [class*='-picker-cell-disabled']
+    )
+    [class*='-picker-cell-inner'] {
+    color: var(--gzd-date-picker-selected-cell-text-color);
+  }
+
+  &[class*='-picker-dropdown']
+    [class*='-picker-week-panel-row-selected']
+    td[class*='-picker-cell']:not([class*='-picker-cell-disabled'])
+    [class*='-picker-cell-inner'],
+  &[class*='-picker-dropdown']
+    [class*='-picker-week-panel-row-selected']
+    td[class*='-picker-cell-week'] {
+    color: var(--gzd-date-picker-selected-cell-text-color);
+  }
+}

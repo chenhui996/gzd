@@ -1,0 +1,652 @@
+// ============================================================================
+// 表格核心样式覆盖（基于 AG Grid 的 DOM 结构进行主题化定制）
+// ============================================================================
+.gzd-table {
+
+  // ============================================================================
+  // 表格主体样式入口
+  // ============================================================================
+  .ag-root-wrapper {
+    background-color: transparent;
+    border: none; // 移除默认的外边框
+
+    .ag-root-wrapper-body {
+      border: 1px solid var(--ag-border-color); // 添加自定义颜色边框
+      border-radius: var(--ag-wrapper-border-radius); // 响应主题圆角
+      overflow: hidden; // 确保内部滚动不溢出圆角
+
+      .ag-root {
+
+        // ============================================================================
+        // 表格视口样式
+        // ============================================================================
+        .ag-grid-viewport {
+
+          // 固定顶部行样式
+          .ag-grid-pinned-top-rows {
+            .ag-header {
+              background-color: var(--ag-header-background-color);
+
+              .ag-header-row {
+
+                // 表头行底部的统一分割线
+                &:after {
+                  border-bottom: 1px solid var(--ag-header-border-color);
+                  background-color: var(--ag-header-background-color);
+                }
+
+                // 分组表头行底部的统一分割线
+                &.ag-header-row-group {
+                  border-bottom: var(--ag-header-row-border);
+                }
+
+
+
+                // --------------------------------------------------------------------------
+                // 表头 单元格 基础样式
+                // --------------------------------------------------------------------------
+                .ag-header-cell {
+                  border-bottom: 1px solid var(--ag-header-border-color);
+                  background-color: var(--ag-header-background-color);
+
+                  .ag-header-cell-label {
+                    min-width: 0;
+                    align-items: center;
+                  }
+                }
+
+                // 重置并定制表头单元格（包括分组表头）之间的分割线样式
+                .ag-header-cell::before,
+                .ag-header-group-cell::before {
+                  inset: auto;
+                  top: calc(50% - var(--ag-header-column-border-height) * 0.5);
+                  height: var(--ag-header-column-border-height);
+                  background-image: none;
+                  border: 0;
+                  content: "";
+                  position: absolute;
+                  transition: none;
+                  z-index: 1;
+                }
+
+                // --------------------------------------------------------------------------
+                // 表头 Hover 与拖拽（Moving）的背景动效
+                // --------------------------------------------------------------------------
+                // 利用 ::after 伪元素创建渐变背景，用于响应 hover 和拖拽状态
+                .ag-header-cell:not(.ag-floating-filter)::after,
+                .ag-header-group-cell::after {
+                  inset: 0;
+                  width: auto;
+                  height: auto;
+                  background-image:
+                    linear-gradient(var(--ag-internal-hover-color),
+                      var(--ag-internal-hover-color)),
+                    linear-gradient(var(--ag-internal-moving-color),
+                      var(--ag-internal-moving-color));
+                  border: 0;
+                  content: "";
+                  position: absolute;
+                  transition:
+                    --ag-internal-moving-color var(--ag-header-cell-background-transition-duration),
+                    --ag-internal-hover-color var(--ag-header-cell-background-transition-duration);
+                  z-index: 0;
+                  --ag-internal-moving-color: transparent;
+                  --ag-internal-hover-color: transparent;
+                }
+
+                // 浮动筛选行不需要 hover 背景动效
+                .ag-header-cell.ag-floating-filter::after {
+                  content: none;
+                }
+
+                // 组合表头使用完整的层级边界；普通单行表头继续保留短分隔线。
+                .ag-header-row-group {
+                  border-bottom: calc(var(--gzd-line-width) * 1px) solid var(--gzd-color-split);
+                }
+
+                // 确保多级表头或分组表头的分隔线高度占满 100%
+                .ag-header-group-cell::before,
+                .ag-header-row-group .ag-header-cell::before,
+                .ag-header-row-column.ag-header-row-not-first .ag-header-cell::before {
+                  top: 0;
+                  height: 100%;
+                }
+
+                // 分组表头的文本内容居中对齐
+                .ag-header-group-cell-label {
+                  min-width: 0;
+                  justify-content: center;
+                }
+
+                // 触发表头的 hover 变色效果
+                .ag-header-cell:not(.ag-floating-filter):hover::after,
+                .ag-header-group-cell:hover::after {
+                  --ag-internal-hover-color: var(--ag-header-cell-hover-background-color);
+                }
+
+                // 触发列拖拽时的变色效果
+                .ag-header-cell:not(.ag-floating-filter).ag-header-cell-moving::after,
+                .ag-header-group-cell.ag-header-cell-moving::after {
+                  --ag-internal-moving-color: var(--ag-header-cell-moving-background-color);
+                  --ag-internal-hover-color: var(--ag-header-cell-hover-background-color);
+                }
+
+                // --------------------------------------------------------------------------
+                // 列高亮指示器（例如在拖拽排序时显示的竖线指示器）
+                // --------------------------------------------------------------------------
+                .ag-header-cell.ag-header-highlight-after::after,
+                .ag-header-cell.ag-header-highlight-before::after,
+                .ag-header-group-cell.ag-header-highlight-after::after,
+                .ag-header-group-cell.ag-header-highlight-before::after {
+                  inset: auto;
+                  top: 0;
+                  width: var(--ag-column-drag-indicator-width);
+                  height: 100%;
+                  background-color: var(--ag-column-drag-indicator-color);
+                  background-image: none;
+                  border: 0;
+                  border-radius: calc(var(--ag-column-drag-indicator-width) / 2);
+                  transition: none;
+                  z-index: 1;
+                }
+
+                // 右侧固定区域的第一列不需要左侧的分隔线
+                .ag-header-cell-first-right-pinned {
+                  &::before {
+                    content: none;
+                  }
+                }
+
+                // 浮动筛选行
+                &.ag-header-row-filter {
+                  .ag-header-cell {
+                    background-color: var(--ag-data-background-color);
+                  }
+                }
+              }
+            }
+
+            .ag-grid-sticky-top-rows-container {
+              .ag-row {
+                .ag-cell {
+
+                  // ============================================================================
+                  // 表头标签和单元格基础布局
+                  // ============================================================================
+                  .ag-cell-wrapper {
+                    height: 100%;
+
+                    .ag-group-expanded,
+                    .ag-group-contracted {
+                      .ag-icon {
+                        color: var(--ag-cell-text-color);
+                        padding: 2px;
+                        box-shadow: none;
+                        height: 20px;
+                        width: 20px;
+                      }
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+
+          // 滚动区域的行样式
+          .ag-grid-scrolling-rows {
+            .ag-row {
+
+              // ============================================================================
+              // 数据行的边框处理
+              // ============================================================================
+              &:not(.ag-header-row, .ag-full-width-row) {
+
+                // 为固定列和滚动列的容器底部统一添加边框
+                >.ag-grid-pinned-left-cells,
+                >.ag-grid-scrolling-cells,
+                >.ag-grid-pinned-right-cells {
+                  border-bottom: var(--ag-row-border);
+                  border-bottom-color: var(--ag-border-color);
+                }
+              }
+
+              // ============================================================================
+              // 选中与悬停行混合色处理，当一行同时被选中和悬停时，计算混合颜色作为叠加层背景
+              // ============================================================================
+              &.ag-row-hover.ag-row-selected {
+                --ag-internal-row-overlay-color: color-mix(in srgb,
+                    var(--ag-row-hover-color),
+                    var(--ag-selected-row-background-color));
+                --ag-internal-row-overlay-image: none;
+              }
+
+              .ag-cell {
+
+                // ============================================================================
+                // 表头标签和单元格基础布局
+                // ============================================================================
+                .ag-cell-wrapper {
+                  height: 100%;
+
+                  .ag-group-expanded,
+                  .ag-group-contracted {
+                    .ag-icon {
+                      color: var(--ag-cell-text-color);
+                      padding: 2px;
+                      box-shadow: none;
+                      height: 20px;
+                      width: 20px;
+                    }
+                  }
+
+                }
+              }
+
+              // ============================================================================
+              // 单元格焦点与选中状态样式
+              // ============================================================================
+              // 处理键盘聚焦、右键菜单打开、以及单单元格被选中时的边框与背景色
+              .ag-cell-focus:not(.ag-cell-range-selected):focus-within,
+              .ag-context-menu-open .ag-cell-focus:not(.ag-cell-range-selected),
+              .ag-cell-range-single-cell {
+                border: 1px solid var(--ag-range-selection-border-color);
+                background: var(--ag-range-selection-background-color);
+              }
+
+
+              &.ag-row-hover {
+                .ag-grid-pinned-left-cells {
+                  border-right: 1px solid var(--ag-row-hover-color);
+                }
+
+                .ag-grid-pinned-right-cells {
+                  border-left: 1px solid var(--ag-row-hover-color);
+                }
+              }
+            }
+          }
+
+          // ============================================================================
+          // header 和 body 共享的样式
+          // ============================================================================
+
+          // 固定左侧列样式
+          .ag-grid-pinned-left-cells {
+            .ag-grid-container-wrapper {
+
+              // 隐藏左侧固定区最后一列的调整手柄（避免超出边界）
+              .ag-header-cell-last-left-pinned {
+                border-right: 1px solid transparent;
+              }
+
+              .ag-floating-filter:last-child {
+                border-right: 1px solid transparent;
+              }
+            }
+          }
+
+          // 滚动区域样式
+          .ag-grid-scrolling-cells {
+            background-color: transparent;
+          }
+
+          // 固定右侧列样式
+          .ag-grid-pinned-right-cells {
+            border-left: 1px solid transparent; // 默认透明，由 ping-right 类控制显示
+
+            .ag-grid-container-wrapper {
+
+              // 隐藏右侧固定区第一列的调整手柄（避免超出边界）
+              .ag-header-cell-first-right-pinned {
+                border-left: 1px solid transparent;
+              }
+
+              .ag-floating-filter:first-child {
+                border-left: 1px solid transparent;
+              }
+            }
+          }
+        }
+
+        // ============================================================================
+        // 表格空数据（No Rows）遮罩层样式
+        // ============================================================================
+        .gzd-table-no-rows-overlay {
+          padding: calc(var(--gzd-padding-md) * 1px);
+          color: var(--gzd-color-text-secondary);
+          text-align: center;
+        }
+      }
+    }
+
+    // ============================================================================
+    // Ping 滚动阴影/边框状态 (利用外层类名控制内部固定列的边框显示)
+    // ============================================================================
+    .gzd-table-ping-left & {
+
+      .ag-grid-pinned-left-cells,
+      .ag-header-cell-last-left-pinned {
+        border-right: 1px solid var(--ag-header-border-color) !important;
+      }
+
+      .ag-grid-container-wrapper {
+
+        // 隐藏左侧固定区最后一列的调整手柄（避免超出边界）
+        .ag-header-cell-last-left-pinned {
+          border-right: 1px solid var(--ag-header-border-color) !important;
+        }
+
+        .ag-floating-filter:last-child {
+          border-right: 1px solid var(--ag-header-border-color) !important;
+        }
+      }
+    }
+
+    .gzd-table-ping-right & {
+
+      .ag-grid-pinned-right-cells,
+      .ag-header-cell-first-right-pinned {
+        border-left: 1px solid var(--ag-header-border-color) !important;
+      }
+
+      .ag-grid-container-wrapper {
+
+        // 隐藏右侧固定区第一列的调整手柄（避免超出边界）
+        .ag-header-cell-first-right-pinned {
+          border-left: 1px solid var(--ag-header-border-color) !important;
+        }
+
+        .ag-floating-filter:first-child {
+          border-left: 1px solid var(--ag-header-border-color) !important;
+        }
+      }
+    }
+
+    // ============================================================================
+    // 动态行分组面板（Row Group Panel）与主体区域的圆角/边框衔接
+    // ============================================================================
+    // 1. 面板自身的样式覆盖
+    .ag-column-drop-wrapper {
+
+      // 只要面板内的 .ag-column-drop 没有被隐藏（即面板处于显示状态）
+      &:has(.ag-column-drop:not(.ag-hidden)) {
+        .ag-column-drop {
+          border-top-left-radius: var(--ag-wrapper-border-radius);
+          border-top-right-radius: var(--ag-wrapper-border-radius);
+          border: 1px solid var(--ag-border-color);
+          border-bottom-color: var(--ag-header-border-color);
+          transform: translateY(1px); // 往下偏移 1px，为了盖住主体区域的顶部边框
+        }
+
+        // 2. 相邻的表格主体的顶部圆角处理
+        // 当上方的面板内存在未隐藏的 .ag-column-drop 子元素时（面板显示），
+        // 紧随其后的表格主体 (.ag-root-wrapper-body) 必须去掉顶部圆角，变成直角以实现无缝拼接。
+        &+.ag-root-wrapper-body {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+    }
+
+    // ============================================================================
+    // 滚动条交互
+    // ============================================================================
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    // 默认轨道透明
+    ::-webkit-scrollbar-track {
+      background: var(--ag-data-background-color);
+    }
+
+    // 默认滑块透明（移出时隐藏）
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--ag-scrollbar-thumb-color) !important;
+      border-radius: 10px; // 圆角可以设置大一点，确保滑块是圆润的
+      border: 2px solid transparent;
+      background-clip: padding-box;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: color-mix(in srgb, var(--ag-scrollbar-thumb-color) 90%, white) !important;
+    }
+
+    // 竖向滚动条
+    .ag-body-vertical-scroll {
+      background-color: transparent !important;
+    }
+
+    // 横向滚动条
+    .ag-body-horizontal-scroll {
+      background-color: transparent !important;
+    }
+
+    .ag-body-horizontal-scroll-end-spacer,
+    .ag-body-horizontal-scroll-start-spacer {
+      background-color: var(--ag-data-background-color);
+    }
+
+    .ag-body-vertical-scroll-start-spacer {
+      border-bottom: 1px solid var(--ag-header-border-color);
+    }
+  }
+
+  // ============================================================================
+  // 分页器
+  // ============================================================================
+  &.gzd-table-default-pagination-layout {
+
+    // 左侧面板（总条数）自动占据剩余空间
+    .ag-paging-row-summary-panel {
+      margin-inline-end: auto;
+    }
+
+    .ag-paging-row-summary-panel::before {
+      content: none;
+    }
+
+    // 定制“总条数”的显示格式
+    .ag-paging-row-summary-content {
+      display: inline-flex;
+      gap: calc(var(--gzd-margin-xxs) * 1px);
+      align-items: center;
+      justify-self: auto;
+      white-space: nowrap;
+      font-size: calc(var(--gzd-font-size-sm) * 1px);
+    }
+
+    // 隐藏 AG Grid 默认自带的 “1 to 10 of 100” 冗余文案
+    .ag-paging-row-summary-content>[id$="-first-row"],
+    .ag-paging-row-summary-content>[id$="-to"],
+    .ag-paging-row-summary-content>[id$="-last-row"],
+    .ag-paging-row-summary-content>[id$="-of"] {
+      display: none;
+    }
+
+    // 注入我们自己需要的中文前缀和后缀
+    .ag-paging-row-summary-content::before {
+      content: "共";
+    }
+
+    .ag-paging-row-summary-content::after {
+      content: "条";
+    }
+
+    // 分页选择器（每页条数）下拉框字体调整
+    .ag-paging-page-size {
+      .ag-picker-field {
+        font-size: calc(var(--gzd-font-size-sm) * 1px);
+      }
+    }
+
+    // 当前页码数字
+    .ag-paging-number {
+      position: relative;
+      color: var(--ag-text-color);
+      color-scheme: var(--ag-browser-color-scheme);
+      font-family: var(--ag-font-family);
+      font-size: calc(var(--gzd-font-size-sm) * 1px);
+      font-weight: var(--ag-font-weight);
+    }
+
+    // 注入“页”后缀
+    .ag-paging-description::after {
+      content: "页";
+      position: absolute;
+      top: 12px;
+      right: -16px;
+      color: var(--ag-text-color);
+      color-scheme: var(--ag-browser-color-scheme);
+      font-family: var(--ag-font-family);
+      font-size: calc(var(--gzd-font-size-sm) * 1px);
+      font-weight: var(--ag-font-weight);
+    }
+
+    .ag-paging-description {
+      position: relative;
+      margin-right: 18px;
+      font-size: calc(var(--gzd-font-size-sm) * 1px);
+    }
+  }
+
+  // ============================================================================
+  // LTR 模式表格样式
+  // ============================================================================
+  .ag-ltr {
+
+    // LTR 模式下，分割线靠左
+    .ag-header-cell::before,
+    .ag-header-group-cell::before {
+      left: 0;
+      border-left: var(--ag-header-column-border);
+    }
+
+    .ag-body-horizontal-content-no-gap {
+
+      // 移除第一列左侧多余的边框
+      .ag-header-cell.ag-column-first::before,
+      .ag-header-group-cell.ag-column-first::before {
+        border-left-color: transparent;
+      }
+    }
+
+    .ag-header-highlight-before::after {
+      left: 0;
+    }
+
+    .ag-header-highlight-after::after {
+      right: 0;
+    }
+
+    // 左侧固定区域的右侧指示器需要偏移 1px 避免被遮挡
+    .ag-grid-pinned-left-cells .ag-header-highlight-after::after {
+      right: 1px;
+    }
+  }
+
+  // ============================================================================
+  // RTL 模式表格样式
+  // ============================================================================
+  .ag-rtl {
+
+    // RTL 模式下，分割线靠右
+    .ag-header-cell::before,
+    .ag-header-group-cell::before {
+      right: 0;
+      border-right: var(--ag-header-column-border);
+    }
+
+    .ag-body-horizontal-content-no-gap {
+
+      // 移除第一列右侧多余的边框
+      .ag-header-cell.ag-column-first::before,
+      .ag-header-group-cell.ag-column-first::before {
+        border-right-color: transparent;
+      }
+    }
+
+    .ag-header-highlight-before::after {
+      right: 0;
+    }
+
+    .ag-header-highlight-after::after {
+      left: 0;
+    }
+
+    .ag-grid-pinned-left-cells .ag-header-highlight-after::after {
+      left: 1px;
+    }
+  }
+}
+
+// ============================================================================
+// AG Grid 弹出层（Menu/Popup/Panel）样式覆盖
+// ============================================================================
+// 弹出层通常挂载在 body 上，脱离了 .gzd-table 的 DOM 树，所以需要在最外层覆盖。
+.ag-menu,
+.ag-popup {
+  .ag-menu-list {
+    --ag-spacing: 4px;
+
+    padding: var(--ag-spacing);
+
+    // ============================================================================
+    // 5. 修复菜单项 (display: table-row) 无法直接设置 border-radius 的问题
+    // ============================================================================
+    // AG Grid 的菜单项使用的是 display: table-row 布局以对齐图标和快捷键。
+    // 原生规范不支持给 table-row 设置 border-radius，因此我们使用伪元素背景层来实现。
+    .ag-menu-option {
+      position: relative; // 为伪元素提供定位基准
+      z-index: 1; // 确保整个 row 在正常层级
+
+      // 清除 AG Grid 默认在单元格上加的 hover 背景色
+      &.ag-menu-option-active {
+        background-color: transparent !important;
+      }
+
+      // 屏蔽原生在子元素上加的 hover 背景（如果有的话）
+      .ag-menu-option-part {
+        background-color: transparent !important;
+      }
+
+      // 使用 ::after 伪元素作为圆角背景层
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0; // 撑满整个菜单项 (top:0, right:0, bottom:0, left:0)
+        border-radius: calc(var(--gzd-border-radius) * 1px); // 使用 gzd 的统一圆角
+        background-color: transparent; // 默认透明
+        z-index: -1; // 放到最底层，防止遮挡文字和图标
+        transition: background-color var(--gzd-motion-duration-mid);
+        pointer-events: none; // 防止伪元素拦截鼠标事件
+      }
+
+      // 当菜单项处于激活 (Hover) 状态时，改变伪元素的背景色
+      &.ag-menu-option-active::after {
+        background-color: var(--ag-row-hover-color);
+      }
+
+      .ag-compact-menu-option-part,
+      .ag-menu-option-part {
+        --ag-spacing: 6px;
+      }
+    }
+  }
+
+  .ag-panel-title-bar {
+    background-color: var(--ag-header-background-color);
+  }
+
+  .ag-panel-title-bar-button {
+    :where(.ag-icon) {
+      color: var(--ag-cell-text-color);
+    }
+  }
+}
+
+.ag-menu {
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}

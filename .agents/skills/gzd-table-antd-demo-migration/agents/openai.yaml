@@ -1,0 +1,4 @@
+interface:
+  display_name: "gzd Table Demo Migration"
+  short_description: "将 Ant Design Table 示例迁移为 gzd AG Grid demo"
+  default_prompt: "Use $gzd-table-antd-demo-migration to convert this Ant Design Table example into a gzd AG Grid demo."

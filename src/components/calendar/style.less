@@ -1,0 +1,19 @@
+.gzd-calendar-gold-dark {
+  &[class*='-picker-calendar']
+    [class*='-picker-cell-in-view'][class*='-picker-cell-selected']:not(
+      [class*='-picker-cell-disabled']
+    )
+    [class*='-picker-cell-inner'],
+  &[class*='-picker-calendar']
+    [class*='-picker-cell-in-view'][class*='-picker-cell-range-start']:not(
+      [class*='-picker-cell-disabled']
+    )
+    [class*='-picker-cell-inner'],
+  &[class*='-picker-calendar']
+    [class*='-picker-cell-in-view'][class*='-picker-cell-range-end']:not(
+      [class*='-picker-cell-disabled']
+    )
+    [class*='-picker-cell-inner'] {
+    color: var(--gzd-calendar-selected-cell-text-color);
+  }
+}

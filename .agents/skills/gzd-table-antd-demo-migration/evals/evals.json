@@ -1,0 +1,30 @@
+{
+  "skill_name": "gzd-table-antd-demo-migration",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Convert an Ant Design Table demo with a custom Name renderer, an Age sorter with defaultSortOrder='descend', Address filters for London and New York, and pagination pageSize=2 into this repository's gzd AG Grid Table demo. Implement it as sorting-filtering.tsx and wire it into the Table docs.",
+      "expected_output": "A repository-compatible AG Grid Community demo preserving custom rendering, initial sorting, filtering, and fixed page size, plus the dumi index entry and verification.",
+      "files": [],
+      "expectations": [
+        "Uses gzd Table, AllCommunityModule, typed ColDef, rowData, and getRowId.",
+        "Maps default descending sort to initialSort and does not enable sorting on unrelated columns.",
+        "Uses a Community-compatible filter rather than an Enterprise Set Filter.",
+        "Maps pageSize to AG Grid pagination and disables the page-size selector.",
+        "Adds the dumi code entry and runs lint, TypeScript, docs build, and diff checks."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Convert an Ant Design Table expandable-row demo to this repository's gzd AG Grid 36 Table. The repository may use only Community modules and must not add an Enterprise dependency or license. Implement expandable.tsx if faithful implementation is possible.",
+      "expected_output": "A capability-aware response that does not silently use Enterprise Master/Detail and does not silently introduce a substantial approximation.",
+      "files": [],
+      "expectations": [
+        "Recognizes that AG Grid Master/Detail is Enterprise functionality.",
+        "Explains and requests direction before using a substantial Community workaround.",
+        "Does not add Enterprise imports, dependencies, or licenses.",
+        "Any proposed Community demo still includes module registration, stable row IDs, and explicit wrapper-default overrides."
+      ]
+    }
+  ]
+}

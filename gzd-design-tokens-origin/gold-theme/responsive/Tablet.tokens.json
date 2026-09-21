@@ -1,0 +1,161 @@
+{
+  "device": {
+    "$type": "number",
+    "$value": 768,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:807:76758",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:c8cf9b4b5242fadd0f0c9a8313ce7f1c9c15d3c5/-1:-1",
+        "targetVariableName": "screenMD",
+        "targetVariableSetId": "VariableCollectionId:6704bbd25df4dffcafe63270e7a06412de4d3306/-1:-1",
+        "targetVariableSetName": "alias"
+      }
+    }
+  },
+  "deviceMin": {
+    "$type": "number",
+    "$value": 768,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:807:76764",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:7b70a5ca84f16bdc2c1c8cafaa51e04ae808bb68/-1:-1",
+        "targetVariableName": "screenMDMin",
+        "targetVariableSetId": "VariableCollectionId:6704bbd25df4dffcafe63270e7a06412de4d3306/-1:-1",
+        "targetVariableSetName": "alias"
+      }
+    }
+  },
+  "deviceMax": {
+    "$type": "number",
+    "$value": 991,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:807:76765",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:29994f52b94943286769d5587d48517ee24df113/-1:-1",
+        "targetVariableName": "screenMDMax",
+        "targetVariableSetId": "VariableCollectionId:6704bbd25df4dffcafe63270e7a06412de4d3306/-1:-1",
+        "targetVariableSetName": "alias"
+      }
+    }
+  },
+  "hideOnDesktop": {
+    "$type": "number",
+    "$value": 1,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:807:76762",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "hideOnDesktopSM": {
+    "$type": "number",
+    "$value": 1,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:811:16861",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "hideOnTablet": {
+    "$type": "number",
+    "$value": 0,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:807:76760",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "hideOnMobile": {
+    "$type": "number",
+    "$value": 1,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:807:76759",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "onlyDesktop": {
+    "$type": "number",
+    "$value": 0,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:811:16858",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "onlyDesktopSM": {
+    "$type": "number",
+    "$value": 0,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:811:16862",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "onlyTablet": {
+    "$type": "number",
+    "$value": 1,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:811:16859",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "onlyMobile": {
+    "$type": "number",
+    "$value": 0,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:811:16860",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "boolean"
+    }
+  },
+  "gutter": {
+    "$type": "number",
+    "$value": 12,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:985:48895",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "pageOffset": {
+    "$type": "number",
+    "$value": 16,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:985:48902",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Tablet"
+  }
+}

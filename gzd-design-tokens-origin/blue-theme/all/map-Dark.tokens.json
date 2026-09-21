@@ -1,0 +1,1971 @@
+{
+  "colorPrimaryBg": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.09803921729326248,
+        0.16470588743686676,
+        0.32549020648002625
+      ],
+      "alpha": 1,
+      "hex": "#192A53"
+    },
+    "$description": "Light background color of primary color, usually used for weak visual level selection state",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3898",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryBgHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.11764705926179886,
+        0.23137255012989044,
+        0.501960813999176
+      ],
+      "alpha": 1,
+      "hex": "#1E3B80"
+    },
+    "$description": "The hover state color corresponding to the light background color of the primary color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3899",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryBorder": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.09803921729326248,
+        0.16470588743686676,
+        0.32549020648002625
+      ],
+      "alpha": 1,
+      "hex": "#192A53"
+    },
+    "$description": "The stroke color under the main color gradient, used on the stroke of components such as Slider.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3900",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryBorderHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.11764705926179886,
+        0.23137255012989044,
+        0.501960813999176
+      ],
+      "alpha": 1,
+      "hex": "#1E3B80"
+    },
+    "$description": "The hover state of the stroke color under the main color gradient, which will be used when the stroke Hover of components such as Slider and Button.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3901",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.32549020648002625,
+        0.5490196347236633,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#538CFF"
+    },
+    "$description": "Hover state under the main color gradient.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3902",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryBase": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.21960784494876862,
+        0.45098039507865906,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#3873FF"
+    },
+    "$description": "The brand color is one of the most intuitive visual elements that reflects product characteristics and communication concepts, and is used for the main color tone, main buttons, main icons, main text, etc. of the product.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3903",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:26ce95e08a9596f48452c513f8c352ae094e74d0/-1:-1",
+        "targetVariableName": "colorPrimary",
+        "targetVariableSetId": "VariableCollectionId:5d4e298ce10a86ce0a4f005abdbb52ffc73e4b71/-1:-1",
+        "targetVariableSetName": "seed"
+      }
+    }
+  },
+  "colorPrimaryActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.15294118225574493,
+        0.3450980484485626,
+        0.800000011920929
+      ],
+      "alpha": 1,
+      "hex": "#2758CC"
+    },
+    "$description": "Dark active state under the main color gradient.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3904",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryTextHover": {
+    "$type": "color",
+    "$value": "{colorPrimaryHover}",
+    "$description": "Hover state of text color under the main color gradient.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3905",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryText": {
+    "$type": "color",
+    "$value": "{colorPrimaryBase}",
+    "$description": "Text color under the main color gradient.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3906",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorPrimaryTextActive": {
+    "$type": "color",
+    "$value": "{colorPrimaryActive}",
+    "$description": "Active state of text color under the main color gradient.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3907",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorSuccessBg": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.03529411926865578,
+        0.16862745583057404,
+        0
+      ],
+      "alpha": 1,
+      "hex": "#092B00"
+    },
+    "$description": "Light background color of success color, used for Tag and Alert success state background color",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3908",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:90d62b687df0567033d5965ff51ce6e635412715/-1:-1",
+        "targetVariableName": "green/1",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessBgHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.07450980693101883,
+        0.32156863808631897,
+        0
+      ],
+      "alpha": 1,
+      "hex": "#135200"
+    },
+    "$description": "Light background color of success color, but antd does not use this token currently",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3909",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:a015b95928b95e46e183514e8b7e545e25615923/-1:-1",
+        "targetVariableName": "green/2",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessBorder": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.13725490868091583,
+        0.47058823704719543,
+        0.01568627543747425
+      ],
+      "alpha": 1,
+      "hex": "#237804"
+    },
+    "$description": "Border color of success color, used for Tag and Alert success state border color",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3910",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:51578e8f1d64248454d9ba02bacdb26620349a0d/-1:-1",
+        "targetVariableName": "green/3",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessBorderHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.21960784494876862,
+        0.6196078658103943,
+        0.05098039284348488
+      ],
+      "alpha": 1,
+      "hex": "#389E0D"
+    },
+    "$description": "Hover state color of success color border",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3911",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:eb13ce2d68d766cc3f773cbea908af9e250df4a3/-1:-1",
+        "targetVariableName": "green/4",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.21960784494876862,
+        0.6196078658103943,
+        0.05098039284348488
+      ],
+      "alpha": 1,
+      "hex": "#389E0D"
+    },
+    "$description": "Hover state color of dark success color",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3912",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:eb13ce2d68d766cc3f773cbea908af9e250df4a3/-1:-1",
+        "targetVariableName": "green/4",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessBase": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.45098039507865906,
+        0.8196078538894653,
+        0.239215686917305
+      ],
+      "alpha": 1,
+      "hex": "#73D13D"
+    },
+    "$description": "Default success color, used in components such as Result and Progress",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3913",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:ed9c9d8190ab02435a20bba98b1af3994a304e76/-1:-1",
+        "targetVariableName": "colorSuccess",
+        "targetVariableSetId": "VariableCollectionId:5d4e298ce10a86ce0a4f005abdbb52ffc73e4b71/-1:-1",
+        "targetVariableSetName": "seed"
+      }
+    }
+  },
+  "colorSuccessActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.5843137502670288,
+        0.8705882430076599,
+        0.3921568691730499
+      ],
+      "alpha": 1,
+      "hex": "#95DE64"
+    },
+    "$description": "Active state color of dark success color",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3914",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:9d5506e55580a04d8802e9a7342a2b49ab2bbebe/-1:-1",
+        "targetVariableName": "green/7",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessTextHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.32156863808631897,
+        0.7686274647712708,
+        0.10196078568696976
+      ],
+      "alpha": 1,
+      "hex": "#52C41A"
+    },
+    "$description": "Hover state color of success color text",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3915",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:a8854fb483435e82b60dc7e3abf43a40be73fd8f/-1:-1",
+        "targetVariableName": "green/5",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessText": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.45098039507865906,
+        0.8196078538894653,
+        0.239215686917305
+      ],
+      "alpha": 1,
+      "hex": "#73D13D"
+    },
+    "$description": "Default state color of success color text",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3916",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:efc719a768f5f86abc62687f51434d8b4e0e69ad/-1:-1",
+        "targetVariableName": "green/6",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorSuccessTextActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.5843137502670288,
+        0.8705882430076599,
+        0.3921568691730499
+      ],
+      "alpha": 1,
+      "hex": "#95DE64"
+    },
+    "$description": "Active state color of success color text",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3917",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:9d5506e55580a04d8802e9a7342a2b49ab2bbebe/-1:-1",
+        "targetVariableName": "green/7",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningBg": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.16862745583057404,
+        0.12941177189350128,
+        0.06666667014360428
+      ],
+      "alpha": 1,
+      "hex": "#2B2111"
+    },
+    "$description": "The background color of the warning state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3918",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:878dce0e8a8e6ea7d5449f588f636a18fbda1ff3/-1:-1",
+        "targetVariableName": "gold/1",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningBgHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.2666666805744171,
+        0.1921568661928177,
+        0.06666667014360428
+      ],
+      "alpha": 1,
+      "hex": "#443111"
+    },
+    "$description": "The hover state background color of the warning state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3919",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:1c1c1b17686cc85d9ec8890b4ddc5cb2ad269d60/-1:-1",
+        "targetVariableName": "gold/2",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningBorder": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.3490196168422699,
+        0.25882354378700256,
+        0.0784313753247261
+      ],
+      "alpha": 1,
+      "hex": "#594214"
+    },
+    "$description": "The border color of the warning state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3920",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:39f3049e7a5e6f7be87e2db46904794936e5aab5/-1:-1",
+        "targetVariableName": "gold/3",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningBorderHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.48627451062202454,
+        0.3490196168422699,
+        0.0784313753247261
+      ],
+      "alpha": 1,
+      "hex": "#7C5914"
+    },
+    "$description": "The hover state border color of the warning state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3921",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:7c19f60691e46cb48ea5f25386ddbede494d182b/-1:-1",
+        "targetVariableName": "gold/4",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.48627451062202454,
+        0.3490196168422699,
+        0.0784313753247261
+      ],
+      "alpha": 1,
+      "hex": "#7C5914"
+    },
+    "$description": "The hover state of the warning color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3922",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:7c19f60691e46cb48ea5f25386ddbede494d182b/-1:-1",
+        "targetVariableName": "gold/4",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningBase": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.8470588326454163,
+        0.5882353186607361,
+        0.0784313753247261
+      ],
+      "alpha": 1,
+      "hex": "#D89614"
+    },
+    "$description": "The most commonly used warning color, used for warning components such as Notification, Alert, or input components.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3923",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:da71efa5b4451adb11eb7198a62cf3038485f3d8/-1:-1",
+        "targetVariableName": "colorWarning",
+        "targetVariableSetId": "VariableCollectionId:5d4e298ce10a86ce0a4f005abdbb52ffc73e4b71/-1:-1",
+        "targetVariableSetName": "seed"
+      }
+    }
+  },
+  "colorWarningActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9098039269447327,
+        0.7019608020782471,
+        0.2235294133424759
+      ],
+      "alpha": 1,
+      "hex": "#E8B339"
+    },
+    "$description": "The active state of the warning color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3924",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:d37efa96f4bd0846838926e0bec861ecb1a74cdd/-1:-1",
+        "targetVariableName": "gold/7",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningTextHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.6666666865348816,
+        0.46666666865348816,
+        0.0784313753247261
+      ],
+      "alpha": 1,
+      "hex": "#AA7714"
+    },
+    "$description": "The hover state of the text in the warning color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3925",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:7a5765b4e03a6e8a6d53b7fe5124be16ee26dab3/-1:-1",
+        "targetVariableName": "gold/5",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningText": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.8470588326454163,
+        0.5882353186607361,
+        0.0784313753247261
+      ],
+      "alpha": 1,
+      "hex": "#D89614"
+    },
+    "$description": "The default state of the text in the warning color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3926",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:6df7ca902c57fba8c61bd0e06dc9320b9688218a/-1:-1",
+        "targetVariableName": "gold/6",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorWarningTextActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9098039269447327,
+        0.7019608020782471,
+        0.2235294133424759
+      ],
+      "alpha": 1,
+      "hex": "#E8B339"
+    },
+    "$description": "The active state of the text in the warning color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3927",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:d37efa96f4bd0846838926e0bec861ecb1a74cdd/-1:-1",
+        "targetVariableName": "gold/7",
+        "targetVariableSetId": "VariableCollectionId:b53d31ed7a2a9ecb34f2cebd1e54db7cfb24f17d/-1:-1",
+        "targetVariableSetName": "colors"
+      }
+    }
+  },
+  "colorErrorBg": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.1725490242242813,
+        0.08627451211214066,
+        0.0941176488995552
+      ],
+      "alpha": 1,
+      "hex": "#2C1618"
+    },
+    "$description": "The background color of the error state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3928",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorBgHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.2705882489681244,
+        0.11372549086809158,
+        0.12156862765550613
+      ],
+      "alpha": 1,
+      "hex": "#451D1F"
+    },
+    "$description": "The hover state background color of the error state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3929",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorBorder": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.35686275362968445,
+        0.14509804546833038,
+        0.14901961386203766
+      ],
+      "alpha": 1,
+      "hex": "#5B2526"
+    },
+    "$description": "The border color of the error state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3930",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorBorderHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.4941176474094391,
+        0.18039216101169586,
+        0.18431372940540314
+      ],
+      "alpha": 1,
+      "hex": "#7E2E2F"
+    },
+    "$description": "The hover state border color of the error state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3931",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9098039269447327,
+        0.4313725531101227,
+        0.41960784792900085
+      ],
+      "alpha": 1,
+      "hex": "#E86E6B"
+    },
+    "$description": "The hover state of the error color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3932",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorBase": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.8627451062202454,
+        0.2666666805744171,
+        0.27450981736183167
+      ],
+      "alpha": 1,
+      "hex": "#DC4446"
+    },
+    "$description": "The color of the error state.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3933",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:d5e06ac9cb657ba6ebed1fdcff2558be2a7e26e6/-1:-1",
+        "targetVariableName": "colorError",
+        "targetVariableSetId": "VariableCollectionId:5d4e298ce10a86ce0a4f005abdbb52ffc73e4b71/-1:-1",
+        "targetVariableSetName": "seed"
+      }
+    }
+  },
+  "colorErrorActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.6784313917160034,
+        0.2235294133424759,
+        0.22745098173618317
+      ],
+      "alpha": 1,
+      "hex": "#AD393A"
+    },
+    "$description": "The active state of the error color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3934",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorTextHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9098039269447327,
+        0.4313725531101227,
+        0.41960784792900085
+      ],
+      "alpha": 1,
+      "hex": "#E86E6B"
+    },
+    "$description": "The hover state of the text in the error color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3935",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorText": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.8627451062202454,
+        0.2666666805744171,
+        0.27450981736183167
+      ],
+      "alpha": 1,
+      "hex": "#DC4446"
+    },
+    "$description": "The default state of the text in the error color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3936",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorTextActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.6784313917160034,
+        0.2235294133424759,
+        0.22745098173618317
+      ],
+      "alpha": 1,
+      "hex": "#AD393A"
+    },
+    "$description": "The active state of the text in the error color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3937",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoBg": {
+    "$type": "color",
+    "$value": "{colorPrimaryBg}",
+    "$description": "Light background color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3938",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoBgHover": {
+    "$type": "color",
+    "$value": "{colorPrimaryBgHover}",
+    "$description": "Hover state of light background color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3939",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoBorder": {
+    "$type": "color",
+    "$value": "{colorPrimaryBorder}",
+    "$description": "Border color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3940",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoBorderHover": {
+    "$type": "color",
+    "$value": "{colorPrimaryBorderHover}",
+    "$description": "Hover state of border color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3941",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoHover": {
+    "$type": "color",
+    "$value": "{colorPrimaryHover}",
+    "$description": "Hover state of dark color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3942",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoBase": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.21960784494876862,
+        0.45098039507865906,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#3873FF"
+    },
+    "$description": "Information color",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3943",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:45cc5e868144d921614ba8977a0ec44947664256/-1:-1",
+        "targetVariableName": "colorInfo",
+        "targetVariableSetId": "VariableCollectionId:5d4e298ce10a86ce0a4f005abdbb52ffc73e4b71/-1:-1",
+        "targetVariableSetName": "seed"
+      }
+    }
+  },
+  "colorInfoActive": {
+    "$type": "color",
+    "$value": "{colorPrimaryActive}",
+    "$description": "Active state of dark color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3944",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoTextHover": {
+    "$type": "color",
+    "$value": "{colorPrimaryTextHover}",
+    "$description": "Hover state of text color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3945",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoText": {
+    "$type": "color",
+    "$value": "{colorPrimaryText}",
+    "$description": "Default state of text color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3946",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorInfoTextActive": {
+    "$type": "color",
+    "$value": "{colorPrimaryTextActive}",
+    "$description": "Active state of text color of information color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3947",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorText": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.8500000238418579,
+      "hex": "#FFFFFF"
+    },
+    "$description": "Default text color which comply with W3C standards, and this color is also the darkest neutral color.\t",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3948",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorTextSecondary": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.6499999761581421,
+      "hex": "#FFFFFF"
+    },
+    "$description": "The second level of text color is generally used in scenarios where text color is not emphasized, such as label text, menu text selection state, etc.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3949",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorTextTertiary": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.44999998807907104,
+      "hex": "#FFFFFF"
+    },
+    "$description": "The third level of text color is generally used for descriptive text, such as form supplementary explanation text, list descriptive text, etc.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3950",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorTextQuaternary": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.25,
+      "hex": "#FFFFFF"
+    },
+    "$description": "The fourth level of text color is the lightest text color, such as form input prompt text, disabled color text, etc.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3951",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBorder": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "alpha": 1,
+      "hex": "#333333"
+    },
+    "$description": "Default border color, used to separate different elements, such as: form separator, card separator, etc.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3952",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBorderSecondary": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.18039216101169586,
+        0.1921568661928177,
+        0.21568627655506134
+      ],
+      "alpha": 1,
+      "hex": "#2E3137"
+    },
+    "$description": "Slightly lighter than the default border color, this color is the same as `colorSplit`. Solid color is used.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3953",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorFill": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.18000000715255737,
+      "hex": "#FFFFFF"
+    },
+    "$description": "The darkest fill color is used to distinguish between the second and third level of fill color, and is currently only used in the hover effect of Slider.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3954",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorFillSecondary": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.11999999731779099,
+      "hex": "#FFFFFF"
+    },
+    "$description": "The second level of fill color can outline the shape of the element more clearly, such as Rate, Skeleton, etc. It can also be used as the Hover state of the third level of fill color, such as Table, etc.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3955",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorFillTertiary": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.07999999821186066,
+      "hex": "#FFFFFF"
+    },
+    "$description": "The third level of fill color is used to outline the shape of the element, such as Slider, Segmented, etc. If there is no emphasis requirement, it is recommended to use the third level of fill color as the default fill color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3956",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorFillQuaternary": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.03999999910593033,
+      "hex": "#FFFFFF"
+    },
+    "$description": "The weakest level of fill color is suitable for color blocks that are not easy to attract attention, such as zebra stripes, color blocks that distinguish boundaries, etc.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3957",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgLayout": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.07843100279569626,
+        0.07843100279569626,
+        0.07843100279569626
+      ],
+      "alpha": 1,
+      "hex": "#141414"
+    },
+    "$description": "This color is used for the background color of the overall layout of the page. This token will only be used when it is necessary to be at the B1 visual level in the page. Other usages are wrong.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3958",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgContainer": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.1490200012922287,
+        0.1490200012922287,
+        0.1490200012922287
+      ],
+      "alpha": 1,
+      "hex": "#262626"
+    },
+    "$description": "Container background color, e.g: default button, input box, etc. Be sure not to confuse this with `colorBgElevated`.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3959",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgContainerBorder": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.07999999821186066,
+      "hex": "#FFFFFF"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:13727:19285",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgElevated": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.18039216101169586,
+        0.18039216101169586,
+        0.18039216101169586
+      ],
+      "alpha": 1,
+      "hex": "#2E2E2E"
+    },
+    "$description": "Container background color of the popup layer, in dark mode the color value of this token will be a little brighter than `colorBgContainer`. E.g: modal, pop-up, menu, etc.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3960",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgSpotlight": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.25882354378700256,
+        0.25882354378700256,
+        0.25882354378700256
+      ],
+      "alpha": 1,
+      "hex": "#424242"
+    },
+    "$description": "This color is used to draw the user's strong attention to the background color, and is currently only used in the background color of Tooltip.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3961",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgMask": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0,
+        0
+      ],
+      "alpha": 0.5,
+      "hex": "#000000"
+    },
+    "$description": "The background color of the mask, used to cover the content below the mask, Modal, Drawer and other components use this token",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3962",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "sizeXXL": {
+    "$type": "number",
+    "$value": 48,
+    "$description": "- ",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3963",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "sizeXL": {
+    "$type": "number",
+    "$value": 32,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3964",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "sizeLG": {
+    "$type": "number",
+    "$value": 24,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3965",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "sizeMD": {
+    "$type": "number",
+    "$value": 20,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3966",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "sizeMS": {
+    "$type": "number",
+    "$value": 16,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3967",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "size": {
+    "$type": "number",
+    "$value": 16,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3968",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "sizeSM": {
+    "$type": "number",
+    "$value": 12,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3969",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "sizeXS": {
+    "$type": "number",
+    "$value": 8,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3970",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "sizeXXS": {
+    "$type": "number",
+    "$value": 4,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3971",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ]
+    }
+  },
+  "controlHeightLG": {
+    "$type": "number",
+    "$value": 40,
+    "$description": "LG component height",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3972",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ]
+    }
+  },
+  "controlHeightSM": {
+    "$type": "number",
+    "$value": 24,
+    "$description": "SM component height",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3973",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ]
+    }
+  },
+  "controlHeightXS": {
+    "$type": "number",
+    "$value": 16,
+    "$description": "XS component height",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3974",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ]
+    }
+  },
+  "borderRadiusXS": {
+    "$type": "number",
+    "$value": 2,
+    "$description": "XS size border radius, used in some small border radius components, such as Segmented, Arrow and other components with small border radius.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3975",
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ]
+    }
+  },
+  "borderRadiusSM": {
+    "$type": "number",
+    "$value": 4,
+    "$description": "SM size border radius, used in small size components, such as Button, Input, Select and other input components in small size",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3976",
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ]
+    }
+  },
+  "borderRadiusM": {
+    "$type": "number",
+    "$value": 6,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:13702:22196",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "borderRadiusLG": {
+    "$type": "number",
+    "$value": 8,
+    "$description": "LG size border radius, used in some large border radius components, such as Card, Modal and other components.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3977",
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ]
+    }
+  },
+  "borderRadiusXL": {
+    "$type": "number",
+    "$value": 12,
+    "$description": "LG size border radius, used in some large border radius components, such as Card, Modal and other components.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1624:3678",
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ]
+    }
+  },
+  "borderRadiusXXL": {
+    "$type": "number",
+    "$value": 16,
+    "$description": "LG size border radius, used in some large border radius components, such as Card, Modal and other components.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1624:3679",
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ]
+    }
+  },
+  "borderRadiusOuter": {
+    "$type": "number",
+    "$value": 4,
+    "$description": "Outer border radius",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3978"
+    }
+  },
+  "colorWhite": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#FFFFFF"
+    },
+    "$description": "Pure white color don't changed by theme",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3979",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBlack": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0,
+        0
+      ],
+      "alpha": 1,
+      "hex": "#000000"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4214:575168",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "fontSizeXL": {
+    "$type": "number",
+    "$value": 20,
+    "$description": "Super large font size",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3980",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeLG": {
+    "$type": "number",
+    "$value": 16,
+    "$description": "Large font size",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3981",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeSM": {
+    "$type": "number",
+    "$value": 12,
+    "$description": "Small font size",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3982",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeXS": {
+    "$type": "number",
+    "$value": 11,
+    "$description": "Small font size",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:936:74109",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeXXS": {
+    "$type": "number",
+    "$value": 10,
+    "$description": "Small font size",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:936:74110",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeHeading1": {
+    "$type": "number",
+    "$value": 38,
+    "$description": "Font size of h1 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3983",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeHeading2": {
+    "$type": "number",
+    "$value": 30,
+    "$description": "Font size of h2 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3984",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeHeading3": {
+    "$type": "number",
+    "$value": 24,
+    "$description": "Font size of h3 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3985",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeHeading4": {
+    "$type": "number",
+    "$value": 20,
+    "$description": "Font size of h4 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3986",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "fontSizeHeading5": {
+    "$type": "number",
+    "$value": 16,
+    "$description": "Font size of h5 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3987",
+      "com.figma.scopes": [
+        "FONT_SIZE"
+      ]
+    }
+  },
+  "lineHeight": {
+    "$type": "number",
+    "$value": 1.5709999799728394,
+    "$description": "Line height of text.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3988",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineHeightLG": {
+    "$type": "number",
+    "$value": 1.5,
+    "$description": "Line height of large text.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3989",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineHeightSM": {
+    "$type": "number",
+    "$value": 1.6666666269302368,
+    "$description": "Line height of small text.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:4219:13121",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineHeightHeading1": {
+    "$type": "number",
+    "$value": 1.2109999656677246,
+    "$description": "Line height of h1 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3990",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineHeightHeading2": {
+    "$type": "number",
+    "$value": 1.2669999599456787,
+    "$description": "Line height of h2 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3991",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineHeightHeading3": {
+    "$type": "number",
+    "$value": 1.3329999446868896,
+    "$description": "Line height of h3 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3992",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineHeightHeading4": {
+    "$type": "number",
+    "$value": 1.399999976158142,
+    "$description": "Line height of h4 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3993",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineHeightHeading5": {
+    "$type": "number",
+    "$value": 1.5,
+    "$description": "Line height of h5 tag.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3994",
+      "com.figma.scopes": [
+        "LINE_HEIGHT"
+      ]
+    }
+  },
+  "lineWidthBold": {
+    "$type": "number",
+    "$value": 2,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:174:3995",
+      "com.figma.scopes": [
+        "STROKE_FLOAT"
+      ]
+    }
+  },
+  "borderRadiusFull": {
+    "$type": "number",
+    "$value": 9999,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:193:109191",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorFillContrast": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0,
+        0
+      ],
+      "alpha": 0.30000001192092896,
+      "hex": "#000000"
+    },
+    "$description": "The darkest fill color is used to distinguish between the second and third level of fill color, and is currently only used in the hover effect of Slider.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:195:112353",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgBlur": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0,
+        0
+      ],
+      "alpha": 0,
+      "hex": "#000000"
+    },
+    "$description": "Control the background color of frosted glass container, usually transparent.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:792:69704",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "transparent": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.10588235408067703,
+        0.11372549086809158,
+        0.12941177189350128
+      ],
+      "alpha": 0,
+      "hex": "#1B1D21"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:792:69706",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorBgSolid": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 0.949999988079071,
+      "hex": "#FFFFFF"
+    },
+    "$description": "Solid background color, currently only used for the default solid button background color.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1076:113405",
+      "com.figma.scopes": [
+        "ALL_FILLS",
+        "STROKE"
+      ]
+    }
+  },
+  "colorBgSolidHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#FFFFFF"
+    },
+    "$description": "Solid background color hover state, currently only used in the hover effect of the default solid button.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1076:113407",
+      "com.figma.scopes": [
+        "ALL_FILLS",
+        "STROKE"
+      ]
+    }
+  },
+  "colorBgSolidActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9215686321258545,
+        0.9215686321258545,
+        0.9215686321258545
+      ],
+      "alpha": 0.8999999761581421,
+      "hex": "#EBEBEB"
+    },
+    "$description": "Solid background color active state, currently only used in the active effect of the default solid button.",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1076:113406",
+      "com.figma.scopes": [
+        "ALL_FILLS",
+        "STROKE"
+      ]
+    }
+  },
+  "colorErrorBgFilledHover": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.2666666805744171,
+        0.11764705926179886,
+        0.12156862765550613
+      ],
+      "alpha": 1,
+      "hex": "#441E1F"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1081:125152",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "colorErrorBgActive": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.35686275362968445,
+        0.14509804546833038,
+        0.14901961386203766
+      ],
+      "alpha": 1,
+      "hex": "#5B2526"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1081:125153",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Dark"
+  }
+}

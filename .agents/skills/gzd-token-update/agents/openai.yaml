@@ -1,0 +1,4 @@
+interface:
+  display_name: "gzd Token 更新"
+  short_description: "转换、核对并验证 gzd Design Tokens"
+  default_prompt: "Use $gzd-token-update 更新 UI 交付的 Design Tokens，并完成生成、文档和定向校验。"

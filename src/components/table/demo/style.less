@@ -1,0 +1,83 @@
+.gzd-table-gold-dark,
+.gzd-table-gold-light {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  // 默认轨道透明
+  ::-webkit-scrollbar-track {
+    background: var(--ag-data-background-color);
+  }
+
+  // 默认滑块透明（移出时隐藏）
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--ag-scrollbar-thumb-color) !important;
+    border-radius: 10px; // 圆角可以设置大一点，确保滑块是圆润的
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: var(--ag-data-background-color) !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in srgb, var(--ag-scrollbar-thumb-color) 90%, white) !important;
+  }
+}
+
+// .gzd-table-demo-bordered {
+//   overflow: hidden;
+//   border: 1px solid var(--gzd-color-border, #d9d9d9);
+//   border-radius: var(--gzd-border-radius, 6px);
+
+//   &-section {
+//     padding: 12px 16px;
+//     color: var(--gzd-color-text);
+//     background: var(--gzd-color-bg-container);
+//   }
+
+//   &-section:first-child {
+//     border-bottom: 1px solid var(--gzd-color-border, #d9d9d9);
+//   }
+
+//   &-section:last-child {
+//     border-top: 1px solid var(--gzd-color-border, #d9d9d9);
+//   }
+// }
+
+// .gzd-table-demo-ellipsis .ag-cell-value {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+
+// .gzd-table-demo-dynamic-bordered {
+//   border: 1px solid var(--gzd-color-border, #d9d9d9);
+//   border-radius: var(--gzd-border-radius, 6px);
+//   overflow: hidden;
+// }
+
+// .gzd-table-demo-semantic .gzd-table-demo-semantic-header {
+//   color: var(--gzd-color-primary);
+//   font-weight: 600;
+// }
+
+// .gzd-table-demo-semantic .gzd-table-demo-semantic-name {
+//   font-weight: 600;
+// }
+
+// .gzd-table-demo-semantic .gzd-table-demo-semantic-amount {
+//   color: var(--gzd-color-primary);
+//   font-variant-numeric: tabular-nums;
+//   text-align: right;
+// }
+
+// .gzd-table-demo-semantic .gzd-table-demo-semantic-row-warning .ag-cell {
+//   background: color-mix(in srgb, var(--gzd-color-warning) 12%, transparent);
+// }
+
+.gzd-index-header {
+  padding-left: 4px !important;
+}

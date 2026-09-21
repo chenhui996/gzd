@@ -1,0 +1,4 @@
+interface:
+  display_name: "gzd 开发规范"
+  short_description: "gzd 组件、主题和文档规范"
+  default_prompt: "Use $gzd-development-guidelines 按照 gzd 项目的组件、主题和文档规范实现改动。"

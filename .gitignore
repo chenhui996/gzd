@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# node_modules
+node_modules
+.worktrees/
+dist
+gzd-lib
+gzd-docs
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+*.sw?
+
+# dumi
+/.dumi/tmp/
+/.dumi/cache/
+/.dumi/tmp-production/
+docs-dist
+.npmrc
+
+# Playwright component test artifacts
+/playwright/.cache/
+/test-results/
+/playwright-report/
+
+# Generated from the root CHANGELOG.md by scripts/syncChangelog.js
+/docs/CHANGELOG.md
+
+# AI分析过程产物
+diagrams/

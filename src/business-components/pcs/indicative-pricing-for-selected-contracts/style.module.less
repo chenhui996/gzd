@@ -1,0 +1,270 @@
+.root {
+  box-sizing: border-box;
+  width: 100%;
+  padding: calc(var(--gzd-padding-md, 16) * 1px);
+  color: var(--gzd-color-text);
+  font-family: var(--gzd-font-family);
+  font-size: calc(var(--gzd-font-size, 14) * 1px);
+  background: #1f1f1f;
+  border-radius: calc(var(--gzd-border-radius-lg, 6) * 1px);
+}
+
+.root :global(.ant-spin-container) {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gzd-padding-md, 16) * 1px);
+}
+
+.section {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: calc(var(--gzd-padding-xs, 8) * 1px);
+}
+
+.sectionTitle {
+  margin-top: 16px;
+  color: var(--gzd-color-text);
+  font-size: calc(var(--gzd-font-size, 14) * 1px);
+  font-weight: var(--gzd-font-weight-medium, 500);
+  line-height: 22px;
+}
+
+.contextForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: start;
+}
+
+.contextForm.fixedSingle {
+  --pricing-form-item-width: 370px;
+  --pricing-form-label-width: 111px;
+  --pricing-form-control-width: 240px;
+}
+
+.contextForm.multiple {
+  --pricing-form-item-width: 344px;
+  --pricing-form-label-width: 120px;
+  --pricing-form-control-width: 216px;
+}
+
+.contextFormItem {
+  width: var(--pricing-form-item-width);
+  flex: 0 0 var(--pricing-form-item-width);
+  margin-bottom: 0;
+}
+
+.contextFormItem> :first-child {
+  flex-wrap: nowrap;
+  column-gap: 8px;
+}
+
+.contextFormLabel {
+  width: 100%;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.contextFormLabel::before {
+  flex: 0 0 auto;
+}
+
+.root .contextForm .contextFormItem .contextFormLabel::after {
+  content: none;
+  display: none;
+  margin: 0;
+}
+
+.contextFormLabelText {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contextFormContent,
+.contextFormContent>* {
+  width: 100%;
+}
+
+.selectPopup {
+  width: max-content;
+}
+
+.selectPopupListItem {
+  height: auto;
+  align-items: flex-start;
+}
+
+.selectPopupListItem> :global([class*="-select-item-option-content"]) {
+  overflow: visible;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+  word-break: break-word;
+}
+
+.contextFormItem :global([class*="-form-item-explain"]),
+.contextFormItem :global([class*="-form-item-extra"]) {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.resourceIssues {
+  display: grid;
+  gap: calc(var(--gzd-padding-xs, 8) * 1px);
+}
+
+.limitAlert {
+  width: 100%;
+}
+
+.fixedGrid,
+.multipleGrid {
+  --pricing-table-scrollbar-thumb-color: color-mix(in srgb,
+      transparent,
+      var(--gzd-color-text) 18%);
+  --pricing-table-scrollbar-thumb-hover-color: color-mix(in srgb,
+      transparent,
+      var(--gzd-color-text) 25%);
+
+  min-width: 0;
+  overflow: hidden;
+  border-radius: calc(var(--gzd-border-radius, 6) * 1px);
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  // 默认轨道透明
+  ::-webkit-scrollbar-track {
+    background: var(--ag-data-background-color);
+  }
+
+  // 默认滑块透明（移出时隐藏）
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--ag-scrollbar-thumb-color) !important;
+    border-radius: 10px; // 圆角可以设置大一点，确保滑块是圆润的
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in srgb, var(--ag-scrollbar-thumb-color) 90%, white) !important;
+  }
+
+  // 竖向滚动条
+  .ag-body-vertical-scroll {
+    background-color: transparent !important;
+  }
+}
+
+// AG Grid 36 的 autoHeight 模式默认保留 150px 数据区最小高度；单合约表格需要按实际行高收起。
+.fixedGrid :global(.ag-grid-scrolling-rows.ag-layout-auto-height) {
+  min-height: 0;
+}
+
+.multipleGrid {
+  --pricing-field-column-width: 180px;
+}
+
+// AG Grid 的纵向合并层不包含左侧固定列，需要补回字段列宽度以对齐动态列。
+.multipleGrid :global(.ag-spanned-cell-wrapper) {
+  transform: translateX(var(--pricing-field-column-width));
+}
+
+.fixedGrid :global(.ag-root-wrapper),
+.multipleGrid :global(.ag-root-wrapper) {
+  border-color: var(--gzd-color-border);
+}
+
+.fieldCell {
+  color: var(--gzd-color-text-secondary);
+  font-weight: var(--gzd-font-weight-medium, 500);
+  background: transparent;
+}
+
+.negativeValue {
+  color: var(--gzd-red-6, var(--gzd-color-error));
+}
+
+.gridErrorAlert {
+  width: 100%;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 0;
+  padding: 3px 12px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+}
+
+.gridErrorIcon {
+  align-self: center;
+}
+
+.gridErrorSection {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.gridErrorMessage {
+  display: block;
+  overflow: hidden;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mergedErrorGridCell {
+  padding: 0 !important;
+}
+
+.mergedErrorGridCell :global(.ag-cell-wrapper),
+.mergedErrorGridCell :global(.ag-cell-value) {
+  width: 100%;
+  height: 100%;
+}
+
+.mergedErrorCell {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  padding: calc(var(--gzd-padding-xs, 8) * 1px) calc(var(--gzd-padding-sm, 12) * 1px);
+  overflow: hidden;
+  color: var(--gzd-color-text);
+  line-height: 22px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  background: var(--gzd-color-error-bg, var(--gzd-color-bg-container));
+  border-radius: calc(var(--gzd-border-radius, 4) * 1px);
+}
+
+.mergedErrorText {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.emptyState {
+  display: grid;
+  min-height: 144px;
+  place-items: center;
+  background: var(--gzd-color-bg-container);
+  border: 1px solid var(--gzd-color-border-secondary, var(--gzd-color-border));
+  border-radius: calc(var(--gzd-border-radius, 6) * 1px);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: calc(var(--gzd-padding-xs, 8) * 1px);
+  margin-top: calc(var(--gzd-padding-md, 16) * 1px);
+}

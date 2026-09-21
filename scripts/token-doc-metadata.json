@@ -1,0 +1,1731 @@
+{
+  "global": {
+    "red1": "红色色板第 1 阶",
+    "red2": "红色色板第 2 阶",
+    "red3": "红色色板第 3 阶",
+    "red4": "红色色板第 4 阶",
+    "red5": "红色色板第 5 阶",
+    "red6": "红色色板第 6 阶",
+    "red7": "红色色板第 7 阶",
+    "red8": "红色色板第 8 阶",
+    "red9": "红色色板第 9 阶",
+    "red10": "红色色板第 10 阶",
+    "volcano1": "火山色色板第 1 阶",
+    "volcano2": "火山色色板第 2 阶",
+    "volcano3": "火山色色板第 3 阶",
+    "volcano4": "火山色色板第 4 阶",
+    "volcano5": "火山色色板第 5 阶",
+    "volcano6": "火山色色板第 6 阶",
+    "volcano7": "火山色色板第 7 阶",
+    "volcano8": "火山色色板第 8 阶",
+    "volcano9": "火山色色板第 9 阶",
+    "volcano10": "火山色色板第 10 阶",
+    "orange1": "橙色色板第 1 阶",
+    "orange2": "橙色色板第 2 阶",
+    "orange3": "橙色色板第 3 阶",
+    "orange4": "橙色色板第 4 阶",
+    "orange5": "橙色色板第 5 阶",
+    "orange6": "橙色色板第 6 阶",
+    "orange7": "橙色色板第 7 阶",
+    "orange8": "橙色色板第 8 阶",
+    "orange9": "橙色色板第 9 阶",
+    "orange10": "橙色色板第 10 阶",
+    "yellow1": "黄色色板第 1 阶",
+    "yellow2": "黄色色板第 2 阶",
+    "yellow3": "黄色色板第 3 阶",
+    "yellow4": "黄色色板第 4 阶",
+    "yellow5": "黄色色板第 5 阶",
+    "yellow6": "黄色色板第 6 阶",
+    "yellow7": "黄色色板第 7 阶",
+    "yellow8": "黄色色板第 8 阶",
+    "yellow9": "黄色色板第 9 阶",
+    "yellow10": "黄色色板第 10 阶",
+    "lime1": "青柠色色板第 1 阶",
+    "lime2": "青柠色色板第 2 阶",
+    "lime3": "青柠色色板第 3 阶",
+    "lime4": "青柠色色板第 4 阶",
+    "lime5": "青柠色色板第 5 阶",
+    "lime6": "青柠色色板第 6 阶",
+    "lime7": "青柠色色板第 7 阶",
+    "lime8": "青柠色色板第 8 阶",
+    "lime9": "青柠色色板第 9 阶",
+    "lime10": "青柠色色板第 10 阶",
+    "guotai gold1": "国泰金色色板第 1 阶",
+    "guotai gold2": "国泰金色色板第 2 阶",
+    "guotai gold3": "国泰金色色板第 3 阶",
+    "guotai gold4": "国泰金色色板第 4 阶",
+    "guotai gold5": "国泰金色色板第 5 阶",
+    "guotai gold6": "国泰金色色板第 6 阶",
+    "guotai gold7": "国泰金色色板第 7 阶",
+    "guotai gold8": "国泰金色色板第 8 阶",
+    "guotai gold9": "国泰金色色板第 9 阶",
+    "guotai gold10": "国泰金色色板第 10 阶",
+    "green1": "绿色色板第 1 阶",
+    "green2": "绿色色板第 2 阶",
+    "green3": "绿色色板第 3 阶",
+    "green4": "绿色色板第 4 阶",
+    "green5": "绿色色板第 5 阶",
+    "green6": "绿色色板第 6 阶",
+    "green7": "绿色色板第 7 阶",
+    "green8": "绿色色板第 8 阶",
+    "green9": "绿色色板第 9 阶",
+    "green10": "绿色色板第 10 阶",
+    "cyan1": "青色色板第 1 阶",
+    "cyan2": "青色色板第 2 阶",
+    "cyan3": "青色色板第 3 阶",
+    "cyan4": "青色色板第 4 阶",
+    "cyan5": "青色色板第 5 阶",
+    "cyan6": "青色色板第 6 阶",
+    "cyan7": "青色色板第 7 阶",
+    "cyan8": "青色色板第 8 阶",
+    "cyan9": "青色色板第 9 阶",
+    "cyan10": "青色色板第 10 阶",
+    "galaxy blue1": "银河蓝色色板第 1 阶",
+    "galaxy blue2": "银河蓝色色板第 2 阶",
+    "galaxy blue3": "银河蓝色色板第 3 阶",
+    "galaxy blue4": "银河蓝色色板第 4 阶",
+    "galaxy blue5": "银河蓝色色板第 5 阶",
+    "galaxy blue6": "银河蓝色色板第 6 阶",
+    "galaxy blue7": "银河蓝色色板第 7 阶",
+    "galaxy blue8": "银河蓝色色板第 8 阶",
+    "galaxy blue9": "银河蓝色色板第 9 阶",
+    "galaxy blue10": "银河蓝色色板第 10 阶",
+    "purple1": "紫色色板第 1 阶",
+    "purple2": "紫色色板第 2 阶",
+    "purple3": "紫色色板第 3 阶",
+    "purple4": "紫色色板第 4 阶",
+    "purple5": "紫色色板第 5 阶",
+    "purple6": "紫色色板第 6 阶",
+    "purple7": "紫色色板第 7 阶",
+    "purple8": "紫色色板第 8 阶",
+    "purple9": "紫色色板第 9 阶",
+    "purple10": "紫色色板第 10 阶",
+    "magenta1": "洋红色色板第 1 阶",
+    "magenta2": "洋红色色板第 2 阶",
+    "magenta3": "洋红色色板第 3 阶",
+    "magenta4": "洋红色色板第 4 阶",
+    "magenta5": "洋红色色板第 5 阶",
+    "magenta6": "洋红色色板第 6 阶",
+    "magenta7": "洋红色色板第 7 阶",
+    "magenta8": "洋红色色板第 8 阶",
+    "magenta9": "洋红色色板第 9 阶",
+    "magenta10": "洋红色色板第 10 阶",
+    "gray1": "灰色色板第 1 阶",
+    "gray2": "灰色色板第 2 阶",
+    "gray3": "灰色色板第 3 阶",
+    "gray4": "灰色色板第 4 阶",
+    "gray5": "灰色色板第 5 阶",
+    "gray6": "灰色色板第 6 阶",
+    "gray7": "灰色色板第 7 阶",
+    "gray8": "灰色色板第 8 阶",
+    "gray9": "灰色色板第 9 阶",
+    "gray10": "灰色色板第 10 阶",
+    "gold1": "金色色板第 1 阶",
+    "gold2": "金色色板第 2 阶",
+    "gold3": "金色色板第 3 阶",
+    "gold4": "金色色板第 4 阶",
+    "gold5": "金色色板第 5 阶",
+    "gold6": "金色色板第 6 阶",
+    "gold7": "金色色板第 7 阶",
+    "gold8": "金色色板第 8 阶",
+    "gold9": "金色色板第 9 阶",
+    "gold10": "金色色板第 10 阶",
+    "colorPrimary": "品牌主色",
+    "colorSuccess": "成功状态色",
+    "colorWarning": "警告状态色",
+    "colorError": "错误状态色",
+    "colorInfo": "信息状态色",
+    "colorTextBase": "基础文字颜色",
+    "colorBgBase": "基础背景颜色",
+    "sizeUnit": "尺寸变化基础单位",
+    "sizeStep": "尺寸变化步长",
+    "sizePopupArrow": "浮层箭头尺寸",
+    "controlHeight": "控件默认高度",
+    "opacityImage": "图片透明度",
+    "fontFamily": "默认字体族",
+    "fontFamilyCode": "代码字体族",
+    "fontSize": "默认字号",
+    "lineWidth": "默认线宽",
+    "borderRadius": "默认圆角",
+    "zIndexPopupBase": "浮层基础 z-index",
+    "lineType": "边框线型",
+    "motion": "是否启用动效",
+    "motionBase": "动效基础值",
+    "motionEaseInBack": "动效缓动进入回退函数",
+    "motionEaseInOut": "动效缓动进入退出函数",
+    "motionEaseInOutCirc": "动效缓动进入退出圆形函数",
+    "motionEaseInQuint": "动效缓动进入五次方函数",
+    "motionEaseOut": "动效缓动退出函数",
+    "motionEaseOutBack": "动效缓动退出回退函数",
+    "motionEaseOutCirc": "动效缓动退出圆形函数",
+    "motionEaseOutQuint": "动效缓动退出五次方函数",
+    "motionUnit": "动效时间单位",
+    "wireframe": "是否启用线框风格",
+    "colorPrimaryGradientStart": "主色渐变起始色",
+    "colorPrimaryGradientEnd": "主色渐变结束色",
+    "colorPrimaryBg": "颜色主色背景颜色",
+    "colorPrimaryBgHover": "颜色主色背景悬浮态颜色",
+    "colorPrimaryBorder": "颜色主色边框颜色",
+    "colorPrimaryBorderHover": "颜色主色边框悬浮态颜色",
+    "colorPrimaryHover": "颜色主色悬浮态颜色",
+    "colorPrimaryBase": "颜色主色基础颜色",
+    "colorPrimaryActive": "颜色主色激活态颜色",
+    "colorPrimaryTextHover": "颜色主色文字悬浮态颜色",
+    "colorPrimaryText": "颜色主色文字颜色",
+    "colorPrimaryTextActive": "颜色主色文字激活态颜色",
+    "colorSuccessBg": "颜色成功背景颜色",
+    "colorSuccessBgHover": "颜色成功背景悬浮态颜色",
+    "colorSuccessBorder": "颜色成功边框颜色",
+    "colorSuccessBorderHover": "颜色成功边框悬浮态颜色",
+    "colorSuccessHover": "颜色成功悬浮态颜色",
+    "colorSuccessBase": "颜色成功基础颜色",
+    "colorSuccessActive": "颜色成功激活态颜色",
+    "colorSuccessTextHover": "颜色成功文字悬浮态颜色",
+    "colorSuccessText": "颜色成功文字颜色",
+    "colorSuccessTextActive": "颜色成功文字激活态颜色",
+    "colorWarningBg": "颜色警告背景颜色",
+    "colorWarningBgHover": "颜色警告背景悬浮态颜色",
+    "colorWarningBorder": "颜色警告边框颜色",
+    "colorWarningBorderHover": "颜色警告边框悬浮态颜色",
+    "colorWarningHover": "颜色警告悬浮态颜色",
+    "colorWarningBase": "颜色警告基础颜色",
+    "colorWarningActive": "颜色警告激活态颜色",
+    "colorWarningTextHover": "颜色警告文字悬浮态颜色",
+    "colorWarningText": "颜色警告文字颜色",
+    "colorWarningTextActive": "颜色警告文字激活态颜色",
+    "colorErrorBg": "颜色错误背景颜色",
+    "colorErrorBgHover": "颜色错误背景悬浮态颜色",
+    "colorErrorBorder": "颜色错误边框颜色",
+    "colorErrorBorderHover": "颜色错误边框悬浮态颜色",
+    "colorErrorHover": "颜色错误悬浮态颜色",
+    "colorErrorBase": "颜色错误基础颜色",
+    "colorErrorActive": "颜色错误激活态颜色",
+    "colorErrorTextHover": "颜色错误文字悬浮态颜色",
+    "colorErrorText": "颜色错误文字颜色",
+    "colorErrorTextActive": "颜色错误文字激活态颜色",
+    "colorInfoBg": "颜色信息背景颜色",
+    "colorInfoBgHover": "颜色信息背景悬浮态颜色",
+    "colorInfoBorder": "颜色信息边框颜色",
+    "colorInfoBorderHover": "颜色信息边框悬浮态颜色",
+    "colorInfoHover": "颜色信息悬浮态颜色",
+    "colorInfoBase": "颜色信息基础颜色",
+    "colorInfoActive": "颜色信息激活态颜色",
+    "colorInfoTextHover": "颜色信息文字悬浮态颜色",
+    "colorInfoText": "颜色信息文字颜色",
+    "colorInfoTextActive": "颜色信息文字激活态颜色",
+    "colorText": "颜色文字颜色",
+    "colorTextSecondary": "颜色文字二级颜色",
+    "colorTextTertiary": "颜色文字三级颜色",
+    "colorTextQuaternary": "颜色文字四级颜色",
+    "colorBorder": "颜色边框颜色",
+    "colorBorderSecondary": "颜色边框二级颜色",
+    "colorFill": "颜色填充颜色",
+    "colorFillSecondary": "颜色填充二级颜色",
+    "colorFillTertiary": "颜色填充三级颜色",
+    "colorFillQuaternary": "颜色填充四级颜色",
+    "colorBgLayout": "颜色背景布局颜色",
+    "colorBgContainer": "颜色背景容器颜色",
+    "colorBgField": "颜色背景字段容器颜色",
+    "colorBgContainerBorder": "容器背景边框色",
+    "colorBgElevated": "颜色背景浮层颜色",
+    "colorBgSpotlight": "颜色背景聚焦颜色",
+    "colorBgMask": "颜色背景遮罩颜色",
+    "sizeXXL": "尺寸特大",
+    "sizeXL": "尺寸超大",
+    "sizeLG": "尺寸大号",
+    "sizeMD": "尺寸中号",
+    "sizeMS": "尺寸ms",
+    "size": "尺寸",
+    "sizeSM": "尺寸小号",
+    "sizeXS": "尺寸超小",
+    "sizeXXS": "尺寸极小",
+    "controlHeightLG": "控件高度大号",
+    "controlHeightSM": "控件高度小号",
+    "controlHeightXS": "控件高度超小",
+    "borderRadiusXS": "边框圆角超小圆角",
+    "borderRadiusSM": "边框圆角小号圆角",
+    "borderRadiusM": "边框圆角m圆角",
+    "borderRadiusLG": "边框圆角大号圆角",
+    "borderRadiusXL": "边框圆角超大圆角",
+    "borderRadiusXXL": "边框圆角特大圆角",
+    "borderRadiusOuter": "边框圆角外层圆角",
+    "colorWhite": "白色",
+    "colorBlack": "黑色",
+    "fontSizeXL": "字体尺寸超大字号",
+    "fontSizeLG": "字体尺寸大号字号",
+    "fontSizeSM": "字体尺寸小号字号",
+    "fontSizeXS": "字体尺寸超小字号",
+    "fontSizeXXS": "字体尺寸极小字号",
+    "fontSizeHeading1": "字体尺寸标题1字号",
+    "fontSizeHeading2": "字体尺寸标题2字号",
+    "fontSizeHeading3": "字体尺寸标题3字号",
+    "fontSizeHeading4": "字体尺寸标题4字号",
+    "fontSizeHeading5": "字体尺寸标题5字号",
+    "lineHeight": "行高度行高",
+    "lineHeightLG": "行高度大号行高",
+    "lineHeightSM": "行高度小号行高",
+    "lineHeightHeading1": "行高度标题1行高",
+    "lineHeightHeading2": "行高度标题2行高",
+    "lineHeightHeading3": "行高度标题3行高",
+    "lineHeightHeading4": "行高度标题4行高",
+    "lineHeightHeading5": "行高度标题5行高",
+    "lineWidthBold": "行宽度粗线宽",
+    "borderRadiusFull": "边框圆角全圆角",
+    "colorFillContrast": "颜色填充对比颜色",
+    "colorBgBlur": "颜色背景模糊颜色",
+    "transparent": "透明色",
+    "colorBgSolid": "颜色背景实色颜色",
+    "colorBgSolidHover": "颜色背景实色悬浮态颜色",
+    "colorBgSolidActive": "颜色背景实色激活态颜色",
+    "colorErrorBgFilledHover": "颜色错误背景填充悬浮态颜色",
+    "colorErrorBgActive": "颜色错误背景激活态颜色",
+    "colorLink": "颜色链接颜色",
+    "colorSplit": "颜色split颜色",
+    "fontSizeIcon": "字体尺寸图标字号",
+    "controlInteractiveSize": "控件交互尺寸",
+    "paddingXL": "内边距超大内边距",
+    "paddingLG": "内边距大号内边距",
+    "paddingMD": "内边距中号内边距",
+    "padding": "内边距",
+    "paddingSM": "内边距小号内边距",
+    "paddingXS": "内边距超小内边距",
+    "paddingXXS": "内边距极小内边距",
+    "marginXXL": "外边距特大外边距",
+    "marginXL": "外边距超大外边距",
+    "marginLG": "外边距大号外边距",
+    "marginMD": "外边距中号外边距",
+    "margin": "外边距",
+    "marginSM": "外边距小号外边距",
+    "marginXS": "外边距超小外边距",
+    "marginXXS": "外边距极小外边距",
+    "controlPaddingHorizontal": "控件内边距水平",
+    "controlPaddingHorizontalSM": "控件内边距水平小号",
+    "paddingContentHorizontalLG": "内边距内容水平大号内边距",
+    "paddingContentVerticalLG": "内边距内容垂直大号内边距",
+    "paddingContentHorizontal": "内边距内容水平内边距",
+    "paddingContentVertical": "内边距内容垂直内边距",
+    "paddingContentHorizontalSM": "内边距内容水平小号内边距",
+    "paddingContentVerticalSM": "内边距内容垂直小号内边距",
+    "colorLinkHover": "颜色链接悬浮态颜色",
+    "colorLinkActive": "颜色链接激活态颜色",
+    "colorBgControlItemHover": "颜色背景控件项悬浮态颜色",
+    "colorFillContent": "颜色填充内容颜色",
+    "colorFillContentHover": "颜色填充内容悬浮态颜色",
+    "colorFillAlter": "颜色填充alter颜色",
+    "colorBgContainerDisabled": "颜色背景容器禁用态颜色",
+    "colorBorderBg": "颜色边框背景颜色",
+    "colorTextPlaceholder": "颜色文字占位颜色",
+    "colorTextDisabled": "颜色文字禁用态颜色",
+    "colorTextHeading": "颜色文字标题颜色",
+    "colorTextLabel": "颜色文字标签颜色",
+    "colorTextDescription": "颜色文字描述颜色",
+    "colorTextLightSolid": "颜色文字浅色实色颜色",
+    "colorHighlight": "颜色highlight颜色",
+    "colorBgTextHover": "颜色背景文字悬浮态颜色",
+    "colorBgTextActive": "颜色背景文字激活态颜色",
+    "colorTextOnLight": "颜色文字on浅色颜色",
+    "colorTextSecondaryOnLight": "颜色文字二级on浅色颜色",
+    "colorTextTertiaryOnLight": "颜色文字三级on浅色颜色",
+    "colorTextOnLightDisabled": "颜色文字on浅色禁用态颜色",
+    "colorIcon": "颜色图标颜色",
+    "colorIconHover": "颜色图标悬浮态颜色",
+    "colorErrorOutline": "颜色错误描边颜色",
+    "colorWarningOutline": "颜色警告描边颜色",
+    "controlItemBgHover": "控件项背景悬浮态",
+    "controlItemBgActive": "控件项背景激活态",
+    "controlItemBgActiveHover": "控件项背景激活态悬浮态",
+    "controlItemBgActiveDisabled": "控件项背景激活态禁用态",
+    "controlTmpOutline": "控件临时描边",
+    "controlOutline": "控件描边",
+    "controlOutlineWidth": "控件描边宽度",
+    "opacityLoading": "透明度加载中",
+    "screenXS": "响应式 XS 断点宽度",
+    "screenSM": "响应式 SM 断点宽度",
+    "screenMD": "响应式 MD 断点宽度",
+    "screenLG": "响应式 LG 断点宽度",
+    "screenXL": "响应式 XL 断点宽度",
+    "screenXXL": "响应式 XXL 断点宽度",
+    "screenXSMin": "响应式 XS 断点最小宽度",
+    "screenXSMax": "响应式 XS 断点最大宽度",
+    "screenSMMin": "响应式 SM 断点最小宽度",
+    "screenSMMax": "响应式 SM 断点最大宽度",
+    "screenMDMin": "响应式 MD 断点最小宽度",
+    "screenMDMax": "响应式 MD 断点最大宽度",
+    "screenLGMin": "响应式 LG 断点最小宽度",
+    "screenLGMax": "响应式 LG 断点最大宽度",
+    "screenXLMin": "响应式 XL 断点最小宽度",
+    "screenXLMax": "响应式 XL 断点最大宽度",
+    "screenXXLMin": "响应式 XXL 断点最小宽度",
+    "lineWidthFocus": "行宽度聚焦态线宽",
+    "linkDecoration": "链接装饰",
+    "linkFocusDecoration": "链接聚焦态装饰",
+    "linkHoverDecoration": "链接悬浮态装饰",
+    "fontWeightMedium": "字体字重中等",
+    "fontWeightNormal": "字体字重常规",
+    "drawerWidth": "抽屉宽度",
+    "drawerWidthMD": "抽屉宽度中号",
+    "drawerWidthLG": "抽屉宽度大号",
+    "colorTextOnPrimary": "颜色文字on主色颜色",
+    "colorTextOnPrimaryHover": "颜色文字on主色悬浮态颜色",
+    "colorTextOnPrimaryActive": "颜色文字on主色激活态颜色",
+    "colorTextOnPrimaryDisabled": "颜色文字on主色禁用态颜色",
+    "fontStyleReqularItalic": "常规斜体字形（历史拼写）",
+    "fontStyleSemiboldItalic": "半粗斜体字形",
+    "fontStyleRegularItalic": "常规斜体字形",
+    "fontStyleMediumItalic": "中等斜体字形",
+    "layoutSidebarWidthMD": "布局侧边栏宽度中号",
+    "layoutSidebarWidthSm": "布局侧边栏宽度小号",
+    "layoutSidebarWidthLG": "布局侧边栏宽度大号",
+    "layoutSidebarCollapsedWidth": "布局侧边栏collapsed宽度",
+    "layoutColorBgSidebar": "布局颜色背景侧边栏",
+    "layoutHeaderHeight": "布局页头高度",
+    "layoutFooterHeight": "布局页脚高度",
+    "opacity0": "透明度阶梯 0",
+    "opacity1": "透明度阶梯 1",
+    "opacity2": "透明度阶梯 2",
+    "opacity3": "透明度阶梯 3",
+    "opacity4": "透明度阶梯 4",
+    "opacity5": "透明度阶梯 5",
+    "opacity6": "透明度阶梯 6",
+    "opacity7": "透明度阶梯 7",
+    "opacity8": "透明度阶梯 8",
+    "opacity9": "透明度阶梯 9",
+    "opacity10": "透明度阶梯 10",
+    "opacity11": "透明度阶梯 11",
+    "opacity12": "透明度阶梯 12",
+    "opacity13": "透明度阶梯 13",
+    "opacity14": "透明度阶梯 14",
+    "opacity15": "透明度阶梯 15",
+    "opacity16": "透明度阶梯 16",
+    "opacity17": "透明度阶梯 17",
+    "opacity18": "透明度阶梯 18",
+    "opacity19": "透明度阶梯 19",
+    "opacity20": "透明度阶梯 20",
+    "opacity21": "透明度阶梯 21",
+    "opacity22": "透明度阶梯 22",
+    "opacity23": "透明度阶梯 23",
+    "tooltipVerticalPadding": "提示垂直内边距",
+    "buttonPaddingHorizontal": "按钮内边距水平",
+    "buttonPaddingHorizontalSM": "按钮内边距水平小号",
+    "buttonIconOnlyFontSize": "按钮图标仅字体尺寸",
+    "buttonIconOnlyFontSizeLG": "按钮图标仅字体尺寸大号",
+    "buttonIconOnlyFontSizeSM": "按钮图标仅字体尺寸小号",
+    "borderRadiusRound": "边框圆角圆形圆角",
+    "borderRadiusRoundSM": "边框圆角圆形小号圆角",
+    "borderRadiusRoundLG": "边框圆角圆形大号圆角",
+    "buttonRoundPaddingHorizontal": "按钮圆形内边距水平",
+    "buttonRoundPaddingHorizontalLG": "按钮圆形内边距水平大号",
+    "buttonRoundPaddingHorizontalSM": "按钮圆形内边距水平小号",
+    "tagPaddingHorizontal": "标签内边距水平",
+    "tagIconSize": "标签图标尺寸",
+    "iconMarginInline": "图标外边距行内",
+    "alertPaddingHorizontal": "警告提示内边距水平",
+    "alertIconSizeLG": "警告提示图标尺寸大号",
+    "alertCloseIcon": "警告提示关闭图标",
+    "alertIcon": "警告提示图标",
+    "messageContentHorizontal": "消息内容水平",
+    "messageIcon": "消息图标",
+    "switchHeight": "开关高度",
+    "switchHeightSM": "开关高度小号",
+    "switchPadding": "开关内边距",
+    "switchPinSize": "开关pin尺寸",
+    "switchPinSizeActive": "开关pin尺寸激活态",
+    "switchPinSizeSM": "开关pin尺寸小号",
+    "switchPinSizeSMActive": "开关pin尺寸小号激活态",
+    "switchWidth": "开关宽度",
+    "switchWidthSM": "开关宽度小号",
+    "switchInnerMarginMin": "开关内部外边距最小",
+    "switchInnerMarginMinSM": "开关内部外边距最小小号",
+    "switchLoadingIconColor": "开关加载中图标颜色",
+    "borderRadiusSwitch": "边框圆角开关圆角",
+    "borderRadiusMax": "边框圆角最大圆角",
+    "borderRadiusSwitchHandle": "边框圆角开关控制柄圆角",
+    "switchIconSizeSM": "开关图标尺寸小号",
+    "switchIconSize": "开关图标尺寸",
+    "iconSize": "图标尺寸",
+    "codeBg": "代码背景",
+    "codeBorder": "代码边框",
+    "keyboardBg": "键盘背景",
+    "keyboardBorder": "键盘边框",
+    "codeAndKeyboardHorizontalMargin": "代码和键盘水平外边距",
+    "codeAndKeyboardHorizontalPadding": "代码和键盘水平内边距",
+    "codeAndKeyboardTopPadding": "代码和键盘顶部内边距",
+    "codeKeyboardRadius": "代码键盘圆角",
+    "codeAndKeyboardBottomPadding": "代码和键盘底部内边距",
+    "badgeShadowColor": "徽标阴影颜色",
+    "badgeShadowSize": "徽标阴影尺寸",
+    "badgeHeight": "徽标高度",
+    "badgeHeightSM": "徽标高度小号",
+    "badgeDotSize": "徽标圆点尺寸",
+    "badgeStatusSize": "徽标状态尺寸",
+    "borderRadiusBadge": "边框圆角徽标圆角",
+    "borderRadiusBadgeSM": "边框圆角徽标小号圆角",
+    "spinDotSize": "加载圆点尺寸",
+    "spinDotItemSize": "加载圆点项尺寸",
+    "spinDotItemSizeSM": "加载圆点项尺寸小号",
+    "spinDotItemSizeLG": "加载圆点项尺寸大号",
+    "spinDotSizeSM": "加载圆点尺寸小号",
+    "spinDotSizeLG": "加载圆点尺寸大号",
+    "notificationCloseButtonSize": "通知关闭按钮尺寸",
+    "notificationCloseIconSize": "通知关闭图标尺寸",
+    "notificationNoticeIconSize": "通知通知图标尺寸",
+    "resultIconSize": "结果图标尺寸",
+    "resultVerticalPadding": "结果垂直内边距",
+    "resultContentHorizontalPadding": "结果内容水平内边距",
+    "popConfirmIconSize": "气泡确认图标尺寸",
+    "tourCloseSize": "引导关闭尺寸",
+    "tourCoverVerticalPadding": "引导封面垂直内边距",
+    "tourIndicatorSize": "引导指示器尺寸",
+    "tourMaskBg": "引导遮罩背景",
+    "avatarFontSizeBase": "头像字体尺寸基础",
+    "avatarFontSizeSM": "头像字体尺寸小号",
+    "avatarFontSizeLG": "头像字体尺寸大号",
+    "emptyImgHeight": "空状态img高度",
+    "emptyImgHeightMD": "空状态img高度中号",
+    "emptyImgHeightSM": "空状态img高度小号",
+    "QRCodeMaskBackgroundColor": "二维码代码遮罩背景颜色",
+    "QRCodeExpiredTextColor": "二维码代码过期文字颜色",
+    "carouselDotWidth": "走马灯圆点宽度",
+    "carouselDotHeight": "走马灯圆点高度",
+    "carouselDotWidthActive": "走马灯圆点宽度激活态",
+    "carouselArrowSize": "走马灯箭头尺寸",
+    "carouselDotOffset": "走马灯圆点偏移",
+    "carouselArrowOffset": "走马灯箭头偏移",
+    "modalHeaderHeight": "弹窗页头高度",
+    "modalCloseBtnSize": "弹窗关闭按钮尺寸",
+    "modalCloseIconSize": "弹窗关闭图标尺寸",
+    "modalConfirmIconSize": "弹窗确认图标尺寸",
+    "modalCloseButtonPosition": "弹窗关闭按钮position",
+    "drawerCloseIcon": "抽屉关闭图标",
+    "segmentedPaddingHorizontal": "分段控制器内边距水平",
+    "segmentedPaddingHorizontalSM": "分段控制器内边距水平小号",
+    "segmentedPadding": "分段控制器内边距",
+    "segmentedLabelMinHeight": "分段控制器标签最小高度",
+    "segmentedLabelMinHeightLG": "分段控制器标签最小高度大号",
+    "segmentedLabelMinHeightSM": "分段控制器标签最小高度小号",
+    "segmentedItemGap": "分段控制器项间距",
+    "segmentedIcon": "分段控制器图标",
+    "segmentedIconLG": "分段控制器图标大号",
+    "radioDotSize": "单选框圆点尺寸",
+    "radioDotPadding": "单选框圆点内边距",
+    "radioButtonPaddingInline": "单选框按钮内边距行内",
+    "radioButtonPaddingInlineSM": "单选框按钮内边距行内小号",
+    "radioRadius": "单选框圆角",
+    "radioDotDisabledSize": "单选框圆点禁用态尺寸",
+    "radioButtonGroupPadding": "单选框按钮分组内边距",
+    "radioButtonHeight": "单选框按钮高度",
+    "radioButtonHeightSM": "单选框按钮高度小号",
+    "radioButtonHeightLG": "单选框按钮高度大号",
+    "borderRadiusRadioButton": "边框圆角单选框按钮圆角",
+    "borderRadiusRadioButtonSM": "边框圆角单选框按钮小号圆角",
+    "borderRadiusRadioButtonLG": "边框圆角单选框按钮大号圆角",
+    "checkboxSize": "复选框尺寸",
+    "checkboxIndeterminateSize": "复选框半选态尺寸",
+    "rateStarSize": "评分星标尺寸",
+    "timelineItemHeadSize": "时间轴项头部尺寸",
+    "timelineItemPaddingBottom": "时间轴项内边距底部",
+    "itemTailHorizontalPadding": "项尾线水平内边距",
+    "itemTailVerticalPadding": "项尾线垂直内边距",
+    "collapseExpandIconHeight": "折叠面板展开图标高度",
+    "collapseExpandIconHeightLG": "折叠面板展开图标高度大号",
+    "collapseExpandIconHeightSM": "折叠面板展开图标高度小号",
+    "collapseExpandIconPaddingHorizontalStart": "折叠面板展开图标内边距水平起始",
+    "collapseExpandIconPaddingHorizontalStartSM": "折叠面板展开图标内边距水平起始小号",
+    "collapseExpandIconPaddingHorizontalStartLG": "折叠面板展开图标内边距水平起始大号",
+    "selectInputPaddingHorizontalBase": "选择器输入框内边距水平基础",
+    "selectInputPaddingHorizontalSM": "选择器输入框内边距水平小号",
+    "selectionItemPadding": "选中项内边距",
+    "selectionItemPaddingLG": "选中项内边距大号",
+    "selectionItemPaddingSM": "选中项内边距小号",
+    "selectTagItemEnd": "选择器标签项结束",
+    "selectDropdownItemVertical": "选择器下拉项垂直",
+    "selectDropdownItemGroupHorizontal": "选择器下拉项分组水平",
+    "inputPaddingHorizontal": "输入框内边距水平",
+    "inputPaddingHorizontalSM": "输入框内边距水平小号",
+    "inputPaddingHorizontalLG": "输入框内边距水平大号",
+    "inputPaddingVertical": "输入框内边距垂直",
+    "inputPaddingVerticalSM": "输入框内边距垂直小号",
+    "inputPaddingVerticalLG": "输入框内边距垂直大号",
+    "radiusNone": "无圆角",
+    "inputNumberHandleWidth": "输入框数字控制柄宽度",
+    "skeletonButtonWidth": "骨架屏按钮宽度",
+    "skeletonInputWidth": "骨架屏输入框宽度",
+    "skeletonButtonWidthLG": "骨架屏按钮宽度大号",
+    "skeletonInputWidthLG": "骨架屏输入框宽度大号",
+    "skeletonButtonWidthSM": "骨架屏按钮宽度小号",
+    "skeletonInputWidthSM": "骨架屏输入框宽度小号",
+    "colorPickerWidth": "颜色选择器宽度",
+    "colorPickerHandlerSize": "颜色选择器handler尺寸",
+    "colorPickerHandlerSizeSM": "颜色选择器handler尺寸小号",
+    "colorPickerSliderHeight": "颜色选择器滑块高度",
+    "colorPickerPreviewSize": "颜色选择器预览尺寸",
+    "paddingNone": "无内边距",
+    "colorPickerPresetColorSize": "颜色选择器预设颜色尺寸",
+    "paginationItemPaddingInline": "分页项内边距行内",
+    "floatButtonBodyVerticalPadding": "悬浮按钮主体垂直内边距",
+    "floatButtonBodyHorizontalPadding": "悬浮按钮主体水平内边距",
+    "floatButtonIconSize": "悬浮按钮图标尺寸",
+    "marginNone": "无外边距",
+    "tabHorizontalSM": "标签页水平小号",
+    "tabVerticalLG": "标签页垂直大号",
+    "tabCardGap": "标签页卡片间距",
+    "darkBtnTextHover": "暗色按钮文字悬浮态",
+    "darkBtnFilled": "暗色按钮填充",
+    "darkBtnFilledHover": "暗色按钮填充悬浮态",
+    "tooltipVerticalPaddingSM": "提示垂直内边距小号",
+    "colorTextLightSolidPrimary": "颜色文字浅色实色主色颜色",
+    "emptyImage": "空状态图片主色",
+    "emptyImageLight": "空状态图片浅色",
+    "emptyImageInnerShadow": "空状态图片内阴影色",
+    "emptyImageShadow": "空状态图片阴影色",
+    "emptyBorder": "空状态边框颜色",
+    "test-will-be-removed-in-the-next-update": "测试 token，后续更新会移除",
+    "guotai blue1": "国泰蓝色色板第 1 阶",
+    "guotai blue2": "国泰蓝色色板第 2 阶",
+    "guotai blue3": "国泰蓝色色板第 3 阶",
+    "guotai blue4": "国泰蓝色色板第 4 阶",
+    "guotai blue5": "国泰蓝色色板第 5 阶",
+    "guotai blue6": "国泰蓝色色板第 6 阶",
+    "guotai blue7": "国泰蓝色色板第 7 阶",
+    "guotai blue8": "国泰蓝色色板第 8 阶",
+    "guotai blue9": "国泰蓝色色板第 9 阶",
+    "guotai blue10": "国泰蓝色色板第 10 阶",
+    "guozhi blue1": "国之蓝色色板第 1 阶",
+    "guozhi blue2": "国之蓝色色板第 2 阶",
+    "guozhi blue3": "国之蓝色色板第 3 阶",
+    "guozhi blue4": "国之蓝色色板第 4 阶",
+    "guozhi blue5": "国之蓝色色板第 5 阶",
+    "guozhi blue6": "国之蓝色色板第 6 阶",
+    "guozhi blue7": "国之蓝色色板第 7 阶",
+    "guozhi blue8": "国之蓝色色板第 8 阶",
+    "guozhi blue9": "国之蓝色色板第 9 阶",
+    "guozhi blue10": "国之蓝色色板第 10 阶"
+  },
+  "agGrid": {
+    "checkboxCheckedColor": {
+      "category": "复选框和单选框",
+      "cssVariable": "--ag-checkbox-checked-color",
+      "description": "兼容颜色：配置旧版复选框选中态颜色。"
+    },
+    "chromeForegroundColor": {
+      "category": "基础颜色",
+      "cssVariable": "--ag-chrome-foreground-color",
+      "description": "兼容颜色：配置 Grid chrome 区域的前景色。"
+    },
+    "dropdownBorderRadius": {
+      "category": "选择器",
+      "cssVariable": "--ag-dropdown-border-radius",
+      "description": "兼容圆角：配置下拉容器的圆角半径。"
+    },
+    "headerBorderColor": {
+      "category": "表头",
+      "cssVariable": "--ag-header-border-color",
+      "description": "兼容颜色：配置表头边框颜色。"
+    },
+    "inputDisabledBorderLegacy": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-disabled-border-legacy",
+      "description": "兼容边框：配置旧版禁用输入框边框值。"
+    },
+    "inputRightIconVisible": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-right-icon-visible",
+      "description": "兼容开关：配置输入框右侧图标是否可见，使用 0 或 1。"
+    },
+    "radioCheckedShapeImage": {
+      "category": "复选框和单选框",
+      "cssVariable": "--ag-radio-checked-shape-image",
+      "description": "图片：配置单选框选中标记图片；源值 0 转换为 none。"
+    },
+    "rowGroupBgColor": {
+      "category": "行",
+      "cssVariable": "--ag-row-group-bg-color",
+      "description": "兼容颜色：配置分组行背景色。"
+    },
+    "rowGroupBgHoverColor": {
+      "category": "行",
+      "cssVariable": "--ag-row-group-bg-hover-color",
+      "description": "兼容颜色：配置分组行悬停背景色。"
+    },
+    "scrollbarThumbColor": {
+      "category": "滚动条",
+      "cssVariable": "--ag-scrollbar-thumb-color",
+      "description": "兼容颜色：配置滚动条滑块颜色。"
+    },
+    "scrollbarThumbHoverColor": {
+      "category": "滚动条",
+      "cssVariable": "--ag-scrollbar-thumb-hover-color",
+      "description": "兼容颜色：配置滚动条滑块悬停颜色。"
+    },
+    "tabBorderColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-border-color",
+      "description": "兼容颜色：配置标签页边框颜色。"
+    },
+    "widgetContainerBorderRadius": {
+      "category": "控件容器",
+      "cssVariable": "--ag-widget-container-border-radius",
+      "description": "兼容圆角：配置控件容器的圆角半径。"
+    },
+    "widgetContainerVerticalSpacing": {
+      "category": "控件容器",
+      "cssVariable": "--ag-widget-container-vertical-spacing",
+      "description": "兼容间距：配置控件容器的垂直间距。"
+    },
+    "accentColor": {
+      "category": "基础颜色",
+      "cssVariable": "--ag-accent-color",
+      "description": "颜色：配置 accent 的颜色。"
+    },
+    "advancedFilterBuilderButtonBarBorder": {
+      "category": "高级筛选",
+      "cssVariable": "--ag-advanced-filter-builder-button-bar-border",
+      "description": "边框：配置 advanced filter builder button bar 的边框。"
+    },
+    "advancedFilterBuilderColumnPillColor": {
+      "category": "高级筛选",
+      "cssVariable": "--ag-advanced-filter-builder-column-pill-color",
+      "description": "颜色：配置 advanced filter builder column pill 的颜色。"
+    },
+    "advancedFilterBuilderIndentSize": {
+      "category": "高级筛选",
+      "cssVariable": "--ag-advanced-filter-builder-indent-size",
+      "description": "缩进：配置 advanced filter builder 的缩进尺寸。"
+    },
+    "advancedFilterBuilderJoinPillColor": {
+      "category": "高级筛选",
+      "cssVariable": "--ag-advanced-filter-builder-join-pill-color",
+      "description": "颜色：配置 advanced filter builder join pill 的颜色。"
+    },
+    "advancedFilterBuilderOptionPillColor": {
+      "category": "高级筛选",
+      "cssVariable": "--ag-advanced-filter-builder-option-pill-color",
+      "description": "颜色：配置 advanced filter builder option pill 的颜色。"
+    },
+    "advancedFilterBuilderValuePillColor": {
+      "category": "高级筛选",
+      "cssVariable": "--ag-advanced-filter-builder-value-pill-color",
+      "description": "颜色：配置 advanced filter builder value pill 的颜色。"
+    },
+    "backgroundColor": {
+      "category": "基础背景",
+      "cssVariable": "--ag-background-color",
+      "description": "颜色：配置 background 的颜色。"
+    },
+    "borderColor": {
+      "category": "边框",
+      "cssVariable": "--ag-border-color",
+      "description": "颜色：配置 border 的颜色。"
+    },
+    "borderRadius": {
+      "category": "边框",
+      "cssVariable": "--ag-border-radius",
+      "description": "圆角：配置 border 的圆角半径。"
+    },
+    "browserColorScheme": {
+      "category": "浏览器",
+      "cssVariable": "--ag-browser-color-scheme",
+      "description": "模式：配置 browser color 的浏览器颜色模式。"
+    },
+    "buttonActiveBackgroundColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-active-background-color",
+      "description": "颜色：配置 button active background 的颜色。"
+    },
+    "buttonActiveBorder": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-active-border",
+      "description": "边框：配置 button active 的边框。"
+    },
+    "buttonActiveTextColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-active-text-color",
+      "description": "颜色：配置 button active text 的颜色。"
+    },
+    "buttonBackgroundColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-background-color",
+      "description": "颜色：配置 button background 的颜色。"
+    },
+    "buttonBorder": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-border",
+      "description": "边框：配置 button 的边框。"
+    },
+    "buttonBorderRadius": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-border-radius",
+      "description": "圆角：配置 button border 的圆角半径。"
+    },
+    "buttonDisabledBackgroundColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-disabled-background-color",
+      "description": "颜色：配置 button disabled background 的颜色。"
+    },
+    "buttonDisabledBorder": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-disabled-border",
+      "description": "边框：配置 button disabled 的边框。"
+    },
+    "buttonDisabledTextColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-disabled-text-color",
+      "description": "颜色：配置 button disabled text 的颜色。"
+    },
+    "buttonFontWeight": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-font-weight",
+      "description": "字重：配置 button 的字重。"
+    },
+    "buttonHorizontalPadding": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-horizontal-padding",
+      "description": "内边距：配置 button horizontal 的内边距。"
+    },
+    "buttonHoverBackgroundColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-hover-background-color",
+      "description": "颜色：配置 button hover background 的颜色。"
+    },
+    "buttonHoverBorder": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-hover-border",
+      "description": "边框：配置 button hover 的边框。"
+    },
+    "buttonHoverTextColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-hover-text-color",
+      "description": "颜色：配置 button hover text 的颜色。"
+    },
+    "buttonTextColor": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-text-color",
+      "description": "颜色：配置 button text 的颜色。"
+    },
+    "buttonVerticalPadding": {
+      "category": "按钮",
+      "cssVariable": "--ag-button-vertical-padding",
+      "description": "内边距：配置 button vertical 的内边距。"
+    },
+    "cellBatchEditBackgroundColor": {
+      "category": "单元格",
+      "cssVariable": "--ag-cell-batch-edit-background-color",
+      "description": "颜色：配置 cell batch edit background 的颜色。"
+    },
+    "cellEditingBorder": {
+      "category": "单元格",
+      "cssVariable": "--ag-cell-editing-border",
+      "description": "边框：配置 cell editing 的边框。"
+    },
+    "cellFontFamily": {
+      "category": "单元格",
+      "cssVariable": "--ag-cell-font-family",
+      "description": "字体：配置 cell 使用的字体。"
+    },
+    "cellHorizontalPadding": {
+      "category": "单元格",
+      "cssVariable": "--ag-cell-horizontal-padding",
+      "description": "内边距：配置 cell horizontal 的内边距。"
+    },
+    "cellHorizontalPaddingScale": {
+      "category": "单元格",
+      "cssVariable": "--ag-cell-horizontal-padding-scale",
+      "description": "比例：配置 cell horizontal padding 的缩放比例。"
+    },
+    "cellTextColor": {
+      "category": "单元格",
+      "cssVariable": "--ag-cell-text-color",
+      "description": "颜色：配置 cell text 的颜色。"
+    },
+    "cellWidgetSpacing": {
+      "category": "单元格",
+      "cssVariable": "--ag-cell-widget-spacing",
+      "description": "间距：配置 cell widget 的间距。"
+    },
+    "chartMenuPanelWidth": {
+      "category": "图表",
+      "cssVariable": "--ag-chart-menu-panel-width",
+      "description": "宽度：配置 chart menu panel 的宽度。"
+    },
+    "checkboxBorderRadius": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-border-radius",
+      "description": "圆角：配置 checkbox border 的圆角半径。"
+    },
+    "checkboxBorderWidth": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-border-width",
+      "description": "宽度：配置 checkbox border 的宽度。"
+    },
+    "checkboxCheckedBackgroundColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-checked-background-color",
+      "description": "颜色：配置 checkbox checked background 的颜色。"
+    },
+    "checkboxCheckedBorderColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-checked-border-color",
+      "description": "颜色：配置 checkbox checked border 的颜色。"
+    },
+    "checkboxCheckedShapeColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-checked-shape-color",
+      "description": "颜色：配置 checkbox checked shape 的颜色。"
+    },
+    "checkboxIndeterminateBackgroundColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-indeterminate-background-color",
+      "description": "颜色：配置 checkbox indeterminate background 的颜色。"
+    },
+    "checkboxIndeterminateBorderColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-indeterminate-border-color",
+      "description": "颜色：配置 checkbox indeterminate border 的颜色。"
+    },
+    "checkboxIndeterminateShapeColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-indeterminate-shape-color",
+      "description": "颜色：配置 checkbox indeterminate shape 的颜色。"
+    },
+    "checkboxUncheckedBackgroundColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-unchecked-background-color",
+      "description": "颜色：配置 checkbox unchecked background 的颜色。"
+    },
+    "checkboxUncheckedBorderColor": {
+      "category": "复选框",
+      "cssVariable": "--ag-checkbox-unchecked-border-color",
+      "description": "颜色：配置 checkbox unchecked border 的颜色。"
+    },
+    "chromeBackgroundColor": {
+      "category": "基础界面",
+      "cssVariable": "--ag-chrome-background-color",
+      "description": "颜色：配置 chrome background 的颜色。"
+    },
+    "columnBorder": {
+      "category": "列",
+      "cssVariable": "--ag-column-border",
+      "description": "边框：配置 column 的边框。"
+    },
+    "columnDropCellBackgroundColor": {
+      "category": "列",
+      "cssVariable": "--ag-column-drop-cell-background-color",
+      "description": "颜色：配置 column drop cell background 的颜色。"
+    },
+    "columnDropCellBorder": {
+      "category": "列",
+      "cssVariable": "--ag-column-drop-cell-border",
+      "description": "边框：配置 column drop cell 的边框。"
+    },
+    "columnDropCellDragHandleColor": {
+      "category": "列",
+      "cssVariable": "--ag-column-drop-cell-drag-handle-color",
+      "description": "颜色：配置 column drop cell drag handle 的颜色。"
+    },
+    "columnDropCellTextColor": {
+      "category": "列",
+      "cssVariable": "--ag-column-drop-cell-text-color",
+      "description": "颜色：配置 column drop cell text 的颜色。"
+    },
+    "columnHoverColor": {
+      "category": "列",
+      "cssVariable": "--ag-column-hover-color",
+      "description": "颜色：配置 column hover 的颜色。"
+    },
+    "columnSelectIndentSize": {
+      "category": "列",
+      "cssVariable": "--ag-column-select-indent-size",
+      "description": "缩进：配置 column select 的缩进尺寸。"
+    },
+    "dataFontSize": {
+      "category": "数据",
+      "cssVariable": "--ag-data-font-size",
+      "description": "字号：配置 data 的字号。"
+    },
+    "dialogBorder": {
+      "category": "对话框",
+      "cssVariable": "--ag-dialog-border",
+      "description": "边框：配置 dialog 的边框。"
+    },
+    "dragAndDropImageBackgroundColor": {
+      "category": "拖拽",
+      "cssVariable": "--ag-drag-and-drop-image-background-color",
+      "description": "颜色：配置 drag and drop image background 的颜色。"
+    },
+    "dragAndDropImageBorder": {
+      "category": "拖拽",
+      "cssVariable": "--ag-drag-and-drop-image-border",
+      "description": "边框：配置 drag and drop image 的边框。"
+    },
+    "dragHandleColor": {
+      "category": "拖拽",
+      "cssVariable": "--ag-drag-handle-color",
+      "description": "颜色：配置 drag handle 的颜色。"
+    },
+    "filterToolPanelGroupIndent": {
+      "category": "筛选",
+      "cssVariable": "--ag-filter-tool-panel-group-indent",
+      "description": "参数：配置 filter tool panel group indent。"
+    },
+    "findActiveMatchBackgroundColor": {
+      "category": "查找",
+      "cssVariable": "--ag-find-active-match-background-color",
+      "description": "颜色：配置 find active match background 的颜色。"
+    },
+    "findActiveMatchColor": {
+      "category": "查找",
+      "cssVariable": "--ag-find-active-match-color",
+      "description": "颜色：配置 find active match 的颜色。"
+    },
+    "findMatchBackgroundColor": {
+      "category": "查找",
+      "cssVariable": "--ag-find-match-background-color",
+      "description": "颜色：配置 find match background 的颜色。"
+    },
+    "findMatchColor": {
+      "category": "查找",
+      "cssVariable": "--ag-find-match-color",
+      "description": "颜色：配置 find match 的颜色。"
+    },
+    "focusShadow": {
+      "category": "焦点",
+      "cssVariable": "--ag-focus-shadow",
+      "description": "阴影：配置 focus 的阴影。"
+    },
+    "fontFamily": {
+      "category": "字体",
+      "cssVariable": "--ag-font-family",
+      "description": "参数：配置 font family。"
+    },
+    "fontSize": {
+      "category": "字体",
+      "cssVariable": "--ag-font-size",
+      "description": "参数：配置 font size。"
+    },
+    "footerRowBorder": {
+      "category": "底部行",
+      "cssVariable": "--ag-footer-row-border",
+      "description": "边框：配置 footer row 的边框。"
+    },
+    "foregroundColor": {
+      "category": "基础颜色",
+      "cssVariable": "--ag-foreground-color",
+      "description": "颜色：配置 foreground 的颜色。"
+    },
+    "headerBackgroundColor": {
+      "category": "表头",
+      "cssVariable": "--ag-header-background-color",
+      "description": "颜色：配置 header background 的颜色。"
+    },
+    "headerCellHoverBackgroundColor": {
+      "category": "表头",
+      "cssVariable": "--ag-header-cell-hover-background-color",
+      "description": "颜色：配置 header cell hover background 的颜色。"
+    },
+    "headerCellMovingBackgroundColor": {
+      "category": "表头",
+      "cssVariable": "--ag-header-cell-moving-background-color",
+      "description": "颜色：配置 header cell moving background 的颜色。"
+    },
+    "headerColumnBorder": {
+      "category": "表头",
+      "cssVariable": "--ag-header-column-border",
+      "description": "边框：配置 header column 的边框。"
+    },
+    "headerColumnBorderHeight": {
+      "category": "表头",
+      "cssVariable": "--ag-header-column-border-height",
+      "description": "高度：配置 header column border 的高度。"
+    },
+    "headerColumnResizeHandleColor": {
+      "category": "表头",
+      "cssVariable": "--ag-header-column-resize-handle-color",
+      "description": "颜色：配置 header column resize handle 的颜色。"
+    },
+    "headerColumnResizeHandleHeight": {
+      "category": "表头",
+      "cssVariable": "--ag-header-column-resize-handle-height",
+      "description": "高度：配置 header column resize handle 的高度。"
+    },
+    "headerColumnResizeHandleWidth": {
+      "category": "表头",
+      "cssVariable": "--ag-header-column-resize-handle-width",
+      "description": "宽度：配置 header column resize handle 的宽度。"
+    },
+    "headerFontFamily": {
+      "category": "表头",
+      "cssVariable": "--ag-header-font-family",
+      "description": "字体：配置 header 使用的字体。"
+    },
+    "headerFontSize": {
+      "category": "表头",
+      "cssVariable": "--ag-header-font-size",
+      "description": "字号：配置 header 的字号。"
+    },
+    "headerFontWeight": {
+      "category": "表头",
+      "cssVariable": "--ag-header-font-weight",
+      "description": "字重：配置 header 的字重。"
+    },
+    "headerHeight": {
+      "category": "表头",
+      "cssVariable": "--ag-header-height",
+      "description": "高度：配置 header 的高度。"
+    },
+    "headerRowBorder": {
+      "category": "表头",
+      "cssVariable": "--ag-header-row-border",
+      "description": "边框：配置 header row 的边框。"
+    },
+    "headerTextColor": {
+      "category": "表头",
+      "cssVariable": "--ag-header-text-color",
+      "description": "颜色：配置 header text 的颜色。"
+    },
+    "headerVerticalPaddingScale": {
+      "category": "表头",
+      "cssVariable": "--ag-header-vertical-padding-scale",
+      "description": "比例：配置 header vertical padding 的缩放比例。"
+    },
+    "iconButtonActiveBackgroundColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-active-background-color",
+      "description": "颜色：配置 icon button active background 的颜色。"
+    },
+    "iconButtonActiveColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-active-color",
+      "description": "颜色：配置 icon button active 的颜色。"
+    },
+    "iconButtonActiveIndicatorColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-active-indicator-color",
+      "description": "颜色：配置 icon button active indicator 的颜色。"
+    },
+    "iconButtonBackgroundColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-background-color",
+      "description": "颜色：配置 icon button background 的颜色。"
+    },
+    "iconButtonBackgroundSpread": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-background-spread",
+      "description": "参数：配置 icon button background spread。"
+    },
+    "iconButtonBorderRadius": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-border-radius",
+      "description": "圆角：配置 icon button border 的圆角半径。"
+    },
+    "iconButtonColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-color",
+      "description": "颜色：配置 icon button 的颜色。"
+    },
+    "iconButtonHoverBackgroundColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-hover-background-color",
+      "description": "颜色：配置 icon button hover background 的颜色。"
+    },
+    "iconButtonHoverColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-button-hover-color",
+      "description": "颜色：配置 icon button hover 的颜色。"
+    },
+    "iconColor": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-color",
+      "description": "颜色：配置 icon 的颜色。"
+    },
+    "iconSize": {
+      "category": "图标",
+      "cssVariable": "--ag-icon-size",
+      "description": "参数：配置 icon size。"
+    },
+    "inputBackgroundColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-background-color",
+      "description": "颜色：配置 input background 的颜色。"
+    },
+    "inputBorder": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-border",
+      "description": "边框：配置 input 的边框。"
+    },
+    "inputBorderRadius": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-border-radius",
+      "description": "圆角：配置 input border 的圆角半径。"
+    },
+    "inputDisabledBackgroundColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-disabled-background-color",
+      "description": "颜色：配置 input disabled background 的颜色。"
+    },
+    "inputDisabledBorder": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-disabled-border",
+      "description": "边框：配置 input disabled 的边框。"
+    },
+    "inputDisabledTextColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-disabled-text-color",
+      "description": "颜色：配置 input disabled text 的颜色。"
+    },
+    "inputFocusBackgroundColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-focus-background-color",
+      "description": "颜色：配置 input focus background 的颜色。"
+    },
+    "inputFocusBorder": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-focus-border",
+      "description": "边框：配置 input focus 的边框。"
+    },
+    "inputFocusShadow": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-focus-shadow",
+      "description": "阴影：配置 input focus 的阴影。"
+    },
+    "inputFocusTextColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-focus-text-color",
+      "description": "颜色：配置 input focus text 的颜色。"
+    },
+    "inputHeight": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-height",
+      "description": "高度：配置 input 的高度。"
+    },
+    "inputIconColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-icon-color",
+      "description": "颜色：配置 input icon 的颜色。"
+    },
+    "inputInvalidBackgroundColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-invalid-background-color",
+      "description": "颜色：配置 input invalid background 的颜色。"
+    },
+    "inputInvalidBorder": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-invalid-border",
+      "description": "边框：配置 input invalid 的边框。"
+    },
+    "inputInvalidTextColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-invalid-text-color",
+      "description": "颜色：配置 input invalid text 的颜色。"
+    },
+    "inputPaddingStart": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-padding-start",
+      "description": "参数：配置 input padding start。"
+    },
+    "inputPlaceholderTextColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-placeholder-text-color",
+      "description": "颜色：配置 input placeholder text 的颜色。"
+    },
+    "inputTextColor": {
+      "category": "输入框",
+      "cssVariable": "--ag-input-text-color",
+      "description": "颜色：配置 input text 的颜色。"
+    },
+    "invalidColor": {
+      "category": "校验",
+      "cssVariable": "--ag-invalid-color",
+      "description": "颜色：配置 invalid 的颜色。"
+    },
+    "listItemHeight": {
+      "category": "列表",
+      "cssVariable": "--ag-list-item-height",
+      "description": "高度：配置 list item 的高度。"
+    },
+    "menuBackgroundColor": {
+      "category": "菜单",
+      "cssVariable": "--ag-menu-background-color",
+      "description": "颜色：配置 menu background 的颜色。"
+    },
+    "menuBorder": {
+      "category": "菜单",
+      "cssVariable": "--ag-menu-border",
+      "description": "边框：配置 menu 的边框。"
+    },
+    "menuSeparatorColor": {
+      "category": "菜单",
+      "cssVariable": "--ag-menu-separator-color",
+      "description": "颜色：配置 menu separator 的颜色。"
+    },
+    "menuShadow": {
+      "category": "菜单",
+      "cssVariable": "--ag-menu-shadow",
+      "description": "阴影：配置 menu 的阴影。"
+    },
+    "menuTextColor": {
+      "category": "菜单",
+      "cssVariable": "--ag-menu-text-color",
+      "description": "颜色：配置 menu text 的颜色。"
+    },
+    "modalOverlayBackgroundColor": {
+      "category": "模态层",
+      "cssVariable": "--ag-modal-overlay-background-color",
+      "description": "颜色：配置 modal overlay background 的颜色。"
+    },
+    "oddRowBackgroundColor": {
+      "category": "行",
+      "cssVariable": "--ag-odd-row-background-color",
+      "description": "颜色：配置 odd row background 的颜色。"
+    },
+    "panelBackgroundColor": {
+      "category": "面板",
+      "cssVariable": "--ag-panel-background-color",
+      "description": "颜色：配置 panel background 的颜色。"
+    },
+    "panelTitleBarBackgroundColor": {
+      "category": "面板",
+      "cssVariable": "--ag-panel-title-bar-background-color",
+      "description": "颜色：配置 panel title bar background 的颜色。"
+    },
+    "panelTitleBarBorder": {
+      "category": "面板",
+      "cssVariable": "--ag-panel-title-bar-border",
+      "description": "边框：配置 panel title bar 的边框。"
+    },
+    "panelTitleBarFontWeight": {
+      "category": "面板",
+      "cssVariable": "--ag-panel-title-bar-font-weight",
+      "description": "字重：配置 panel title bar 的字重。"
+    },
+    "panelTitleBarIconColor": {
+      "category": "面板",
+      "cssVariable": "--ag-panel-title-bar-icon-color",
+      "description": "颜色：配置 panel title bar icon 的颜色。"
+    },
+    "panelTitleBarTextColor": {
+      "category": "面板",
+      "cssVariable": "--ag-panel-title-bar-text-color",
+      "description": "颜色：配置 panel title bar text 的颜色。"
+    },
+    "pickerButtonBackgroundColor": {
+      "category": "选择器",
+      "cssVariable": "--ag-picker-button-background-color",
+      "description": "颜色：配置 picker button background 的颜色。"
+    },
+    "pickerButtonBorder": {
+      "category": "选择器",
+      "cssVariable": "--ag-picker-button-border",
+      "description": "边框：配置 picker button 的边框。"
+    },
+    "pickerButtonFocusBackgroundColor": {
+      "category": "选择器",
+      "cssVariable": "--ag-picker-button-focus-background-color",
+      "description": "颜色：配置 picker button focus background 的颜色。"
+    },
+    "pickerListBackgroundColor": {
+      "category": "选择器",
+      "cssVariable": "--ag-picker-list-background-color",
+      "description": "颜色：配置 picker list background 的颜色。"
+    },
+    "pickerListBorder": {
+      "category": "选择器",
+      "cssVariable": "--ag-picker-list-border",
+      "description": "边框：配置 picker list 的边框。"
+    },
+    "pinnedColumnBorder": {
+      "category": "固定行列",
+      "cssVariable": "--ag-pinned-column-border",
+      "description": "边框：配置 pinned column 的边框。"
+    },
+    "pinnedRowBorder": {
+      "category": "固定行列",
+      "cssVariable": "--ag-pinned-row-border",
+      "description": "边框：配置 pinned row 的边框。"
+    },
+    "popupShadow": {
+      "category": "弹出层",
+      "cssVariable": "--ag-popup-shadow",
+      "description": "阴影：配置 popup 的阴影。"
+    },
+    "rangeHeaderHighlightColor": {
+      "category": "范围选择",
+      "cssVariable": "--ag-range-header-highlight-color",
+      "description": "颜色：配置 range header highlight 的颜色。"
+    },
+    "rangeSelectionBackgroundColor": {
+      "category": "范围选择",
+      "cssVariable": "--ag-range-selection-background-color",
+      "description": "颜色：配置 range selection background 的颜色。"
+    },
+    "rangeSelectionBorderColor": {
+      "category": "范围选择",
+      "cssVariable": "--ag-range-selection-border-color",
+      "description": "颜色：配置 range selection border 的颜色。"
+    },
+    "rangeSelectionChartBackgroundColor": {
+      "category": "范围选择",
+      "cssVariable": "--ag-range-selection-chart-background-color",
+      "description": "颜色：配置 range selection chart background 的颜色。"
+    },
+    "rangeSelectionChartCategoryBackgroundColor": {
+      "category": "范围选择",
+      "cssVariable": "--ag-range-selection-chart-category-background-color",
+      "description": "颜色：配置 range selection chart category background 的颜色。"
+    },
+    "rangeSelectionHighlightColor": {
+      "category": "范围选择",
+      "cssVariable": "--ag-range-selection-highlight-color",
+      "description": "颜色：配置 range selection highlight 的颜色。"
+    },
+    "rowBatchEditBackgroundColor": {
+      "category": "行",
+      "cssVariable": "--ag-row-batch-edit-background-color",
+      "description": "颜色：配置 row batch edit background 的颜色。"
+    },
+    "rowBorder": {
+      "category": "行",
+      "cssVariable": "--ag-row-border",
+      "description": "边框：配置 row 的边框。"
+    },
+    "rowGroupIndentSize": {
+      "category": "行",
+      "cssVariable": "--ag-row-group-indent-size",
+      "description": "缩进：配置 row group 的缩进尺寸。"
+    },
+    "rowHeight": {
+      "category": "行",
+      "cssVariable": "--ag-row-height",
+      "description": "高度：配置 row 的高度。"
+    },
+    "rowHoverColor": {
+      "category": "行",
+      "cssVariable": "--ag-row-hover-color",
+      "description": "颜色：配置 row hover 的颜色。"
+    },
+    "rowLoadingSkeletonEffectColor": {
+      "category": "行",
+      "cssVariable": "--ag-row-loading-skeleton-effect-color",
+      "description": "颜色：配置 row loading skeleton effect 的颜色。"
+    },
+    "rowNumbersSelectedColor": {
+      "category": "行",
+      "cssVariable": "--ag-row-numbers-selected-color",
+      "description": "颜色：配置 row numbers selected 的颜色。"
+    },
+    "rowVerticalPaddingScale": {
+      "category": "行",
+      "cssVariable": "--ag-row-vertical-padding-scale",
+      "description": "比例：配置 row vertical padding 的缩放比例。"
+    },
+    "selectCellBackgroundColor": {
+      "category": "单元格选择",
+      "cssVariable": "--ag-select-cell-background-color",
+      "description": "颜色：配置 select cell background 的颜色。"
+    },
+    "selectCellBorder": {
+      "category": "单元格选择",
+      "cssVariable": "--ag-select-cell-border",
+      "description": "边框：配置 select cell 的边框。"
+    },
+    "selectedRowBackgroundColor": {
+      "category": "选中行",
+      "cssVariable": "--ag-selected-row-background-color",
+      "description": "颜色：配置 selected row background 的颜色。"
+    },
+    "setFilterIndentSize": {
+      "category": "集合筛选",
+      "cssVariable": "--ag-set-filter-indent-size",
+      "description": "缩进：配置 set filter 的缩进尺寸。"
+    },
+    "sideBarBackgroundColor": {
+      "category": "侧边栏",
+      "cssVariable": "--ag-side-bar-background-color",
+      "description": "颜色：配置 side bar background 的颜色。"
+    },
+    "sideBarPanelWidth": {
+      "category": "侧边栏",
+      "cssVariable": "--ag-side-bar-panel-width",
+      "description": "宽度：配置 side bar panel 的宽度。"
+    },
+    "sideButtonBackgroundColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-background-color",
+      "description": "颜色：配置 side button background 的颜色。"
+    },
+    "sideButtonBarBackgroundColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-bar-background-color",
+      "description": "颜色：配置 side button bar background 的颜色。"
+    },
+    "sideButtonBarTopPadding": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-bar-top-padding",
+      "description": "内边距：配置 side button bar top 的内边距。"
+    },
+    "sideButtonHoverBackgroundColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-hover-background-color",
+      "description": "颜色：配置 side button hover background 的颜色。"
+    },
+    "sideButtonHoverTextColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-hover-text-color",
+      "description": "颜色：配置 side button hover text 的颜色。"
+    },
+    "sideButtonSelectedBackgroundColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-selected-background-color",
+      "description": "颜色：配置 side button selected background 的颜色。"
+    },
+    "sideButtonSelectedBorder": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-selected-border",
+      "description": "边框：配置 side button selected 的边框。"
+    },
+    "sideButtonSelectedTextColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-selected-text-color",
+      "description": "颜色：配置 side button selected text 的颜色。"
+    },
+    "sideButtonSelectedUnderlineColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-selected-underline-color",
+      "description": "颜色：配置 side button selected underline 的颜色。"
+    },
+    "sideButtonTextColor": {
+      "category": "侧边栏按钮",
+      "cssVariable": "--ag-side-button-text-color",
+      "description": "颜色：配置 side button text 的颜色。"
+    },
+    "sidePanelBorder": {
+      "category": "侧面板",
+      "cssVariable": "--ag-side-panel-border",
+      "description": "边框：配置 side panel 的边框。"
+    },
+    "spacing": {
+      "category": "间距",
+      "cssVariable": "--ag-spacing",
+      "description": "间距：主题基础间距单位。"
+    },
+    "statusBarLabelColor": {
+      "category": "状态栏",
+      "cssVariable": "--ag-status-bar-label-color",
+      "description": "颜色：配置 status bar label 的颜色。"
+    },
+    "statusBarLabelFontWeight": {
+      "category": "状态栏",
+      "cssVariable": "--ag-status-bar-label-font-weight",
+      "description": "字重：配置 status bar label 的字重。"
+    },
+    "statusBarValueColor": {
+      "category": "状态栏",
+      "cssVariable": "--ag-status-bar-value-color",
+      "description": "颜色：配置 status bar value 的颜色。"
+    },
+    "statusBarValueFontWeight": {
+      "category": "状态栏",
+      "cssVariable": "--ag-status-bar-value-font-weight",
+      "description": "字重：配置 status bar value 的字重。"
+    },
+    "subtleTextColor": {
+      "category": "辅助文字",
+      "cssVariable": "--ag-subtle-text-color",
+      "description": "颜色：配置 subtle text 的颜色。"
+    },
+    "tabBackgroundColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-background-color",
+      "description": "颜色：配置 tab background 的颜色。"
+    },
+    "tabBarBackgroundColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-bar-background-color",
+      "description": "颜色：配置 tab bar background 的颜色。"
+    },
+    "tabBarBorder": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-bar-border",
+      "description": "边框：配置 tab bar 的边框。"
+    },
+    "tabBarHorizontalPadding": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-bar-horizontal-padding",
+      "description": "内边距：配置 tab bar horizontal 的内边距。"
+    },
+    "tabBarTopPadding": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-bar-top-padding",
+      "description": "内边距：配置 tab bar top 的内边距。"
+    },
+    "tabBottomPadding": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-bottom-padding",
+      "description": "内边距：配置 tab bottom 的内边距。"
+    },
+    "tabHorizontalPadding": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-horizontal-padding",
+      "description": "内边距：配置 tab horizontal 的内边距。"
+    },
+    "tabHoverBackgroundColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-hover-background-color",
+      "description": "颜色：配置 tab hover background 的颜色。"
+    },
+    "tabHoverTextColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-hover-text-color",
+      "description": "颜色：配置 tab hover text 的颜色。"
+    },
+    "tabSelectedBackgroundColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-selected-background-color",
+      "description": "颜色：配置 tab selected background 的颜色。"
+    },
+    "tabSelectedBorderColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-selected-border-color",
+      "description": "颜色：配置 tab selected border 的颜色。"
+    },
+    "tabSelectedBorderWidth": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-selected-border-width",
+      "description": "宽度：配置 tab selected border 的宽度。"
+    },
+    "tabSelectedTextColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-selected-text-color",
+      "description": "颜色：配置 tab selected text 的颜色。"
+    },
+    "tabSelectedUnderlineColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-selected-underline-color",
+      "description": "颜色：配置 tab selected underline 的颜色。"
+    },
+    "tabSelectedUnderlineTransitionDuration": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-selected-underline-transition-duration",
+      "description": "时长：配置 tab selected underline transition 的过渡时长。"
+    },
+    "tabSelectedUnderlineWidth": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-selected-underline-width",
+      "description": "宽度：配置 tab selected underline 的宽度。"
+    },
+    "tabSpacing": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-spacing",
+      "description": "间距：配置 tab 的间距。"
+    },
+    "tabTextColor": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-text-color",
+      "description": "颜色：配置 tab text 的颜色。"
+    },
+    "tabTopPadding": {
+      "category": "标签页",
+      "cssVariable": "--ag-tab-top-padding",
+      "description": "内边距：配置 tab top 的内边距。"
+    },
+    "textColor": {
+      "category": "基础文字",
+      "cssVariable": "--ag-text-color",
+      "description": "颜色：配置 text 的颜色。"
+    },
+    "toggleButtonHeight": {
+      "category": "切换按钮",
+      "cssVariable": "--ag-toggle-button-height",
+      "description": "高度：配置 toggle button 的高度。"
+    },
+    "toggleButtonOffBackgroundColor": {
+      "category": "切换按钮",
+      "cssVariable": "--ag-toggle-button-off-background-color",
+      "description": "颜色：配置 toggle button off background 的颜色。"
+    },
+    "toggleButtonOnBackgroundColor": {
+      "category": "切换按钮",
+      "cssVariable": "--ag-toggle-button-on-background-color",
+      "description": "颜色：配置 toggle button on background 的颜色。"
+    },
+    "toggleButtonSwitchBackgroundColor": {
+      "category": "切换按钮",
+      "cssVariable": "--ag-toggle-button-switch-background-color",
+      "description": "颜色：配置 toggle button switch background 的颜色。"
+    },
+    "toggleButtonSwitchInset": {
+      "category": "切换按钮",
+      "cssVariable": "--ag-toggle-button-switch-inset",
+      "description": "参数：配置 toggle button switch inset。"
+    },
+    "toggleButtonWidth": {
+      "category": "切换按钮",
+      "cssVariable": "--ag-toggle-button-width",
+      "description": "宽度：配置 toggle button 的宽度。"
+    },
+    "toolPanelSeparatorBorder": {
+      "category": "工具面板",
+      "cssVariable": "--ag-tool-panel-separator-border",
+      "description": "边框：配置 tool panel separator 的边框。"
+    },
+    "tooltipBackgroundColor": {
+      "category": "提示框",
+      "cssVariable": "--ag-tooltip-background-color",
+      "description": "颜色：配置 tooltip background 的颜色。"
+    },
+    "tooltipBorder": {
+      "category": "提示框",
+      "cssVariable": "--ag-tooltip-border",
+      "description": "边框：配置 tooltip 的边框。"
+    },
+    "tooltipTextColor": {
+      "category": "提示框",
+      "cssVariable": "--ag-tooltip-text-color",
+      "description": "颜色：配置 tooltip text 的颜色。"
+    },
+    "valueChangeDeltaDownColor": {
+      "category": "数值变化",
+      "cssVariable": "--ag-value-change-delta-down-color",
+      "description": "颜色：配置 value change delta down 的颜色。"
+    },
+    "valueChangeDeltaUpColor": {
+      "category": "数值变化",
+      "cssVariable": "--ag-value-change-delta-up-color",
+      "description": "颜色：配置 value change delta up 的颜色。"
+    },
+    "valueChangeValueHighlightBackgroundColor": {
+      "category": "数值变化",
+      "cssVariable": "--ag-value-change-value-highlight-background-color",
+      "description": "颜色：配置 value change value highlight background 的颜色。"
+    },
+    "widgetContainerHorizontalPadding": {
+      "category": "控件容器",
+      "cssVariable": "--ag-widget-container-horizontal-padding",
+      "description": "内边距：配置 widget container horizontal 的内边距。"
+    },
+    "widgetContainerVerticalPadding": {
+      "category": "控件容器",
+      "cssVariable": "--ag-widget-container-vertical-padding",
+      "description": "内边距：配置 widget container vertical 的内边距。"
+    },
+    "widgetHorizontalSpacing": {
+      "category": "控件容器",
+      "cssVariable": "--ag-widget-horizontal-spacing",
+      "description": "间距：配置 widget horizontal 的间距。"
+    },
+    "widgetVerticalSpacing": {
+      "category": "控件容器",
+      "cssVariable": "--ag-widget-vertical-spacing",
+      "description": "间距：配置 widget vertical 的间距。"
+    },
+    "wrapperBorder": {
+      "category": "表格外框",
+      "cssVariable": "--ag-wrapper-border",
+      "description": "边框：配置 wrapper 的边框。"
+    },
+    "wrapperBorderRadius": {
+      "category": "表格外框",
+      "cssVariable": "--ag-wrapper-border-radius",
+      "description": "圆角：配置 wrapper border 的圆角半径。"
+    }
+  }
+}
